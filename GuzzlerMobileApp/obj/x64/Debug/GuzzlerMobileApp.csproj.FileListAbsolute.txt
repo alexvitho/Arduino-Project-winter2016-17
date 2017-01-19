@@ -485,7 +485,6 @@ C:\git\GuzzleR\GuzzlerMobileApp\bin\x64\Debug\Microsoft.WindowsAzure.Storage.dll
 C:\git\GuzzleR\GuzzlerMobileApp\bin\x64\Debug\Microsoft.WindowsAzure.Storage.pdb
 C:\git\GuzzleR\GuzzlerMobileApp\bin\x64\Debug\WinRTXamlToolkit.dll
 C:\git\GuzzleR\GuzzlerMobileApp\bin\x64\Debug\WinRTXamlToolkit.Controls.DataVisualization.dll
-C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\GuzzlerMobileApp.csprojResolveAssemblyReference.cache
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\App.g.i.cs
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\App.g.cs
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\ExtendedSplash.g.i.cs
@@ -509,9 +508,9 @@ C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\views\regDev.g.cs
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\views\specialDev.g.i.cs
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\views\specialDev.g.cs
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\XamlTypeInfo.g.cs
-C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\styles.xaml
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\App.xaml
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\ExtendedSplash.xaml
+C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\styles.xaml
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\views\chartTry.xaml
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\views\checkNow.xaml
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\views\dayLog.xaml
@@ -521,9 +520,9 @@ C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\views\estimatedCost.xaml
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\views\historyLog.xaml
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\views\regDev.xaml
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\views\specialDev.xaml
-C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\styles.xbf
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\App.xbf
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\ExtendedSplash.xbf
+C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\styles.xbf
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\views\chartTry.xbf
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\views\checkNow.xbf
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\views\dayLog.xbf
