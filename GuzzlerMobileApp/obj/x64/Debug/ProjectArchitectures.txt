@@ -1,1 +1,1 @@
-C:\Users\Alex\Desktop\GuzzlerMobileApp_Windows_CS\GuzzlerMobileApp\GuzzlerMobileApp.csproj;x64
+C:\git\GuzzleR\GuzzlerMobileApp\GuzzlerMobileApp.csproj;x64
