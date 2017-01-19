@@ -1,0 +1,59 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="GuzzlerMobileApp.views.checkNow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GuzzlerMobileApp.views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid Background="{ThemeResource splashBackColor}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="6*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <TextBox x:ConnectionId='4' Style="{StaticResource TitleText}" FontSize="24"                                                                  FontWeight="Light" />
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1" >
+            <TextBox Style="{StaticResource explanationText}" FontSize="24" Text="Real Time Power Consumption" VerticalAlignment="Top" />
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="37*"/>
+                <ColumnDefinition Width="8*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="3">
+            <Border Background="Transparent">
+                <Image Source="../Assets/ExampleG1.png"  />
+            </Border>
+            <WebView x:ConnectionId='3' HorizontalAlignment="Left" Height="291" VerticalAlignment="Top" Width="270"                                       Source="https://app.powerbi.com/groups/me/dashboards/2476c67a-384a-4f6e-9f3d-3ab7f2ecc6cb"/>
+        </Grid>
+        <Grid Grid.Row="9" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='2' Content="&lt; Back"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center"                          />
+        </Grid>
+    </Grid>
+
+</Page>
+

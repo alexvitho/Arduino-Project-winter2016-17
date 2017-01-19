@@ -1,0 +1,11 @@
+App.xbf
+ExtendedSplash.xbf
+styles.xbf
+views\checkNow.xbf
+views\dayLog.xbf
+views\deviceDetails.xbf
+views\devices.xbf
+views\estimatedCost.xbf
+views\historyLog.xbf
+views\regDev.xbf
+views\specialDev.xbf
