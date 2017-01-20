@@ -41,7 +41,7 @@ namespace GuzzlerMobileApp.views
             getValuesForDate();
         }
 
-        public List<string> getValuesForDate()
+        public List<double> getValuesForDate()
         {
             string partitionFilter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, guzzlerId);
 
@@ -59,18 +59,21 @@ namespace GuzzlerMobileApp.views
             string powerFilter = TableQuery.CombineFilters(TableQuery.CombineFilters(partitionFilter, TableOperators.And, powerHigh), TableOperators.And, powerLow);
             // ************************************** End of power filter ********************************************//
 
-            var query = new TableQuery<DynamicTableEntity>().Where(dateFilter);
+            var query = new TableQuery<DynamicTableEntity>().Where(dateFilter).Select(new string[] {"Timestamp", "realPower"});
 
-            var queryOutput = devicesGraphsTable.ExecuteQuerySegmentedAsync<DynamicTableEntity>(new TableQuery<DynamicTableEntity>().Where(dateFilter), null);
-            var results = queryOutput.Result;
-            List<string> tmp = new List<string>();
+            var queryOutput = devicesGraphsTable.ExecuteQuerySegmentedAsync<DynamicTableEntity>(query, null);
+            var results = queryOutput.Result.Results;
+            List<double> tmp = new List<double>();
+            List<DateTime> tmp1 = new List<DateTime>();
 
 
 
 
             foreach (var entity in results)
             {
-                tmp.Add(entity.RowKey);
+                tmp.Add((Double.Parse((entity.Properties["realPower"].PropertyAsObject).ToString())));
+                tmp1.Add((entity.Timestamp.LocalDateTime));
+
                 DataModel.existingDevsModel.nickToId.Add(entity.RowKey, entity.PartitionKey);
             }
 
