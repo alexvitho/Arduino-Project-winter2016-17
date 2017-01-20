@@ -19,7 +19,7 @@ namespace GuzzlerMobileApp.views
         public string DevName { get; private set; }
         public string Date { get; private set; }
         private string guzzlerId;
-        DateTimeOffset DateTimeOffsetVal;
+        DateTimeOffset DateChosed;
         public static StorageCredentials credentials = new StorageCredentials("guzzlerstorage", "GQgI4xCFRAHvD4s+4E+QKqPAHAWGgWagsWa6zP3aWfKus8GGJ15n+Fhp0DT9tD6+OzHSGR2Ekf8Twl4w2mfPow==");
         public static CloudStorageAccount storageAccount = new CloudStorageAccount(credentials, true);
         CloudTable devicesGraphsTable = storageAccount.CreateCloudTableClient().GetTableReference("DeviceGraps");  // Retrieve a reference to the table.
@@ -35,7 +35,7 @@ namespace GuzzlerMobileApp.views
             guzzlerId = DataModel.existingDevsModel.nickToId[devName];
             DevName = devName;
             Date = specificDate + " stats";
-            DateTimeOffsetVal = DateTime;
+            DateChosed = DateTime;
 
             this.InitializeComponent();
             getValuesForDate();
@@ -46,11 +46,11 @@ namespace GuzzlerMobileApp.views
             string partitionFilter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, guzzlerId);
 
             // **************************************  date filter ********************************************//
-            DateTimeOffset startTime = new DateTimeOffset(2017, 1, 20, 0,0, 0, new TimeSpan(2, 0, 0));
-            DateTimeOffset endTime = new DateTimeOffset(2017, 1, 20, 23, 59, 59, new TimeSpan(2, 0, 0));
+            DateTimeOffset startTime = new DateTimeOffset(DateChosed.Year, DateChosed.Month, DateChosed.Day, 0, 0, 0, new TimeSpan());
+            DateTimeOffset endTime = new DateTimeOffset(DateChosed.Year, DateChosed.Month, DateChosed.Day, 23, 59, 59, new TimeSpan());
 
-            string startTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.GreaterThanOrEqual, startTime);
-            string endTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.LessThanOrEqual, endTime);
+            string startTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.GreaterThanOrEqual, startTime.LocalDateTime);
+            string endTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.LessThanOrEqual, endTime.LocalDateTime);
             string dateFilter = TableQuery.CombineFilters(TableQuery.CombineFilters(partitionFilter, TableOperators.And, startTimeFilter), TableOperators.And, endTimeFilter);
             // ************************************** End of date filter ********************************************//
             // **************************************  power filter ********************************************//
