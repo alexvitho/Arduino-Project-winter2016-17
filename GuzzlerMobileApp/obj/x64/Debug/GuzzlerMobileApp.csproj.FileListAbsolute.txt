@@ -619,3 +619,4 @@ C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\Microsoft.WindowsAzure.Mobile.Ext.
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\WinRTXamlToolkit.pri.xml
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\WinRTXamlToolkit.Controls.DataVisualization.pri.xml
 C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\ProjectArchitectures.txt
+C:\git\GuzzleR\GuzzlerMobileApp\obj\x64\Debug\GuzzlerMobileApp.csprojResolveAssemblyReference.cache

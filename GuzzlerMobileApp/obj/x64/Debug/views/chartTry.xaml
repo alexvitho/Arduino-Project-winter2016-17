@@ -6,10 +6,23 @@
     xmlns:local="using:GuzzlerMobileApp.views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:datavis="using:WinRTXamlToolkit.Controls.DataVisualization"
+
     mc:Ignorable="d">
 
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../styles.xaml"/>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+
+    </Page.Resources>
+
+
+    <Grid Background="{StaticResource splashBackColor}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="6*" />
@@ -17,28 +30,31 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" />
-            <RowDefinition Height="3*" />
-            <RowDefinition Height="3*" />
-            <RowDefinition Height="3*" />
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="6*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
+
         <Grid Grid.Row="1" Grid.Column="1">
-        <Charting:Chart x:ConnectionId='3'  x:Name="PieChart"  HorizontalAlignment="Left"  VerticalAlignment="Top"  Margin="0" Width="323" >
-            <Charting:PieSeries Margin="0"  IndependentValuePath="Name"  DependentValuePath="Amount"  IsSelectionEnabled="True"/>
-        </Charting:Chart>
+            <Charting:Chart x:ConnectionId='2' Margin="0,20,0,0" Foreground="Yellow"  x:Name="LineChart" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   Title="Consumption chart" BorderThickness="2" BorderBrush="Magenta"  >
+                <Charting:LineSeries    ItemsSource="{Binding Data1}" IndependentValuePath="Day"  VerticalAlignment="Stretch" DependentValuePath="Val" IsSelectionEnabled="True"  />
+                <Charting:Chart.LegendStyle>
+                    <Style TargetType="datavis:Legend">
+                        <Setter Property="Width" Value="0" />
+                    </Style>
+                </Charting:Chart.LegendStyle>
+            </Charting:Chart>
         </Grid>
         <Grid Grid.Row="2" Grid.Column="1">
-
-            <Charting:Chart x:ConnectionId='2'  x:Name="lineChart"  HorizontalAlignment="Left"  VerticalAlignment="Top"  Margin="0" Height="159" Width="316" >
-            <Charting:LineSeries Margin="0"  IndependentValuePath="Name"  DependentValuePath="Amount"  IsSelectionEnabled="True"/>
-        </Charting:Chart>
+            <Charting:Chart x:ConnectionId='1' Margin="0,20,0,0"  x:Name="PieChart" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   Title="Consumption chart" BorderThickness="2" BorderBrush="Magenta"  >
+                <Charting:PieSeries    ItemsSource="{Binding Data2}"  IndependentValuePath="Day" DependentValuePath="Val"  />
+                <Charting:Chart.LegendStyle>
+                    <Style TargetType="datavis:Legend">
+                        <Setter Property="Width" Value="30"  />
+                    </Style>
+                </Charting:Chart.LegendStyle>
+            </Charting:Chart>
         </Grid>
-        <Grid Grid.Row="3" Grid.Column="1">
-
-            <Charting:Chart x:ConnectionId='1'  x:Name="ColumnChart"  HorizontalAlignment="Left"  VerticalAlignment="Top"  Margin="0" Width="329" >
-            <Charting:ColumnSeries Margin="0"  IndependentValuePath="Name"  DependentValuePath="Amount" CharacterSpacing="5"  IsSelectionEnabled="True"/>
-    </Charting:Chart>
-    </Grid>
 
     </Grid>
 </Page>

@@ -38,17 +38,30 @@ namespace GuzzlerMobileApp.views
             DateTimeOffsetVal = DateTime;
             
             this.InitializeComponent();
+            getValuesForDate();
         }
      
-        public List<string> getValuesForDate(string specDate)
+        public List<string> getValuesForDate()
         {
             string partitionFilter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, guzzlerId);
             string date1 = TableQuery.GenerateFilterConditionForDate("Date", QueryComparisons.GreaterThanOrEqual,DateTimeOffsetVal);
             string date2 = TableQuery.GenerateFilterConditionForDate("Date", QueryComparisons.LessThanOrEqual, DateTimeOffsetVal);
             string finalFilter = TableQuery.CombineFilters(TableQuery.CombineFilters(partitionFilter,TableOperators.And,date1),TableOperators.And, date2);
 
-            return null;
-        }
+            var query = new TableQuery<DynamicTableEntity>() { };
+            
+            var queryOutput = devicesGraphsTable.ExecuteQuerySegmentedAsync<DynamicTableEntity>(query, null);
+            var results = queryOutput.Result;
+            List<string> tmp = new List<string>();
+            foreach (var entity in results)
+            {
+                tmp.Add(entity.RowKey);
+                DataModel.existingDevsModel.nickToId.Add(entity.RowKey, entity.PartitionKey);
+            }
+            
+            return tmp;
+
+               }
 
 
 
