@@ -123,6 +123,9 @@
     <Compile Include="views\historyLog.xaml.cs">
       <DependentUpon>historyLog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="views\realTimePower.xaml.cs">
+      <DependentUpon>realTimePower.xaml</DependentUpon>
+    </Compile>
     <Compile Include="views\regDev.xaml.cs">
       <DependentUpon>regDev.xaml</DependentUpon>
     </Compile>
@@ -192,6 +195,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="views\historyLog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\realTimePower.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

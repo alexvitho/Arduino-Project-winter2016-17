@@ -930,4 +930,8 @@ C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\Microsoft.Wi
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\WinRTXamlToolkit.pri.xml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\WinRTXamlToolkit.Controls.DataVisualization.pri.xml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\ProjectArchitectures.txt
-C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\GuzzlerMobileApp.csprojResolveAssemblyReference.cache
+C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\views\realTimePower.xbf
+C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\realTimePower.g.i.cs
+C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\realTimePower.g.cs
+C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\realTimePower.xaml
+C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\realTimePower.xbf

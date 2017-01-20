@@ -19,7 +19,7 @@ namespace GuzzlerMobileApp.views
 
         private void powerConsumption_Click(object sender, RoutedEventArgs e)
         {
-            Window.Current.Content = new checkNow(DeviceName);
+            Window.Current.Content = new realTimePower(DeviceName);
             Window.Current.Activate();
         }
         private void cost_Click(object sender, RoutedEventArgs e)
