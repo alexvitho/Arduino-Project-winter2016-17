@@ -24,7 +24,7 @@ namespace GuzzlerMobileApp.views
         }
         private void cost_Click(object sender, RoutedEventArgs e)
         {
-          //  Window.Current.Content = new estimatedCost(DeviceName);
+            //Window.Current.Content = new estimatedCost(DeviceName);
             Window.Current.Content = new chartTry();
 
             Window.Current.Activate();

@@ -104,7 +104,9 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="MinHeight" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="FontSize" />
@@ -199,6 +201,14 @@
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="Style" />
       <RootProperty Name="SelectedItem" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="IsHitTestVisible" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
@@ -338,24 +348,18 @@
       <RootProperty Name="Color" />
       <RootProperty Name="Offset" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Padding" />
-      <RootProperty Name="IsTabStop" />
-      <RootProperty Name="Content" />
-      <RootProperty Name="IsHitTestVisible" />
-    </RootType>
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart">
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Title" />
+      <RootProperty Name="TitleStyle" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Series" />
       <RootProperty Name="LegendStyle" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.PieSeries">
       <RootProperty Name="ItemsSource" />

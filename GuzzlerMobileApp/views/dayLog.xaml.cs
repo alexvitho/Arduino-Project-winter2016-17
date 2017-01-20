@@ -14,7 +14,7 @@ namespace GuzzlerMobileApp.views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class dayLog : Page 
+    public sealed partial class dayLog : Page
     {
         public string DevName { get; private set; }
         public string Date { get; private set; }
@@ -26,7 +26,7 @@ namespace GuzzlerMobileApp.views
 
 
 
-        public dayLog(string specificDate , string devName, DateTimeOffset DateTime)
+        public dayLog(string specificDate, string devName, DateTimeOffset DateTime)
         {
             if (specificDate == null)
                 specificDate = "";
@@ -34,34 +34,49 @@ namespace GuzzlerMobileApp.views
                 DevName = "";
             guzzlerId = DataModel.existingDevsModel.nickToId[devName];
             DevName = devName;
-            Date = specificDate + " stats" ;
+            Date = specificDate + " stats";
             DateTimeOffsetVal = DateTime;
-            
+
             this.InitializeComponent();
             getValuesForDate();
         }
-     
+
         public List<string> getValuesForDate()
         {
             string partitionFilter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, guzzlerId);
-            string date1 = TableQuery.GenerateFilterConditionForDate("Date", QueryComparisons.GreaterThanOrEqual,DateTimeOffsetVal);
-            string date2 = TableQuery.GenerateFilterConditionForDate("Date", QueryComparisons.LessThanOrEqual, DateTimeOffsetVal);
-            string finalFilter = TableQuery.CombineFilters(TableQuery.CombineFilters(partitionFilter,TableOperators.And,date1),TableOperators.And, date2);
 
-            var query = new TableQuery<DynamicTableEntity>() { };
-            
-            var queryOutput = devicesGraphsTable.ExecuteQuerySegmentedAsync<DynamicTableEntity>(query, null);
+            // **************************************  date filter ********************************************//
+            DateTimeOffset startTime = new DateTimeOffset(2017, 1, 20, 0,0, 0, new TimeSpan(2, 0, 0));
+            DateTimeOffset endTime = new DateTimeOffset(2017, 1, 20, 23, 59, 59, new TimeSpan(2, 0, 0));
+
+            string startTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.GreaterThanOrEqual, startTime);
+            string endTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.LessThanOrEqual, endTime);
+            string dateFilter = TableQuery.CombineFilters(TableQuery.CombineFilters(partitionFilter, TableOperators.And, startTimeFilter), TableOperators.And, endTimeFilter);
+            // ************************************** End of date filter ********************************************//
+            // **************************************  power filter ********************************************//
+            string powerLow = TableQuery.GenerateFilterConditionForDouble("realPower", QueryComparisons.GreaterThanOrEqual, 1);
+            string powerHigh = TableQuery.GenerateFilterConditionForDouble("realPower", QueryComparisons.LessThanOrEqual, 2);
+            string powerFilter = TableQuery.CombineFilters(TableQuery.CombineFilters(partitionFilter, TableOperators.And, powerHigh), TableOperators.And, powerLow);
+            // ************************************** End of power filter ********************************************//
+
+            var query = new TableQuery<DynamicTableEntity>().Where(dateFilter);
+
+            var queryOutput = devicesGraphsTable.ExecuteQuerySegmentedAsync<DynamicTableEntity>(new TableQuery<DynamicTableEntity>().Where(dateFilter), null);
             var results = queryOutput.Result;
             List<string> tmp = new List<string>();
+
+
+
+
             foreach (var entity in results)
             {
                 tmp.Add(entity.RowKey);
                 DataModel.existingDevsModel.nickToId.Add(entity.RowKey, entity.PartitionKey);
             }
-            
+
             return tmp;
 
-               }
+        }
 
 
 

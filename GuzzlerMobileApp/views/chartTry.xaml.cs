@@ -1,23 +1,10 @@
-﻿using FourToolkit.Charts;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 using WinRTXamlToolkit.Controls.DataVisualization.Charting;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace GuzzlerMobileApp.views
 {
@@ -29,10 +16,10 @@ namespace GuzzlerMobileApp.views
         { get; set; }
     }
 
-    public class dataItem
+    public class dataItem1
     {
 
-        public dataItem(int day, double v)
+        public dataItem1(int day, double v)
         {
             this.Day = day;
             this.Val = v;
@@ -88,7 +75,7 @@ namespace GuzzlerMobileApp.views
                 Data2.Add(new dataItem(1, 0.64));
                 Data2.Add(new dataItem(2, 0.36));
 
-                ((LineSeries)LineChart.Series[0]).ItemsSource = Data;
+                ((LineSeries)LineChart.Series[0]).ItemsSource = Data1;
                 ((LineSeries)LineChart.Series[0]).DependentRangeAxis = new LinearAxis()
                 {
                     Maximum = 350,
@@ -96,14 +83,15 @@ namespace GuzzlerMobileApp.views
                     Orientation = AxisOrientation.Y,
                     Interval = 40,
                     ShowGridLines = true,
+                    
                 };
-
+                
                 ((LineSeries)LineChart.Series[0]).IndependentAxis = new LinearAxis()
                 {
                     Maximum = 35,
                     Minimum = 1,
                     Orientation = AxisOrientation.X,
-                    Interval = 2,
+                    Interval = 3,
                     ShowGridLines = true,
 
                 };

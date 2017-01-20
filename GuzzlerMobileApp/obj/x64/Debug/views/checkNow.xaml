@@ -5,6 +5,8 @@
     xmlns:local="using:GuzzlerMobileApp.views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:datavis="using:WinRTXamlToolkit.Controls.DataVisualization"
+    xmlns:Charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -23,29 +25,42 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="0.3*" />
             <RowDefinition Height="1*" />
-            <RowDefinition Height="2*" />
+            <RowDefinition Height="1.5*" MinHeight="80" />
             <RowDefinition Height="4*" />
+            <RowDefinition Height="1.5*" MinHeight="80" />
+
+            <RowDefinition Height="4*" />
+
             <RowDefinition Height="0.5*" />
             <RowDefinition Height="1*" />
+            <RowDefinition Height="0.5*" />
+
         </Grid.RowDefinitions>
         <Grid Grid.Row="1" Grid.Column="1">
-            <TextBox x:ConnectionId='3' Style="{StaticResource TitleText}" FontSize="24"                                                                  FontWeight="Light" />
+            <TextBox x:ConnectionId='4' Style="{StaticResource TitleText}" FontSize="24"                                                                  FontWeight="Light" />
         </Grid>
         <Grid Grid.Row="2" Grid.Column="1" >
-            <TextBox Style="{StaticResource explanationText}" FontSize="24" Text="Real Time Power Consumption" VerticalAlignment="Top" />
+            <TextBox Style="{StaticResource explanationText}" FontSize="24" Text="Power Guzzled kW/Day" VerticalAlignment="Top" />
         </Grid>
         <Grid Grid.Column="1" Grid.Row="5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="37*"/>
-                <ColumnDefinition Width="8*"/>
             </Grid.ColumnDefinitions>
         </Grid>
-        <Grid Grid.Column="1" Grid.Row="3">
-            <Border Background="Transparent">
-                <Image Source="../Assets/ExampleG1.png"  />
-            </Border>
+        <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" Grid.RowSpan="2">
+            <Charting:Chart x:ConnectionId='3'  x:Name="LineChart"  Margin="20 0 20 0" Foreground="Black" Title="" FontSize="10" TitleStyle="{StaticResource TitleContentStyle}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   BorderThickness="2" BorderBrush="Magenta"  >
+                <Charting:LineSeries    IndependentValuePath="Day"  VerticalAlignment="Stretch" DependentValuePath="Val" IsSelectionEnabled="True"  />
+                <Charting:Chart.LegendStyle>
+                    <Style TargetType="datavis:Legend">
+                        <Setter Property="Width" Value="0" />
+                    </Style>
+                </Charting:Chart.LegendStyle>
+            </Charting:Chart>
         </Grid>
-        <Grid Grid.Row="9" Grid.Column="1">
+        <Grid Grid.Row="4" Grid.Column="1" >
+            <TextBox Style="{StaticResource explanationText}" FontSize="24" Text="Power consumption part" VerticalAlignment="Top" />
+        </Grid>
+        <Grid Grid.Row="7" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="2*" />
