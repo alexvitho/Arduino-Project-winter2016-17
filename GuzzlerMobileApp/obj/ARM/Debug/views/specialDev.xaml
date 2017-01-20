@@ -40,7 +40,7 @@
             <TextBox x:ConnectionId='7' Style="{StaticResource TitleText}" FontSize="24"                                                                        FontWeight="Light" Background="Transparent"/>
         </Grid>
         <Grid Grid.Row="2" Grid.Column="1"  Grid.RowSpan="2" >
-            <Button x:ConnectionId='6' Content="power consumption"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center"                                 />
+            <Button x:ConnectionId='6' Content="Real Time Monitoring"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center"                                 />
         </Grid>
         <Grid Grid.Row="5" Grid.Column="1">
             <Button x:ConnectionId='5' Content="Estimated cost"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center"                    />

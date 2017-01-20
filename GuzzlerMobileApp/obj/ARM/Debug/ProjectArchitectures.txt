@@ -1,1 +1,1 @@
-C:\Users\Alex\Desktop\GuzzlerMobileApp_Windows_CS\GuzzlerMobileApp\GuzzlerMobileApp.csproj;arm
+C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\GuzzlerMobileApp.csproj;arm

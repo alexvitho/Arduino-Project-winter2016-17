@@ -1,12 +1,11 @@
-﻿using System.ComponentModel;
-using Windows.UI.Xaml;
+﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
 
 namespace GuzzlerMobileApp.views
 {
 
-    public sealed partial class specialDev : Page 
+    public sealed partial class specialDev : Page
     {
 
         public string DeviceName { get; private set; }
@@ -24,8 +23,8 @@ namespace GuzzlerMobileApp.views
         }
         private void cost_Click(object sender, RoutedEventArgs e)
         {
-            //Window.Current.Content = new estimatedCost(DeviceName);
-            Window.Current.Content = new chartTry();
+            Window.Current.Content = new estimatedCost(DeviceName);
+            //     Window.Current.Content = new chartTry();
 
             Window.Current.Activate();
         }

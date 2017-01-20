@@ -38,8 +38,8 @@
         <Grid Grid.Row="2" Grid.Column="1" >
             <TextBox Style="{StaticResource explanationText}" FontSize="24" Text="Real time power guzzling" VerticalAlignment="Top" />
         </Grid>
-        <Grid Grid.Column="1" Grid.Row="4">
-            <WebView HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Source="{x:Bind RealTimeViewLink }" />
+        <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="4">
+            <WebView HorizontalAlignment="Stretch" Margin="20 0" VerticalAlignment="Stretch" Source="{x:Bind RealTimeViewLink }" />
 
         </Grid>
         <Grid Grid.Row="6" Grid.Column="1">

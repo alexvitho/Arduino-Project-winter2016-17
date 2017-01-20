@@ -775,6 +775,19 @@
         </Setter>
     </Style>
 
-
+    <Style x:Key="TitleContentStyle" TargetType="ContentControl">
+        <Setter Property="FontFamily" Value="Showcard Gothic" />
+        <Setter Property="FontWeight" Value="ExtraBlack"/>
+        <Setter Property="FontSize" Value="22"/>
+        <Setter Property="Height" Value="20"/>
+        <Setter Property="Width" Value="0"/>
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="Foreground" Value="Black" />
+        <Setter Property="Margin" Value="{StaticResource PivotPortraitThemePadding}" />
+    </Style>
+    <Style x:Key="LightTitleContentStyle" TargetType="ContentControl" BasedOn="{StaticResource TitleContentStyle}">
+        <Setter Property="Foreground" Value="Yellow"/>
+    </Style>
 </ResourceDictionary>
 

@@ -19,7 +19,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <TextBox Text="Wellcome To the Guzzler" IsHitTestVisible="False"  Style="{StaticResource splashText}" Foreground="Yellow" AcceptsReturn="True"  HorizontalAlignment="Center"  VerticalAlignment="Center" MaxWidth="300" Background="{x:Null}" SelectionHighlightColor="{x:Null}" BorderBrush="{x:Null}" />
-        <Image x:ConnectionId='1' x:Name="extendedSplashImage" Source="Assets/Guzz.png"  HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="100" Height="100" />
+        <Image x:ConnectionId='1' x:Name="extendedSplashImage" Source="Assets/GuzzlerLogo.png"  HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="100" Height="100" />
     </Grid>
 
    
