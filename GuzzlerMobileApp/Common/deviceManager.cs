@@ -19,6 +19,7 @@ namespace GuzzlerMobileApp.Common
         public string ManufacturerName { get; set; }
         public string DeviceModel { get; set; }
         public string SerialNumber { get; set; }
+        public string RealTimeLink { get; set; }
     }
     
     public class deviceManager
@@ -34,6 +35,7 @@ namespace GuzzlerMobileApp.Common
             newDevice.ManufacturerName = manName;
             newDevice.DeviceModel = model;
             newDevice.SerialNumber = serial;
+            newDevice.RealTimeLink = "update from azure"; 
             return newDevice;
         }
         public void AzureStoreDevice(Device dev)

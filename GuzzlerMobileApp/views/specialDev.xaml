@@ -40,7 +40,7 @@
             <TextBox Style="{StaticResource TitleText}" FontSize="24" Text="{x:Bind  DeviceName, Mode=OneWay, FallbackValue=Name Of Device}" FontWeight="Light" Background="Transparent"/>
         </Grid>
         <Grid Grid.Row="2" Grid.Column="1"  Grid.RowSpan="2" >
-            <Button Content="power consumption"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center" Click="powerConsumption_Click"  />
+            <Button Content="Real Time Monitoring"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center" Click="powerConsumption_Click"  />
         </Grid>
         <Grid Grid.Row="5" Grid.Column="1">
             <Button Content="Estimated cost"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center" Click="cost_Click" />

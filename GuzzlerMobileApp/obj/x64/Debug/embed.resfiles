@@ -8,5 +8,6 @@ views\deviceDetails.xbf
 views\devices.xbf
 views\estimatedCost.xbf
 views\historyLog.xbf
+views\realTimePower.xbf
 views\regDev.xbf
 views\specialDev.xbf

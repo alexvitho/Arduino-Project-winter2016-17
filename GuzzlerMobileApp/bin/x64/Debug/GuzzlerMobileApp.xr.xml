@@ -406,6 +406,12 @@
       <RootEvent Name="SelectedDatesChanged" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.historyLog" />
+    <RootType FullName="Windows.UI.Xaml.Controls.WebView">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="GuzzlerMobileApp.views.realTimePower" />
     <RootType FullName="GuzzlerMobileApp.views.regDev" />
     <RootType FullName="GuzzlerMobileApp.views.specialDev" />
   </Roots.RootTypes>
