@@ -162,5 +162,10 @@ namespace GuzzlerMobileApp.views
 
         #endregion
 
+        private void Pie_Click(object sender, RoutedEventArgs e)
+        {
+            Window.Current.Content = new dailyPie(DateChosed.ToLocalTime().DateTime, DevName);
+            Window.Current.Activate();
+        }
     }
 }

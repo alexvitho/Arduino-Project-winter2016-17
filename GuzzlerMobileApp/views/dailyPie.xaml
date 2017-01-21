@@ -1,0 +1,77 @@
+﻿<Page
+    x:Class="GuzzlerMobileApp.views.dailyPie"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GuzzlerMobileApp.views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:datavis="using:WinRTXamlToolkit.Controls.DataVisualization"
+    xmlns:Charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid Background="{ThemeResource splashBackColor}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="6*" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" MinHeight="50" />
+            <RowDefinition Height="3*" MinHeight="80" MaxHeight="100" />
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="0.5*"/>
+
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <TextBox Style="{StaticResource TitleText}" FontSize="24" Text="{x:Bind DevName , Mode=OneWay ,FallbackValue=Device Name}" FontWeight="Light" />
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1" >
+            <TextBox Style="{StaticResource explanationText}" FontSize="24" Text="Daily Precentage" VerticalAlignment="Top" />
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="4">
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Column="1" Grid.Row="0">
+                <TextBox   Background="{StaticResource buttonBack}" Style="{StaticResource explanationText}"  HorizontalAlignment="Stretch" VerticalAlignment="Center"  Text="{x:Bind DevGuzzeled ,Mode=TwoWay}"/>
+            </Grid>
+            <Grid Grid.Column="1" Grid.Row="1">
+                <TextBox  Background="{StaticResource buttonBack}" Style="{StaticResource explanationText}" Text="{x:Bind DevPower ,Mode=OneWay}"    HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="50 0" />
+            </Grid>
+        </Grid>
+
+
+        <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5">
+            <Charting:Chart Margin="20 0" FontSize="10" Foreground="Yellow" x:Name="PieChart" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   Title="Consumption chart" TitleStyle="{StaticResource LightTitleContentStyle}" BorderThickness="2" BorderBrush="Yellow"  >
+                <Charting:PieSeries    ItemsSource="{Binding powerPartition}"  IndependentValuePath="Dev" DependentValuePath="Val"  />
+                <Charting:Chart.LegendStyle>
+                    <Style TargetType="datavis:Legend">
+                        <Setter Property="Width" Value="100"  />
+                    </Style>
+                </Charting:Chart.LegendStyle>
+            </Charting:Chart>
+        </Grid>
+        <Grid Grid.Row="7" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Button Content="&lt; Back"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center" Click="backButton_Click" />
+        </Grid>
+    </Grid>
+
+</Page>
