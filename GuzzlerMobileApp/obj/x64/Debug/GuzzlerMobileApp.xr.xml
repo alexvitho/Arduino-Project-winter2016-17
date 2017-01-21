@@ -7,6 +7,7 @@
     <RootPropertyPathName Name="Data2" />
     <RootPropertyPathName Name="Data1" />
     <RootPropertyPathName Name="costData" />
+    <RootPropertyPathName Name="powerData" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -61,7 +62,6 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="HorizontalContentAlignment" />
-      <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />

@@ -38,8 +38,8 @@ namespace GuzzlerMobileApp.views
         public string intXVal { get; set; }
         public string maxXVal { get; set; }
         public string minXVal { get; set; }
-        private List<dataItem> data;
-        public List<dataItem> Data
+        private List<powerItem> data;
+        public List<powerItem> Data
         {
             get { return data; }
             set
@@ -49,8 +49,8 @@ namespace GuzzlerMobileApp.views
                 NotifyPropertyChanged("Data");
             }
         }
-        public ObservableCollection<dataItem> Data1 { get; private set; }
-        public ObservableCollection<dataItem> Data2 { get; private set; }
+        public ObservableCollection<powerItem> Data1 { get; private set; }
+        public ObservableCollection<powerItem> Data2 { get; private set; }
         public chartTry()
         {
             intYVal = 1.ToString();
@@ -63,17 +63,17 @@ namespace GuzzlerMobileApp.views
             LoadChartContents();
             try
             {
-                data = new List<dataItem>();
-                Data1 = new ObservableCollection<dataItem>();
+                data = new List<powerItem>();
+                Data1 = new ObservableCollection<powerItem>();
                 for (int i = 0; i < 30; i++)
                 {
-                    data.Add(new dataItem(i, i * 10));
-                    Data1.Add(new dataItem(i, i * 10));
+                    data.Add(new powerItem(i, i * 10));
+                    Data1.Add(new powerItem(i, i * 10));
                 }
-                Data2 = new ObservableCollection<dataItem>();
+                Data2 = new ObservableCollection<powerItem>();
 
-                Data2.Add(new dataItem(1, 0.64));
-                Data2.Add(new dataItem(2, 0.36));
+                Data2.Add(new powerItem(1, 0.64));
+                Data2.Add(new powerItem(2, 0.36));
 
                 ((LineSeries)LineChart.Series[0]).ItemsSource = Data1;
                 ((LineSeries)LineChart.Series[0]).DependentRangeAxis = new LinearAxis()

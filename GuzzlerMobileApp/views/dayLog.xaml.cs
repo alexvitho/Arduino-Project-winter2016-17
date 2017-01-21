@@ -11,7 +11,17 @@ using WinRTXamlToolkit.Controls.DataVisualization.Charting;
 
 namespace GuzzlerMobileApp.views
 {
+    public class powerTimeItem
+    {
 
+        public powerTimeItem(DateTime time, double v)
+        {
+            this.time = time;
+            this.value = v;
+        }
+        public DateTime time { get; set; }
+        public double value { get; set; }
+    }
     public sealed partial class dayLog : Page
     {
         public string DevName { get; private set; }
@@ -22,6 +32,7 @@ namespace GuzzlerMobileApp.views
         public static CloudStorageAccount storageAccount = new CloudStorageAccount(credentials, true);
         CloudTable devicesGraphsTable = storageAccount.CreateCloudTableClient().GetTableReference("DeviceGraps");  // Retrieve a reference to the table.
         ObservableCollection<costPerHour> costData { get; set; }
+        ObservableCollection<powerTimeItem> powerData { get; set; }
 
 
 
@@ -38,14 +49,35 @@ namespace GuzzlerMobileApp.views
 
             this.InitializeComponent();
             getValuesForDate();
-            try {
+            try
+            {
                 costData = new ObservableCollection<costPerHour>();
                 for (int i = 0; i < 24; i++)
                 {
                     costData.Add(new costPerHour(i + 1, i * 10));
                 }
-
+                powerData = new ObservableCollection<powerTimeItem>();
+                int j = 0;
+                for (int i = 0  ; i < 60; i++ )
+                {
+                    if (i < 30)
+                        powerData.Add(new powerTimeItem(new DateTime(2017, 1, 21, 1, (i) % 50, (i + 8) % 50), i * 10));
+                    else
+                    {
+                        powerData.Add(new powerTimeItem(new DateTime(2017, 1, 21, 1, (i) % 50, (i + 8) % 50), j * 10));
+                        j++;
+                    }
+                }
                 ((ColumnSeries)ColumnChart.Series[0]).ItemsSource = costData;
+                ((LineSeries)LineChart.Series[0]).ItemsSource = powerData;
+                ((LineSeries)LineChart.Series[0]).IndependentAxis = new DateTimeAxis()
+                {
+                    IntervalType = DateTimeIntervalType.Minutes,
+                    Orientation = AxisOrientation.X,
+                    Maximum = new DateTime(2017, 1, 21, 1, 59, 59),
+                    Minimum = new DateTime(2017, 1, 21, 1, 0, 0),
+                    ShowGridLines = true,
+                };
             }
             catch (Exception e)
             {
@@ -71,7 +103,7 @@ namespace GuzzlerMobileApp.views
             string powerFilter = TableQuery.CombineFilters(TableQuery.CombineFilters(partitionFilter, TableOperators.And, powerHigh), TableOperators.And, powerLow);
             // ************************************** End of power filter ********************************************//
 
-            var query = new TableQuery<DynamicTableEntity>().Where(dateFilter).Select(new string[] {"Timestamp", "realPower"});
+            var query = new TableQuery<DynamicTableEntity>().Where(dateFilter).Select(new string[] { "Timestamp", "realPower" });
 
             var queryOutput = devicesGraphsTable.ExecuteQuerySegmentedAsync<DynamicTableEntity>(query, null);
             var results = queryOutput.Result.Results;
@@ -102,9 +134,6 @@ namespace GuzzlerMobileApp.views
 
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
 
-        }
     }
 }

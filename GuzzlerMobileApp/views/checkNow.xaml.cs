@@ -8,10 +8,10 @@ using WinRTXamlToolkit.Controls.DataVisualization.Charting;
 namespace GuzzlerMobileApp.views
 {
 
-    public class dataItem
+    public class powerItem
     {
 
-        public dataItem(int day, double v)
+        public powerItem(int day, double v)
         {
             this.Day = day;
             this.Val = v;
@@ -31,8 +31,8 @@ namespace GuzzlerMobileApp.views
         public double minXVal = 1;// { get; set; }
       
 
-        public ObservableCollection<dataItem> Data1 { get; private set; }
-        public ObservableCollection<dataItem> Data2 { get; private set; }
+        public ObservableCollection<powerItem> Data1 { get; private set; }
+        public ObservableCollection<powerItem> Data2 { get; private set; }
         public checkNow(string name = null)
         {
             try
@@ -42,15 +42,15 @@ namespace GuzzlerMobileApp.views
                 DevName = name;
                 this.InitializeComponent();
                 intXVal = 12;
-                Data1 = new ObservableCollection<dataItem>();
+                Data1 = new ObservableCollection<powerItem>();
                 for (int i = 0; i < 130; i++)
                 {
-                    Data1.Add(new dataItem(i, i * 10));
+                    Data1.Add(new powerItem(i, i * 10));
                 }
-                Data2 = new ObservableCollection<dataItem>();
+                Data2 = new ObservableCollection<powerItem>();
 
-                Data2.Add(new dataItem(1, 0.64));
-                Data2.Add(new dataItem(2, 0.36));
+                Data2.Add(new powerItem(1, 0.64));
+                Data2.Add(new powerItem(2, 0.36));
 
                 ((LineSeries)LineChart.Series[0]).ItemsSource = Data1;
                 ((LineSeries)LineChart.Series[0]).DependentRangeAxis = new LinearAxis()
