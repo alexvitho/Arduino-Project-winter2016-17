@@ -1,17 +1,12 @@
 ﻿using System.ComponentModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using GuzzlerMobileApp.views;
 using GuzzlerMobileApp.DataModel;
-
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+using System;
 
 namespace GuzzlerMobileApp.views
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+
     public sealed partial class regDev : Page, INotifyPropertyChanged
     {
         public regDev()
@@ -49,10 +44,29 @@ namespace GuzzlerMobileApp.views
             set
             {
                 if (guzzlerId != value)
-                    guzzlerId = value;
-                NotifyPropertyChanged("GuzzlerId");
+                {
+                    if (IdIsValid(value))
+                        guzzlerId = value.Trim();
+                    else
+                        guzzlerId = "";
+                    NotifyPropertyChanged("GuzzlerId");
+                }
             }
         }
+
+        private bool IdIsValid(string value)
+        {
+            if (!value.StartsWith("GD")) // start with GD
+                return false;
+            string[] strs = value.Split('-');
+            // there is only one "-" and the 2-nd part is 2 chars length
+            if (strs.Length != 2 || strs[1].Length!=2) 
+                return false;
+            int year = 0;
+            int serial = 0;
+            return true;
+        }
+
         private string devType = "";
         public string DevType
         {
@@ -98,8 +112,10 @@ namespace GuzzlerMobileApp.views
         private void regButton_Click(object sender, RoutedEventArgs e)
         {
 
-            if (DevName != "" )
-                {
+            if (DevName != "")
+            {
+                if (existingDevsModel.nickToId.ContainsValue(GuzzlerId))
+                    return;
                 existingDevsModel.existingDevs.Add(DevName);
                 existingDevsModel.nickToId.Add(DevName, GuzzlerId);
                 App.devicesMan.AzureStoreDevice(App.devicesMan.createNewDevice(guzzlerId, devName, devType, manufacturer, model, serial));

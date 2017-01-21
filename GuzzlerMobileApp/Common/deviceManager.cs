@@ -54,6 +54,7 @@ namespace GuzzlerMobileApp.Common
             return (Device)tableResultValue.Result; 
         }
 
+
         public async void AzureRemoveDevice(string guzId, string name)
         {
             // Create a retrieve operation that expects a customer entity.
