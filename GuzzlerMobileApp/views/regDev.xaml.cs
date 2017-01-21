@@ -174,12 +174,22 @@ namespace GuzzlerMobileApp.views
         public static async void showOkMSG(string title, string message)
         {
             var dialog = new message();
-          //  var dialog = new MessageDialog(message);
             dialog.Title = title;
             dialog.Msg = message;
-         //   dialog.Commands.Add(new UICommand { Label = "Ok", Id = 0 });
             await dialog.ShowAsync();
         }
+        public static async void showYesNoCancelMSG(string title, string message)
+        {
+            var dialog = new message();
+            dialog.Title = title;
+            dialog.Msg = message;
+            dialog.yesVis = Visibility.Visible;
+            dialog.noVis = Visibility.Visible;
+            dialog.cancelVis = Visibility.Visible;
+            dialog.btnOkNo = "NO";
+            await dialog.ShowAsync();
+        }
+
     }
 }
 

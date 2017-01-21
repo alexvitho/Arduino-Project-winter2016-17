@@ -28,7 +28,7 @@
     <AppXManifest Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-21T22:52:13.610</Modified>
+      <Modified>2017-01-21T22:53:56.837</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -759,7 +759,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\Core\GuzzlerMobileApp.exe">
       <PackagePath>GuzzlerMobileApp.exe</PackagePath>
-      <Modified>2017-01-21T22:52:13.605</Modified>
+      <Modified>2017-01-21T22:53:56.832</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
