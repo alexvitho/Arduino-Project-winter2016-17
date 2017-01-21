@@ -381,14 +381,14 @@
       <RootProperty Name="FallbackValue" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.checkNow" />
-    <RootType FullName="GuzzlerMobileApp.views.dayLog" />
-    <RootType FullName="GuzzlerMobileApp.views.deviceDetails" />
-    <RootType FullName="GuzzlerMobileApp.views.devices" />
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="IndependentValuePath" />
       <RootProperty Name="DependentValuePath" />
     </RootType>
+    <RootType FullName="GuzzlerMobileApp.views.dayLog" />
+    <RootType FullName="GuzzlerMobileApp.views.deviceDetails" />
+    <RootType FullName="GuzzlerMobileApp.views.devices" />
     <RootType FullName="GuzzlerMobileApp.views.estimatedCost" />
     <RootType FullName="Windows.UI.Xaml.Controls.CalendarView">
       <RootProperty Name="HorizontalAlignment" />

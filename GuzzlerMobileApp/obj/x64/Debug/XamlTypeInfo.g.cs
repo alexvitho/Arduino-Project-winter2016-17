@@ -211,11 +211,11 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
             _typeNameTable[51] = "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.views.dataItem>";
             _typeNameTable[52] = "System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.views.dataItem>";
             _typeNameTable[53] = "GuzzlerMobileApp.views.checkNow";
-            _typeNameTable[54] = "GuzzlerMobileApp.views.dayLog";
-            _typeNameTable[55] = "GuzzlerMobileApp.views.deviceDetails";
-            _typeNameTable[56] = "GuzzlerMobileApp.views.devices";
-            _typeNameTable[57] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries";
-            _typeNameTable[58] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>";
+            _typeNameTable[54] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries";
+            _typeNameTable[55] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>";
+            _typeNameTable[56] = "GuzzlerMobileApp.views.dayLog";
+            _typeNameTable[57] = "GuzzlerMobileApp.views.deviceDetails";
+            _typeNameTable[58] = "GuzzlerMobileApp.views.devices";
             _typeNameTable[59] = "GuzzlerMobileApp.views.estimatedCost";
             _typeNameTable[60] = "GuzzlerMobileApp.views.historyLog";
             _typeNameTable[61] = "GuzzlerMobileApp.views.realTimePower";
@@ -277,11 +277,11 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
             _typeTable[51] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.views.dataItem>);
             _typeTable[52] = typeof(global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.views.dataItem>);
             _typeTable[53] = typeof(global::GuzzlerMobileApp.views.checkNow);
-            _typeTable[54] = typeof(global::GuzzlerMobileApp.views.dayLog);
-            _typeTable[55] = typeof(global::GuzzlerMobileApp.views.deviceDetails);
-            _typeTable[56] = typeof(global::GuzzlerMobileApp.views.devices);
-            _typeTable[57] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries);
-            _typeTable[58] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>);
+            _typeTable[54] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries);
+            _typeTable[55] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>);
+            _typeTable[56] = typeof(global::GuzzlerMobileApp.views.dayLog);
+            _typeTable[57] = typeof(global::GuzzlerMobileApp.views.deviceDetails);
+            _typeTable[58] = typeof(global::GuzzlerMobileApp.views.devices);
             _typeTable[59] = typeof(global::GuzzlerMobileApp.views.estimatedCost);
             _typeTable[60] = typeof(global::GuzzlerMobileApp.views.historyLog);
             _typeTable[61] = typeof(global::GuzzlerMobileApp.views.realTimePower);
@@ -338,8 +338,8 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
         private object Activate_47_List() { return new global::System.Collections.Generic.List<global::GuzzlerMobileApp.views.dataItem>(); }
         private object Activate_51_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.views.dataItem>(); }
         private object Activate_52_Collection() { return new global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.views.dataItem>(); }
-        private object Activate_56_devices() { return new global::GuzzlerMobileApp.views.devices(); }
-        private object Activate_57_ColumnSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries(); }
+        private object Activate_54_ColumnSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries(); }
+        private object Activate_58_devices() { return new global::GuzzlerMobileApp.views.devices(); }
         private object Activate_62_regDev() { return new global::GuzzlerMobileApp.views.regDev(); }
         private void VectorAdd_5_Collection(object instance, object item)
         {
@@ -782,7 +782,22 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 54:   //  GuzzlerMobileApp.views.dayLog
+            case 54:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries
+                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>"));
+                userType.Activator = Activate_54_ColumnSeries;
+                xamlType = userType;
+                break;
+
+            case 55:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>
+                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes"));
+                userType.AddMemberName("DependentRangeAxis");
+                userType.AddMemberName("IndependentAxis");
+                userType.AddMemberName("ActualDependentRangeAxis");
+                userType.AddMemberName("ActualIndependentAxis");
+                xamlType = userType;
+                break;
+
+            case 56:   //  GuzzlerMobileApp.views.dayLog
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.AddMemberName("DevName");
                 userType.AddMemberName("Date");
@@ -790,7 +805,7 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 55:   //  GuzzlerMobileApp.views.deviceDetails
+            case 57:   //  GuzzlerMobileApp.views.deviceDetails
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.AddMemberName("DevName");
                 userType.AddMemberName("Manufacturer");
@@ -803,28 +818,13 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 56:   //  GuzzlerMobileApp.views.devices
+            case 58:   //  GuzzlerMobileApp.views.devices
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_56_devices;
+                userType.Activator = Activate_58_devices;
                 userType.AddMemberName("IsNextEnabled");
                 userType.AddMemberName("ChosenDev");
                 userType.AddMemberName("DevToRemove");
                 userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 57:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries
-                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>"));
-                userType.Activator = Activate_57_ColumnSeries;
-                xamlType = userType;
-                break;
-
-            case 58:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>
-                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes"));
-                userType.AddMemberName("DependentRangeAxis");
-                userType.AddMemberName("IndependentAxis");
-                userType.AddMemberName("ActualDependentRangeAxis");
-                userType.AddMemberName("ActualIndependentAxis");
                 xamlType = userType;
                 break;
 
@@ -1430,145 +1430,145 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
             var that = (global::GuzzlerMobileApp.views.checkNow)instance;
             return that.Data2;
         }
-        private object get_58_dayLog_DevName(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.dayLog)instance;
-            return that.DevName;
-        }
-        private object get_59_dayLog_Date(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.dayLog)instance;
-            return that.Date;
-        }
-        private object get_60_deviceDetails_DevName(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
-            return that.DevName;
-        }
-        private void set_60_deviceDetails_DevName(object instance, object Value)
-        {
-            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
-            that.DevName = (global::System.String)Value;
-        }
-        private object get_61_deviceDetails_Manufacturer(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
-            return that.Manufacturer;
-        }
-        private void set_61_deviceDetails_Manufacturer(object instance, object Value)
-        {
-            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
-            that.Manufacturer = (global::System.String)Value;
-        }
-        private object get_62_deviceDetails_GuzzlerId(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
-            return that.GuzzlerId;
-        }
-        private void set_62_deviceDetails_GuzzlerId(object instance, object Value)
-        {
-            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
-            that.GuzzlerId = (global::System.String)Value;
-        }
-        private object get_63_deviceDetails_DevType(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
-            return that.DevType;
-        }
-        private void set_63_deviceDetails_DevType(object instance, object Value)
-        {
-            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
-            that.DevType = (global::System.String)Value;
-        }
-        private object get_64_deviceDetails_Model(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
-            return that.Model;
-        }
-        private void set_64_deviceDetails_Model(object instance, object Value)
-        {
-            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
-            that.Model = (global::System.String)Value;
-        }
-        private object get_65_deviceDetails_Serial(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
-            return that.Serial;
-        }
-        private void set_65_deviceDetails_Serial(object instance, object Value)
-        {
-            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
-            that.Serial = (global::System.String)Value;
-        }
-        private object get_66_deviceDetails_TimeCreated(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
-            return that.TimeCreated;
-        }
-        private void set_66_deviceDetails_TimeCreated(object instance, object Value)
-        {
-            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
-            that.TimeCreated = (global::System.String)Value;
-        }
-        private object get_67_devices_IsNextEnabled(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.devices)instance;
-            return that.IsNextEnabled;
-        }
-        private void set_67_devices_IsNextEnabled(object instance, object Value)
-        {
-            var that = (global::GuzzlerMobileApp.views.devices)instance;
-            that.IsNextEnabled = (global::System.Boolean)Value;
-        }
-        private object get_68_devices_ChosenDev(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.devices)instance;
-            return that.ChosenDev;
-        }
-        private void set_68_devices_ChosenDev(object instance, object Value)
-        {
-            var that = (global::GuzzlerMobileApp.views.devices)instance;
-            that.ChosenDev = (global::System.String)Value;
-        }
-        private object get_69_devices_DevToRemove(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.devices)instance;
-            return that.DevToRemove;
-        }
-        private void set_69_devices_DevToRemove(object instance, object Value)
-        {
-            var that = (global::GuzzlerMobileApp.views.devices)instance;
-            that.DevToRemove = (global::System.String)Value;
-        }
-        private object get_70_ColumnBarBaseSeries_DependentRangeAxis(object instance)
+        private object get_58_ColumnBarBaseSeries_DependentRangeAxis(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
             return that.DependentRangeAxis;
         }
-        private void set_70_ColumnBarBaseSeries_DependentRangeAxis(object instance, object Value)
+        private void set_58_ColumnBarBaseSeries_DependentRangeAxis(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
             that.DependentRangeAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis)Value;
         }
-        private object get_71_ColumnBarBaseSeries_IndependentAxis(object instance)
+        private object get_59_ColumnBarBaseSeries_IndependentAxis(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
             return that.IndependentAxis;
         }
-        private void set_71_ColumnBarBaseSeries_IndependentAxis(object instance, object Value)
+        private void set_59_ColumnBarBaseSeries_IndependentAxis(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
             that.IndependentAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)Value;
         }
-        private object get_72_ColumnBarBaseSeries_ActualDependentRangeAxis(object instance)
+        private object get_60_ColumnBarBaseSeries_ActualDependentRangeAxis(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
             return that.ActualDependentRangeAxis;
         }
-        private object get_73_ColumnBarBaseSeries_ActualIndependentAxis(object instance)
+        private object get_61_ColumnBarBaseSeries_ActualIndependentAxis(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
             return that.ActualIndependentAxis;
+        }
+        private object get_62_dayLog_DevName(object instance)
+        {
+            var that = (global::GuzzlerMobileApp.views.dayLog)instance;
+            return that.DevName;
+        }
+        private object get_63_dayLog_Date(object instance)
+        {
+            var that = (global::GuzzlerMobileApp.views.dayLog)instance;
+            return that.Date;
+        }
+        private object get_64_deviceDetails_DevName(object instance)
+        {
+            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
+            return that.DevName;
+        }
+        private void set_64_deviceDetails_DevName(object instance, object Value)
+        {
+            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
+            that.DevName = (global::System.String)Value;
+        }
+        private object get_65_deviceDetails_Manufacturer(object instance)
+        {
+            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
+            return that.Manufacturer;
+        }
+        private void set_65_deviceDetails_Manufacturer(object instance, object Value)
+        {
+            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
+            that.Manufacturer = (global::System.String)Value;
+        }
+        private object get_66_deviceDetails_GuzzlerId(object instance)
+        {
+            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
+            return that.GuzzlerId;
+        }
+        private void set_66_deviceDetails_GuzzlerId(object instance, object Value)
+        {
+            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
+            that.GuzzlerId = (global::System.String)Value;
+        }
+        private object get_67_deviceDetails_DevType(object instance)
+        {
+            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
+            return that.DevType;
+        }
+        private void set_67_deviceDetails_DevType(object instance, object Value)
+        {
+            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
+            that.DevType = (global::System.String)Value;
+        }
+        private object get_68_deviceDetails_Model(object instance)
+        {
+            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
+            return that.Model;
+        }
+        private void set_68_deviceDetails_Model(object instance, object Value)
+        {
+            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
+            that.Model = (global::System.String)Value;
+        }
+        private object get_69_deviceDetails_Serial(object instance)
+        {
+            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
+            return that.Serial;
+        }
+        private void set_69_deviceDetails_Serial(object instance, object Value)
+        {
+            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
+            that.Serial = (global::System.String)Value;
+        }
+        private object get_70_deviceDetails_TimeCreated(object instance)
+        {
+            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
+            return that.TimeCreated;
+        }
+        private void set_70_deviceDetails_TimeCreated(object instance, object Value)
+        {
+            var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
+            that.TimeCreated = (global::System.String)Value;
+        }
+        private object get_71_devices_IsNextEnabled(object instance)
+        {
+            var that = (global::GuzzlerMobileApp.views.devices)instance;
+            return that.IsNextEnabled;
+        }
+        private void set_71_devices_IsNextEnabled(object instance, object Value)
+        {
+            var that = (global::GuzzlerMobileApp.views.devices)instance;
+            that.IsNextEnabled = (global::System.Boolean)Value;
+        }
+        private object get_72_devices_ChosenDev(object instance)
+        {
+            var that = (global::GuzzlerMobileApp.views.devices)instance;
+            return that.ChosenDev;
+        }
+        private void set_72_devices_ChosenDev(object instance, object Value)
+        {
+            var that = (global::GuzzlerMobileApp.views.devices)instance;
+            that.ChosenDev = (global::System.String)Value;
+        }
+        private object get_73_devices_DevToRemove(object instance)
+        {
+            var that = (global::GuzzlerMobileApp.views.devices)instance;
+            return that.DevToRemove;
+        }
+        private void set_73_devices_DevToRemove(object instance, object Value)
+        {
+            var that = (global::GuzzlerMobileApp.views.devices)instance;
+            that.DevToRemove = (global::System.String)Value;
         }
         private object get_74_estimatedCost_DevName(object instance)
         {
@@ -2038,103 +2038,103 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlMember.Getter = get_57_checkNow_Data2;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "GuzzlerMobileApp.views.dayLog.DevName":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.dayLog");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevName", "String");
-                xamlMember.Getter = get_58_dayLog_DevName;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "GuzzlerMobileApp.views.dayLog.Date":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.dayLog");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Date", "String");
-                xamlMember.Getter = get_59_dayLog_Date;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "GuzzlerMobileApp.views.deviceDetails.DevName":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevName", "String");
-                xamlMember.Getter = get_60_deviceDetails_DevName;
-                xamlMember.Setter = set_60_deviceDetails_DevName;
-                break;
-            case "GuzzlerMobileApp.views.deviceDetails.Manufacturer":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Manufacturer", "String");
-                xamlMember.Getter = get_61_deviceDetails_Manufacturer;
-                xamlMember.Setter = set_61_deviceDetails_Manufacturer;
-                break;
-            case "GuzzlerMobileApp.views.deviceDetails.GuzzlerId":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "GuzzlerId", "String");
-                xamlMember.Getter = get_62_deviceDetails_GuzzlerId;
-                xamlMember.Setter = set_62_deviceDetails_GuzzlerId;
-                break;
-            case "GuzzlerMobileApp.views.deviceDetails.DevType":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevType", "String");
-                xamlMember.Getter = get_63_deviceDetails_DevType;
-                xamlMember.Setter = set_63_deviceDetails_DevType;
-                break;
-            case "GuzzlerMobileApp.views.deviceDetails.Model":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Model", "String");
-                xamlMember.Getter = get_64_deviceDetails_Model;
-                xamlMember.Setter = set_64_deviceDetails_Model;
-                break;
-            case "GuzzlerMobileApp.views.deviceDetails.Serial":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Serial", "String");
-                xamlMember.Getter = get_65_deviceDetails_Serial;
-                xamlMember.Setter = set_65_deviceDetails_Serial;
-                break;
-            case "GuzzlerMobileApp.views.deviceDetails.TimeCreated":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "TimeCreated", "String");
-                xamlMember.Getter = get_66_deviceDetails_TimeCreated;
-                xamlMember.Setter = set_66_deviceDetails_TimeCreated;
-                break;
-            case "GuzzlerMobileApp.views.devices.IsNextEnabled":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.devices");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "IsNextEnabled", "Boolean");
-                xamlMember.Getter = get_67_devices_IsNextEnabled;
-                xamlMember.Setter = set_67_devices_IsNextEnabled;
-                break;
-            case "GuzzlerMobileApp.views.devices.ChosenDev":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.devices");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "ChosenDev", "String");
-                xamlMember.Getter = get_68_devices_ChosenDev;
-                xamlMember.Setter = set_68_devices_ChosenDev;
-                break;
-            case "GuzzlerMobileApp.views.devices.DevToRemove":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.devices");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevToRemove", "String");
-                xamlMember.Getter = get_69_devices_DevToRemove;
-                xamlMember.Setter = set_69_devices_DevToRemove;
-                break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>.DependentRangeAxis":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DependentRangeAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_70_ColumnBarBaseSeries_DependentRangeAxis;
-                xamlMember.Setter = set_70_ColumnBarBaseSeries_DependentRangeAxis;
+                xamlMember.Getter = get_58_ColumnBarBaseSeries_DependentRangeAxis;
+                xamlMember.Setter = set_58_ColumnBarBaseSeries_DependentRangeAxis;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>.IndependentAxis":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "IndependentAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_71_ColumnBarBaseSeries_IndependentAxis;
-                xamlMember.Setter = set_71_ColumnBarBaseSeries_IndependentAxis;
+                xamlMember.Getter = get_59_ColumnBarBaseSeries_IndependentAxis;
+                xamlMember.Setter = set_59_ColumnBarBaseSeries_IndependentAxis;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>.ActualDependentRangeAxis":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "ActualDependentRangeAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis");
-                xamlMember.Getter = get_72_ColumnBarBaseSeries_ActualDependentRangeAxis;
+                xamlMember.Getter = get_60_ColumnBarBaseSeries_ActualDependentRangeAxis;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>.ActualIndependentAxis":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "ActualIndependentAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
-                xamlMember.Getter = get_73_ColumnBarBaseSeries_ActualIndependentAxis;
+                xamlMember.Getter = get_61_ColumnBarBaseSeries_ActualIndependentAxis;
                 xamlMember.SetIsReadOnly();
+                break;
+            case "GuzzlerMobileApp.views.dayLog.DevName":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.dayLog");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevName", "String");
+                xamlMember.Getter = get_62_dayLog_DevName;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "GuzzlerMobileApp.views.dayLog.Date":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.dayLog");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Date", "String");
+                xamlMember.Getter = get_63_dayLog_Date;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "GuzzlerMobileApp.views.deviceDetails.DevName":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevName", "String");
+                xamlMember.Getter = get_64_deviceDetails_DevName;
+                xamlMember.Setter = set_64_deviceDetails_DevName;
+                break;
+            case "GuzzlerMobileApp.views.deviceDetails.Manufacturer":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Manufacturer", "String");
+                xamlMember.Getter = get_65_deviceDetails_Manufacturer;
+                xamlMember.Setter = set_65_deviceDetails_Manufacturer;
+                break;
+            case "GuzzlerMobileApp.views.deviceDetails.GuzzlerId":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "GuzzlerId", "String");
+                xamlMember.Getter = get_66_deviceDetails_GuzzlerId;
+                xamlMember.Setter = set_66_deviceDetails_GuzzlerId;
+                break;
+            case "GuzzlerMobileApp.views.deviceDetails.DevType":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevType", "String");
+                xamlMember.Getter = get_67_deviceDetails_DevType;
+                xamlMember.Setter = set_67_deviceDetails_DevType;
+                break;
+            case "GuzzlerMobileApp.views.deviceDetails.Model":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Model", "String");
+                xamlMember.Getter = get_68_deviceDetails_Model;
+                xamlMember.Setter = set_68_deviceDetails_Model;
+                break;
+            case "GuzzlerMobileApp.views.deviceDetails.Serial":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Serial", "String");
+                xamlMember.Getter = get_69_deviceDetails_Serial;
+                xamlMember.Setter = set_69_deviceDetails_Serial;
+                break;
+            case "GuzzlerMobileApp.views.deviceDetails.TimeCreated":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "TimeCreated", "String");
+                xamlMember.Getter = get_70_deviceDetails_TimeCreated;
+                xamlMember.Setter = set_70_deviceDetails_TimeCreated;
+                break;
+            case "GuzzlerMobileApp.views.devices.IsNextEnabled":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.devices");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "IsNextEnabled", "Boolean");
+                xamlMember.Getter = get_71_devices_IsNextEnabled;
+                xamlMember.Setter = set_71_devices_IsNextEnabled;
+                break;
+            case "GuzzlerMobileApp.views.devices.ChosenDev":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.devices");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "ChosenDev", "String");
+                xamlMember.Getter = get_72_devices_ChosenDev;
+                xamlMember.Setter = set_72_devices_ChosenDev;
+                break;
+            case "GuzzlerMobileApp.views.devices.DevToRemove":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.devices");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevToRemove", "String");
+                xamlMember.Getter = get_73_devices_DevToRemove;
+                xamlMember.Setter = set_73_devices_DevToRemove;
                 break;
             case "GuzzlerMobileApp.views.estimatedCost.DevName":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.estimatedCost");

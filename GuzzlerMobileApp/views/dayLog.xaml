@@ -5,6 +5,8 @@
     xmlns:local="using:GuzzlerMobileApp.views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:datavis="using:WinRTXamlToolkit.Controls.DataVisualization"
+    xmlns:Charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting" 
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -39,18 +41,24 @@
             <TextBox Style="{StaticResource TitleText}" FontSize="24" Text="{x:Bind Date  , Mode=OneWay }" FontWeight="Light" TextChanged="TextBox_TextChanged" />
         </Grid>
         <Grid Grid.Row="3" Grid.Column="1" >
-            <TextBox Style="{StaticResource explanationText}" FontSize="17" Text="Power Consumption" VerticalAlignment="Top" />
+            <TextBox Style="{StaticResource explanationText}" FontSize="17" Text="Daily Power Consumption" VerticalAlignment="Top" />
         </Grid>
         <Grid Grid.Row="4" Grid.Column="1">
             <Image Source="../Assets/ExampleG1.png">
             </Image>
         </Grid>
         <Grid Grid.Row="5" Grid.Column="1" >
-            <TextBox Style="{StaticResource explanationText}" FontSize="17" Text="Money Guzzled" VerticalAlignment="Top" />
+            <TextBox Style="{StaticResource explanationText}" FontSize="17" Text="Money Guzzled kW/Hour" VerticalAlignment="Top" />
         </Grid>
-        <Grid Grid.Row="6" Grid.Column="1">
-            <Image Source="../Assets/Moneygraph.jpg">
-            </Image>
+        <Grid Grid.Row="5" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="3">
+            <Charting:Chart Margin="20 0" Foreground="Yellow" FontSize="10" x:Name="ColumnChart" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   Title="Consumption chart" TitleStyle="{StaticResource LightTitleContentStyle}" BorderThickness="2" BorderBrush="Black"  >
+                <Charting:ColumnSeries ItemsSource="{Binding costData}"  IndependentValuePath="Hour" DependentValuePath="Val"  />
+                <Charting:Chart.LegendStyle>
+                    <Style TargetType="datavis:Legend">
+                        <Setter Property="Width" Value="0"  />
+                    </Style>
+                </Charting:Chart.LegendStyle>
+            </Charting:Chart>
         </Grid>
 
         <Grid Grid.Row="7" Grid.Column="1">

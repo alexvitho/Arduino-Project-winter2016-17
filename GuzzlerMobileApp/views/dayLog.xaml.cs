@@ -4,16 +4,14 @@ using Microsoft.WindowsAzure.Storage.Auth;
 using Microsoft.WindowsAzure.Storage.Table;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+using WinRTXamlToolkit.Controls.DataVisualization.Charting;
 
 namespace GuzzlerMobileApp.views
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+
     public sealed partial class dayLog : Page
     {
         public string DevName { get; private set; }
@@ -23,6 +21,7 @@ namespace GuzzlerMobileApp.views
         public static StorageCredentials credentials = new StorageCredentials("guzzlerstorage", "GQgI4xCFRAHvD4s+4E+QKqPAHAWGgWagsWa6zP3aWfKus8GGJ15n+Fhp0DT9tD6+OzHSGR2Ekf8Twl4w2mfPow==");
         public static CloudStorageAccount storageAccount = new CloudStorageAccount(credentials, true);
         CloudTable devicesGraphsTable = storageAccount.CreateCloudTableClient().GetTableReference("DeviceGraps");  // Retrieve a reference to the table.
+        ObservableCollection<costPerHour> costData { get; set; }
 
 
 
@@ -39,6 +38,19 @@ namespace GuzzlerMobileApp.views
 
             this.InitializeComponent();
             getValuesForDate();
+            try {
+                costData = new ObservableCollection<costPerHour>();
+                for (int i = 0; i < 24; i++)
+                {
+                    costData.Add(new costPerHour(i + 1, i * 10));
+                }
+
+                ((ColumnSeries)ColumnChart.Series[0]).ItemsSource = costData;
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e.Data);
+            }
         }
 
         public List<double> getValuesForDate()
