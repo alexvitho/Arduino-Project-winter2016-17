@@ -12,9 +12,9 @@ namespace GuzzlerMobileApp.views
     {
         public string DevName { get; private set; }
         public string selectedDate;
-       private DateTimeOffset date;
+        private DateTimeOffset date;
 
-       
+
 
 
         public historyLog(string name = null)
@@ -34,14 +34,19 @@ namespace GuzzlerMobileApp.views
 
         private void CalendarView_SelectedDatesChanged(CalendarView sender, CalendarViewSelectedDatesChangedEventArgs args)
         {
-             date = args.AddedDates.First();
+            date = args.AddedDates.First();
             selectedDate = date.Day.ToString() + "/" + date.Month + "/" + date.Year;
             dateChosed_Click();
         }
 
         private void dateChosed_Click()
         {
-            Window.Current.Content = new dayLog(selectedDate, DevName,date);
+            DateTime todayAndNow = DateTimeOffset.Now.ToLocalTime().Date;
+            if (date.ToLocalTime().Date.CompareTo(todayAndNow) > 0)
+            {
+                return;
+            }
+            Window.Current.Content = new dayLog(selectedDate, DevName, date);
             Window.Current.Activate();
 
         }
