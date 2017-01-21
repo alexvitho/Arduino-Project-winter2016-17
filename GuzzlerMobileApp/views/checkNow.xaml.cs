@@ -4,21 +4,12 @@ using System.ComponentModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using WinRTXamlToolkit.Controls.DataVisualization.Charting;
+using static GuzzlerMobileApp.Common.deviceGraphAnalysis;
 
 namespace GuzzlerMobileApp.views
 {
 
-    public class powerItem
-    {
 
-        public powerItem(int day, double v)
-        {
-            this.Day = day;
-            this.Val = v;
-        }
-        public int Day { get; set; }
-        public double Val { get; set; }
-    }
     public sealed partial class checkNow : Page, INotifyPropertyChanged
     {
 

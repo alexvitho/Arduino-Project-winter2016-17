@@ -96,6 +96,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Common\controller.cs" />
+    <Compile Include="Common\deviceGraphAnalysis.cs" />
     <Compile Include="Common\deviceManager.cs" />
     <Compile Include="DataModel\existingDevsModel.cs" />
     <Compile Include="ExtendedSplash.xaml.cs">

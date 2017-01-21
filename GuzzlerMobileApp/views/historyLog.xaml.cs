@@ -2,6 +2,7 @@
 using System.Linq;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using static GuzzlerMobileApp.Common.deviceGraphAnalysis;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -35,7 +36,7 @@ namespace GuzzlerMobileApp.views
         private void CalendarView_SelectedDatesChanged(CalendarView sender, CalendarViewSelectedDatesChangedEventArgs args)
         {
             date = args.AddedDates.First();
-            selectedDate = date.Day.ToString() + "/" + date.Month + "/" + date.Year;
+            selectedDate = dateToString(date.DateTime);
             dateChosed_Click();
         }
 

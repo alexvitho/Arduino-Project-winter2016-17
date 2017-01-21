@@ -4,20 +4,11 @@ using System.ComponentModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using WinRTXamlToolkit.Controls.DataVisualization.Charting;
+using static GuzzlerMobileApp.Common.deviceGraphAnalysis;
 
 namespace GuzzlerMobileApp.views
 {
-    public class piePowerItem
-    {
-
-        public piePowerItem(string dev, double v)
-        {
-            this.Dev = dev;
-            this.Val = v;
-        }
-        public string Dev { get; set; }
-        public double Val { get; set; }
-    }
+  
 
     public sealed partial class dailyPie : Page
     {
@@ -61,9 +52,6 @@ namespace GuzzlerMobileApp.views
             Window.Current.Content = new dayLog(dateToString(Date), DevName, Date.ToUniversalTime());
             Window.Current.Activate();
         }
-        string dateToString(DateTime date)
-        {
-            return (date == null) ? "" : date.Day.ToString() + "/" + date.Month.ToString() + "/" + date.Year.ToString();
-        }
+  
     }
 }

@@ -9,20 +9,11 @@ using System.ComponentModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using WinRTXamlToolkit.Controls.DataVisualization.Charting;
+using static GuzzlerMobileApp.Common.deviceGraphAnalysis;
 
 namespace GuzzlerMobileApp.views
 {
-    public class powerTimeItem
-    {
-
-        public powerTimeItem(DateTime time, double v)
-        {
-            this.time = time;
-            this.value = v;
-        }
-        public DateTime time { get; set; }
-        public double value { get; set; }
-    }
+   
     public sealed partial class dayLog : Page, INotifyPropertyChanged
     {
         public string DevName { get; private set; }

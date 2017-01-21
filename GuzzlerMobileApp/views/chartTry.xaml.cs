@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using Windows.UI.Xaml.Controls;
 using WinRTXamlToolkit.Controls.DataVisualization.Charting;
-
+using static GuzzlerMobileApp.Common.deviceGraphAnalysis;
 
 namespace GuzzlerMobileApp.views
 {
@@ -16,17 +16,17 @@ namespace GuzzlerMobileApp.views
         { get; set; }
     }
 
-    public class dataItem1
-    {
+    //public class dataItem1
+    //{
 
-        public dataItem1(int day, double v)
-        {
-            this.Day = day;
-            this.Val = v;
-        }
-        public int Day { get; set; }
-        public double Val { get; set; }
-    }
+    //    public dataItem1(int day, double v)
+    //    {
+    //        this.Day = day;
+    //        this.Val = v;
+    //    }
+    //    public int Day { get; set; }
+    //    public double Val { get; set; }
+    //}
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>

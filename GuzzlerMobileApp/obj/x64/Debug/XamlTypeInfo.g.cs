@@ -204,17 +204,17 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
             _typeNameTable[44] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis";
             _typeNameTable[45] = "System.Nullable`1<Int32>";
             _typeNameTable[46] = "GuzzlerMobileApp.views.chartTry";
-            _typeNameTable[47] = "System.Collections.Generic.List`1<GuzzlerMobileApp.views.powerItem>";
-            _typeNameTable[48] = "GuzzlerMobileApp.views.powerItem";
+            _typeNameTable[47] = "System.Collections.Generic.List`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>";
+            _typeNameTable[48] = "GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem";
             _typeNameTable[49] = "Int32";
             _typeNameTable[50] = "Double";
-            _typeNameTable[51] = "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.views.powerItem>";
-            _typeNameTable[52] = "System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.views.powerItem>";
+            _typeNameTable[51] = "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>";
+            _typeNameTable[52] = "System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>";
             _typeNameTable[53] = "GuzzlerMobileApp.views.checkNow";
             _typeNameTable[54] = "GuzzlerMobileApp.views.dailyPie";
-            _typeNameTable[55] = "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.views.piePowerItem>";
-            _typeNameTable[56] = "System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.views.piePowerItem>";
-            _typeNameTable[57] = "GuzzlerMobileApp.views.piePowerItem";
+            _typeNameTable[55] = "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem>";
+            _typeNameTable[56] = "System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem>";
+            _typeNameTable[57] = "GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem";
             _typeNameTable[58] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries";
             _typeNameTable[59] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>";
             _typeNameTable[60] = "GuzzlerMobileApp.views.dayLog";
@@ -275,17 +275,17 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
             _typeTable[44] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis);
             _typeTable[45] = typeof(global::System.Nullable<global::System.Int32>);
             _typeTable[46] = typeof(global::GuzzlerMobileApp.views.chartTry);
-            _typeTable[47] = typeof(global::System.Collections.Generic.List<global::GuzzlerMobileApp.views.powerItem>);
-            _typeTable[48] = typeof(global::GuzzlerMobileApp.views.powerItem);
+            _typeTable[47] = typeof(global::System.Collections.Generic.List<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>);
+            _typeTable[48] = typeof(global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem);
             _typeTable[49] = typeof(global::System.Int32);
             _typeTable[50] = typeof(global::System.Double);
-            _typeTable[51] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.views.powerItem>);
-            _typeTable[52] = typeof(global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.views.powerItem>);
+            _typeTable[51] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>);
+            _typeTable[52] = typeof(global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>);
             _typeTable[53] = typeof(global::GuzzlerMobileApp.views.checkNow);
             _typeTable[54] = typeof(global::GuzzlerMobileApp.views.dailyPie);
-            _typeTable[55] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.views.piePowerItem>);
-            _typeTable[56] = typeof(global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.views.piePowerItem>);
-            _typeTable[57] = typeof(global::GuzzlerMobileApp.views.piePowerItem);
+            _typeTable[55] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem>);
+            _typeTable[56] = typeof(global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem>);
+            _typeTable[57] = typeof(global::GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem);
             _typeTable[58] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries);
             _typeTable[59] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>);
             _typeTable[60] = typeof(global::GuzzlerMobileApp.views.dayLog);
@@ -345,11 +345,11 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
         private object Activate_35_HeaderedItemsControl() { return new global::WinRTXamlToolkit.Controls.HeaderedItemsControl(); }
         private object Activate_39_LineSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries(); }
         private object Activate_46_chartTry() { return new global::GuzzlerMobileApp.views.chartTry(); }
-        private object Activate_47_List() { return new global::System.Collections.Generic.List<global::GuzzlerMobileApp.views.powerItem>(); }
-        private object Activate_51_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.views.powerItem>(); }
-        private object Activate_52_Collection() { return new global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.views.powerItem>(); }
-        private object Activate_55_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.views.piePowerItem>(); }
-        private object Activate_56_Collection() { return new global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.views.piePowerItem>(); }
+        private object Activate_47_List() { return new global::System.Collections.Generic.List<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>(); }
+        private object Activate_51_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>(); }
+        private object Activate_52_Collection() { return new global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>(); }
+        private object Activate_55_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem>(); }
+        private object Activate_56_Collection() { return new global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem>(); }
         private object Activate_58_ColumnSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries(); }
         private object Activate_63_devices() { return new global::GuzzlerMobileApp.views.devices(); }
         private object Activate_67_regDev() { return new global::GuzzlerMobileApp.views.regDev(); }
@@ -409,32 +409,32 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
         }
         private void VectorAdd_47_List(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.views.powerItem>)instance;
-            var newItem = (global::GuzzlerMobileApp.views.powerItem)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>)instance;
+            var newItem = (global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem)item;
             collection.Add(newItem);
         }
         private void VectorAdd_51_ObservableCollection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.views.powerItem>)instance;
-            var newItem = (global::GuzzlerMobileApp.views.powerItem)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>)instance;
+            var newItem = (global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem)item;
             collection.Add(newItem);
         }
         private void VectorAdd_52_Collection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.views.powerItem>)instance;
-            var newItem = (global::GuzzlerMobileApp.views.powerItem)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>)instance;
+            var newItem = (global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem)item;
             collection.Add(newItem);
         }
         private void VectorAdd_55_ObservableCollection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.views.piePowerItem>)instance;
-            var newItem = (global::GuzzlerMobileApp.views.piePowerItem)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem>)instance;
+            var newItem = (global::GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem)item;
             collection.Add(newItem);
         }
         private void VectorAdd_56_Collection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.views.piePowerItem>)instance;
-            var newItem = (global::GuzzlerMobileApp.views.piePowerItem)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem>)instance;
+            var newItem = (global::GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem)item;
             collection.Add(newItem);
         }
 
@@ -759,14 +759,14 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 47:   //  System.Collections.Generic.List`1<GuzzlerMobileApp.views.powerItem>
+            case 47:   //  System.Collections.Generic.List`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.CollectionAdd = VectorAdd_47_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 48:   //  GuzzlerMobileApp.views.powerItem
+            case 48:   //  GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Day");
                 userType.AddMemberName("Val");
@@ -782,14 +782,14 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 51:   //  System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.views.powerItem>
-                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.views.powerItem>"));
+            case 51:   //  System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>
+                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>"));
                 userType.CollectionAdd = VectorAdd_51_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 52:   //  System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.views.powerItem>
+            case 52:   //  System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_52_Collection;
                 userType.CollectionAdd = VectorAdd_52_Collection;
@@ -816,21 +816,21 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 55:   //  System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.views.piePowerItem>
-                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.views.piePowerItem>"));
+            case 55:   //  System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem>
+                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem>"));
                 userType.CollectionAdd = VectorAdd_55_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 56:   //  System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.views.piePowerItem>
+            case 56:   //  System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem>
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_56_Collection;
                 userType.CollectionAdd = VectorAdd_56_Collection;
                 xamlType = userType;
                 break;
 
-            case 57:   //  GuzzlerMobileApp.views.piePowerItem
+            case 57:   //  GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Dev");
                 userType.AddMemberName("Val");
@@ -1437,26 +1437,26 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
         private void set_49_chartTry_Data(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.chartTry)instance;
-            that.Data = (global::System.Collections.Generic.List<global::GuzzlerMobileApp.views.powerItem>)Value;
+            that.Data = (global::System.Collections.Generic.List<global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>)Value;
         }
         private object get_50_powerItem_Day(object instance)
         {
-            var that = (global::GuzzlerMobileApp.views.powerItem)instance;
+            var that = (global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem)instance;
             return that.Day;
         }
         private void set_50_powerItem_Day(object instance, object Value)
         {
-            var that = (global::GuzzlerMobileApp.views.powerItem)instance;
+            var that = (global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem)instance;
             that.Day = (global::System.Int32)Value;
         }
         private object get_51_powerItem_Val(object instance)
         {
-            var that = (global::GuzzlerMobileApp.views.powerItem)instance;
+            var that = (global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem)instance;
             return that.Val;
         }
         private void set_51_powerItem_Val(object instance, object Value)
         {
-            var that = (global::GuzzlerMobileApp.views.powerItem)instance;
+            var that = (global::GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem)instance;
             that.Val = (global::System.Double)Value;
         }
         private object get_52_chartTry_Data1(object instance)
@@ -1506,22 +1506,22 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
         }
         private object get_60_piePowerItem_Dev(object instance)
         {
-            var that = (global::GuzzlerMobileApp.views.piePowerItem)instance;
+            var that = (global::GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem)instance;
             return that.Dev;
         }
         private void set_60_piePowerItem_Dev(object instance, object Value)
         {
-            var that = (global::GuzzlerMobileApp.views.piePowerItem)instance;
+            var that = (global::GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem)instance;
             that.Dev = (global::System.String)Value;
         }
         private object get_61_piePowerItem_Val(object instance)
         {
-            var that = (global::GuzzlerMobileApp.views.piePowerItem)instance;
+            var that = (global::GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem)instance;
             return that.Val;
         }
         private void set_61_piePowerItem_Val(object instance, object Value)
         {
-            var that = (global::GuzzlerMobileApp.views.piePowerItem)instance;
+            var that = (global::GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem)instance;
             that.Val = (global::System.Double)Value;
         }
         private object get_62_dailyPie_DevPower(object instance)
@@ -2110,31 +2110,31 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 break;
             case "GuzzlerMobileApp.views.chartTry.Data":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.chartTry");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data", "System.Collections.Generic.List`1<GuzzlerMobileApp.views.powerItem>");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data", "System.Collections.Generic.List`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>");
                 xamlMember.Getter = get_49_chartTry_Data;
                 xamlMember.Setter = set_49_chartTry_Data;
                 break;
-            case "GuzzlerMobileApp.views.powerItem.Day":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.powerItem");
+            case "GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem.Day":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Day", "Int32");
                 xamlMember.Getter = get_50_powerItem_Day;
                 xamlMember.Setter = set_50_powerItem_Day;
                 break;
-            case "GuzzlerMobileApp.views.powerItem.Val":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.powerItem");
+            case "GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem.Val":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Val", "Double");
                 xamlMember.Getter = get_51_powerItem_Val;
                 xamlMember.Setter = set_51_powerItem_Val;
                 break;
             case "GuzzlerMobileApp.views.chartTry.Data1":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.chartTry");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data1", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.views.powerItem>");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data1", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>");
                 xamlMember.Getter = get_52_chartTry_Data1;
                 xamlMember.SetIsReadOnly();
                 break;
             case "GuzzlerMobileApp.views.chartTry.Data2":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.chartTry");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data2", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.views.powerItem>");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data2", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>");
                 xamlMember.Getter = get_53_chartTry_Data2;
                 xamlMember.SetIsReadOnly();
                 break;
@@ -2152,13 +2152,13 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 break;
             case "GuzzlerMobileApp.views.checkNow.Data1":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.checkNow");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data1", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.views.powerItem>");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data1", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>");
                 xamlMember.Getter = get_56_checkNow_Data1;
                 xamlMember.SetIsReadOnly();
                 break;
             case "GuzzlerMobileApp.views.checkNow.Data2":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.checkNow");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data2", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.views.powerItem>");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data2", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.powerItem>");
                 xamlMember.Getter = get_57_checkNow_Data2;
                 xamlMember.SetIsReadOnly();
                 break;
@@ -2170,18 +2170,18 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 break;
             case "GuzzlerMobileApp.views.dailyPie.powerPartition":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.dailyPie");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "powerPartition", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.views.piePowerItem>");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "powerPartition", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem>");
                 xamlMember.Getter = get_59_dailyPie_powerPartition;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "GuzzlerMobileApp.views.piePowerItem.Dev":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.piePowerItem");
+            case "GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem.Dev":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Dev", "String");
                 xamlMember.Getter = get_60_piePowerItem_Dev;
                 xamlMember.Setter = set_60_piePowerItem_Dev;
                 break;
-            case "GuzzlerMobileApp.views.piePowerItem.Val":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.piePowerItem");
+            case "GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem.Val":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.Common.deviceGraphAnalysis.piePowerItem");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Val", "Double");
                 xamlMember.Getter = get_61_piePowerItem_Val;
                 xamlMember.Setter = set_61_piePowerItem_Val;
