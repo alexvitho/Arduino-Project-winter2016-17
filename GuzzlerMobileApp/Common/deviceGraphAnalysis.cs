@@ -1,50 +1,58 @@
-﻿using System;
+﻿using GuzzlerMobileApp.DataModel;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Auth;
+using Microsoft.WindowsAzure.Storage.Table;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GuzzlerMobileApp.Common
 {
     public class deviceGraphAnalysis
     {
-        // data structure to use in power/time graph
-        public class powerTimeItem
+         static StorageCredentials credentials;
+         static CloudStorageAccount storageAccount;
+        CloudTable devicesGraphsTable; 
+       public deviceGraphAnalysis()
         {
-            public powerTimeItem(DateTime time, double v)
-            {
-                this.time = time;
-                this.value = v;
-            }
-            public DateTime time { get; set; }
-            public double value { get; set; }
+         credentials = new StorageCredentials("guzzlerstorage", "GQgI4xCFRAHvD4s+4E+QKqPAHAWGgWagsWa6zP3aWfKus8GGJ15n+Fhp0DT9tD6+OzHSGR2Ekf8Twl4w2mfPow==");
+       storageAccount = new CloudStorageAccount(credentials, true);
+        devicesGraphsTable = storageAccount.CreateCloudTableClient().GetTableReference("DeviceGraps");  // Retrieve a reference to the table.
         }
-        // data structure to use in power/day graph
-        public class powerItem
-        {
-            public powerItem(int day, double v)
-            {
-                this.Day = day;
-                this.Val = v;
-            }
-            public int Day { get; set; }
-            public double Val { get; set; }
-        }
-        // data structure to use in power/device graph
-        public class piePowerItem
-        {
-            public piePowerItem(string dev, double v)
-            {
-                this.Dev = dev;
-                this.Val = v;
-            }
-            public string Dev { get; set; }
-            public double Val { get; set; }
-        }
+
         // function to create a string representing the date day/month/year
         public static string dateToString(DateTime date)
         {
             return (date == null) ? "" : date.Day.ToString() + "/" + date.Month.ToString() + "/" + date.Year.ToString();
+        }
+
+        public List<powerTimeItem> getPowerValuesForDate(DateTimeOffset DateChosed,string deviceName)
+        {
+            string partitionFilter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, existingDevsModel.nickToId[deviceName]);
+
+            // **************************************  date filter ********************************************//
+            DateTimeOffset startTime = new DateTimeOffset(DateChosed.Year, DateChosed.Month, DateChosed.Day, 0, 0, 0, new TimeSpan());
+            DateTimeOffset endTime = new DateTimeOffset(DateChosed.Year, DateChosed.Month, DateChosed.Day, 23, 59, 59, new TimeSpan());
+
+            string startTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.GreaterThanOrEqual, startTime.LocalDateTime);
+            string endTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.LessThanOrEqual, endTime.LocalDateTime);
+            string dateFilter = TableQuery.CombineFilters(TableQuery.CombineFilters(partitionFilter, TableOperators.And, startTimeFilter), TableOperators.And, endTimeFilter);
+            // ************************************** End of date filter ********************************************//
+            // **************************************  power filter ********************************************//
+            string powerLow = TableQuery.GenerateFilterConditionForDouble("realPower", QueryComparisons.GreaterThanOrEqual, 1);
+            string powerHigh = TableQuery.GenerateFilterConditionForDouble("realPower", QueryComparisons.LessThanOrEqual, 2);
+            string powerFilter = TableQuery.CombineFilters(TableQuery.CombineFilters(partitionFilter, TableOperators.And, powerHigh), TableOperators.And, powerLow);
+            // ************************************** End of power filter ********************************************//
+            var query = new TableQuery<DynamicTableEntity>().Where(dateFilter).Select(new string[] { "Timestamp", "realPower" });
+            var queryOutput = devicesGraphsTable.ExecuteQuerySegmentedAsync<DynamicTableEntity>(query, null);
+            var results = queryOutput.Result.Results;
+            List<powerTimeItem> retValue = new List<powerTimeItem>();
+      
+           foreach (var entity in results)
+            {
+                retValue.Add(new powerTimeItem(entity.Timestamp.LocalDateTime, (Double.Parse((entity.Properties["realPower"].PropertyAsObject).ToString()))));
+            }
+
+            return retValue;
         }
     }
 }

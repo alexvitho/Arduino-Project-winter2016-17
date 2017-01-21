@@ -789,5 +789,12 @@
     <Style x:Key="LightTitleContentStyle" TargetType="ContentControl" BasedOn="{StaticResource TitleContentStyle}">
         <Setter Property="Foreground" Value="Yellow"/>
     </Style>
+    <Style x:Key="TitleMessageStyle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Showcard Gothic" />
+        <Setter Property="FontWeight" Value="ExtraBlack"/>
+        <Setter Property="FontSize" Value="22"/>
+        <Setter Property="Height" Value="20"/>
+         <Setter Property="Foreground" Value="Black" />
+    </Style>
 </ResourceDictionary>
 

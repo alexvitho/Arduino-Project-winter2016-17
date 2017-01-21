@@ -111,7 +111,7 @@ namespace GuzzlerMobileApp.views
                 return wrongIDFormat();
             // the serial number is right after GD , format: 000 and grater 
             string ser = strs[0].Substring(2);
-            if ((!int.TryParse(ser, out serial)) || (serial < 0))
+            if (ser.Length<3 ||(!int.TryParse(ser, out serial)) || (serial < 0))
                 return wrongIDFormat();
             if (existingDevsModel.nickToId.ContainsValue(value))
             {
@@ -173,9 +173,11 @@ namespace GuzzlerMobileApp.views
     {
         public static async void showOkMSG(string title, string message)
         {
-            var dialog = new MessageDialog(message);
+            var dialog = new message();
+          //  var dialog = new MessageDialog(message);
             dialog.Title = title;
-            dialog.Commands.Add(new UICommand { Label = "Ok", Id = 0 });
+            dialog.Msg = message;
+         //   dialog.Commands.Add(new UICommand { Label = "Ok", Id = 0 });
             await dialog.ShowAsync();
         }
     }

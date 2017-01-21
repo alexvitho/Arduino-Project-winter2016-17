@@ -98,7 +98,7 @@
     <Compile Include="Common\controller.cs" />
     <Compile Include="Common\deviceGraphAnalysis.cs" />
     <Compile Include="Common\deviceManager.cs" />
-    <Compile Include="DataModel\existingDevsModel.cs" />
+    <Compile Include="DataModel\dataModel.cs" />
     <Compile Include="ExtendedSplash.xaml.cs">
       <DependentUpon>ExtendedSplash.xaml</DependentUpon>
     </Compile>
@@ -126,6 +126,9 @@
     </Compile>
     <Compile Include="views\historyLog.xaml.cs">
       <DependentUpon>historyLog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\message.xaml.cs">
+      <DependentUpon>message.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\realTimePower.xaml.cs">
       <DependentUpon>realTimePower.xaml</DependentUpon>
@@ -203,6 +206,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="views\historyLog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\message.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

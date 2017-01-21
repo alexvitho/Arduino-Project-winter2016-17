@@ -1,0 +1,56 @@
+﻿<ContentDialog
+    x:Class="GuzzlerMobileApp.views.message"
+    x:Name="dialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GuzzlerMobileApp.views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Background="Black" Foreground="Wheat" Title="title">
+    <ContentDialog.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentDialog.Resources>
+
+
+
+    <Grid Background="{StaticResource splashBackColor}" HorizontalAlignment="Stretch" Margin="0 20 0 0"  MaxWidth="300" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" MinHeight="150"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="6*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3">
+            <TextBox  Text="{x:Bind Msg, FallbackValue=message}" Style="{StaticResource explanationText}" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalAlignment="Stretch" VerticalContentAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" MinHeight="30" />
+                <RowDefinition Height="1*" MinHeight="30"/>
+                <RowDefinition Height="1*"  MinHeight="10" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Column="0" Grid.Row="1" >
+                <Button  Content="Yes" x:Name="btnYes" Click="yes_Click"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" Margin="5 0" Visibility="{x:Bind yesVis}" VerticalAlignment="Bottom"/>
+            </Grid>
+            <Grid Grid.Column="1" Grid.Row="1" >
+                <Button Content="{x:Bind btnOkNo}" x:Name="btn2" Click="btn2_Click" Margin="5 0"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" Visibility="{x:Bind noVis}" VerticalAlignment="Bottom"/>
+            </Grid>
+            <Grid Grid.Column="2" Grid.Row="1" >
+                <Button  Content="Cancle" x:Name="btn3" Click="btn3_Click" Margin="5 0"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" Visibility="{x:Bind cancelVis}"  VerticalAlignment="Bottom"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</ContentDialog>
