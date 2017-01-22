@@ -69,5 +69,16 @@ namespace GuzzlerMobileApp.Common
             retValue.Sort();
             return retValue;
         }
+        public double[] getDailyPowerForHour(DateTimeOffset DateChosed, string deviceName)
+        {
+            List<powerTimeItem> dailyPower = getPowerValuesForDate( DateChosed,  deviceName);
+            double[]  hourlyPower = new double[24]  { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0} ;
+            
+            foreach (var entity in dailyPower)
+            {
+                hourlyPower[entity.time.Hour] += entity.value;
+            }
+                return hourlyPower;
+        }
     }
 }
