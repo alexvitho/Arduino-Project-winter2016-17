@@ -40,11 +40,17 @@ namespace GuzzlerMobileApp.DataModel
         }
     }
     // data structure to use in power/day graph
-    public class powerItem
+    public class powerDayItem
     {
-        public powerItem(int day, double v)
+
+        public powerDayItem()
         {
-            this.Day = day;
+            this.Day =0;
+            this.Val = 0;
+        }
+        public powerDayItem(int hour, double v)
+        {
+            this.Day = hour;
             this.Val = v;
         }
         public int Day { get; set; }

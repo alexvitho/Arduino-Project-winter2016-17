@@ -10,14 +10,16 @@ namespace GuzzlerMobileApp.Common
 {
     public class deviceGraphAnalysis
     {
-         static StorageCredentials credentials;
-         static CloudStorageAccount storageAccount;
-        CloudTable devicesGraphsTable; 
-       public deviceGraphAnalysis()
+        static StorageCredentials credentials;
+        static CloudStorageAccount storageAccount;
+        CloudTable devicesGraphsTable;
+        CloudTable taarifTable;
+        public deviceGraphAnalysis()
         {
-         credentials = new StorageCredentials("guzzlerstorage", "GQgI4xCFRAHvD4s+4E+QKqPAHAWGgWagsWa6zP3aWfKus8GGJ15n+Fhp0DT9tD6+OzHSGR2Ekf8Twl4w2mfPow==");
-       storageAccount = new CloudStorageAccount(credentials, true);
-        devicesGraphsTable = storageAccount.CreateCloudTableClient().GetTableReference("DeviceGraps");  // Retrieve a reference to the table.
+            credentials = new StorageCredentials("guzzlerstorage", "GQgI4xCFRAHvD4s+4E+QKqPAHAWGgWagsWa6zP3aWfKus8GGJ15n+Fhp0DT9tD6+OzHSGR2Ekf8Twl4w2mfPow==");
+            storageAccount = new CloudStorageAccount(credentials, true);
+            devicesGraphsTable = storageAccount.CreateCloudTableClient().GetTableReference("DeviceGraps");  // Retrieve a reference to the table.
+            devicesGraphsTable = storageAccount.CreateCloudTableClient().GetTableReference("ElectricityTariff");
         }
 
         // function to create a string representing the date day/month/year
@@ -26,7 +28,7 @@ namespace GuzzlerMobileApp.Common
             return (date == null) ? "" : date.Day.ToString() + "/" + date.Month.ToString() + "/" + date.Year.ToString();
         }
 
-        public List<powerTimeItem> getPowerValuesForDate(DateTimeOffset DateChosed,string deviceName)
+        public List<powerTimeItem> getPowerValuesForDate(DateTimeOffset DateChosed, string deviceName)
         {
             string partitionFilter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, existingDevsModel.nickToId[deviceName]);
 
@@ -35,11 +37,13 @@ namespace GuzzlerMobileApp.Common
             DateTimeOffset endTime;
             if (DateChosed.TimeOfDay.Hours < 2) // in case that choosen date is not changed yet because UTC time
             {
-                DateTimeOffset day=DateChosed.AddHours(-2);
+                DateTimeOffset day = DateChosed.AddHours(-2);
                 startTime = new DateTimeOffset(day.Year, day.Month, day.Day, 22, 0, 0, new TimeSpan());
                 endTime = new DateTimeOffset(DateChosed.Year, DateChosed.Month, DateChosed.Day, 21, 59, 59, new TimeSpan());
-            } else {
-                
+            }
+            else
+            {
+
                 DateTimeOffset day = DateChosed.AddHours(-2);
                 DateTimeOffset prevDay = new DateTimeOffset(day.Year, day.Month, day.Day, 0, 0, 0, new TimeSpan());
                 day = prevDay.AddHours(-2);
@@ -62,7 +66,7 @@ namespace GuzzlerMobileApp.Common
             var queryOutput = devicesGraphsTable.ExecuteQuerySegmentedAsync<DynamicTableEntity>(query, null);
             var results = queryOutput.Result.Results;
             List<powerTimeItem> retValue = new List<powerTimeItem>();
-           foreach (var entity in results)
+            foreach (var entity in results)
             {
                 retValue.Add(new powerTimeItem(entity.Timestamp.LocalDateTime, (Double.Parse((entity.Properties["realPower"].PropertyAsObject).ToString()))));
             }
@@ -71,14 +75,52 @@ namespace GuzzlerMobileApp.Common
         }
         public double[] getDailyPowerForHour(DateTimeOffset DateChosed, string deviceName)
         {
-            List<powerTimeItem> dailyPower = getPowerValuesForDate( DateChosed,  deviceName);
-            double[]  hourlyPower = new double[24]  { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0} ;
-            
+            List<powerTimeItem> dailyPower = getPowerValuesForDate(DateChosed, deviceName);
+            double[] hourlyPower = new double[24] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            int[] numOfsamles = new int[24] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
             foreach (var entity in dailyPower)
             {
                 hourlyPower[entity.time.Hour] += entity.value;
+                numOfsamles[entity.time.Hour]++; ;
             }
-                return hourlyPower;
+            for  (int i = 0 ; i<24; ++i )
+            {
+                if (numOfsamles[i] != 0)
+                {
+                    hourlyPower[i] /= numOfsamles[i];
+                }
+                else
+                {
+                    hourlyPower[i] = 0;
+                }
+            }
+            return hourlyPower;
         }
+
+        public string getValueFromTable(string pKey, string rKey, string column, CloudTable table)
+        {
+            string countryFilter = TableQuery.GenerateFilterCondition("partitionKey", QueryComparisons.Equal, pKey);
+            string yearFilter = TableQuery.GenerateFilterCondition("rowKey", QueryComparisons.Equal, rKey);
+            string taarifFilter = TableQuery.CombineFilters(countryFilter, TableOperators.And, yearFilter);
+            var query = new TableQuery<DynamicTableEntity>().Where(taarifFilter).Select(new string[] { column });
+            var queryOutput = table.ExecuteQuerySegmentedAsync<DynamicTableEntity>(query, null);
+            var results = queryOutput.Result.Results;
+            foreach (var entity in results)
+            {
+                return (entity.Properties[column].PropertyAsObject).ToString();
+            }
+            return null;
+        }
+        //public List<powerDayItem> getMonthlyPower(DateTimeOffset date, string deviceName)
+        //{
+        //    double tariff = double.Parse(getValueFromTable("Israel", "2017", "KwCost", taarifTable));
+            
+        //    double[] perDayPower = getDailyPowerForHour(date, deviceName);
+
+
+
+        //    return null;
+        //}
     }
 }
