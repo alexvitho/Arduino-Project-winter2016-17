@@ -21,19 +21,29 @@ namespace GuzzlerMobileApp.views
     {
 
         public string DevName { get; private set; }
+        private double tariff;
+        public string Tariff
+        {
+            get { return tariff.ToString()+ " kW/h"; }
+            private set { }       
+        }
+
         ObservableCollection<costPerHour> costData { get; set; }
+
+
         public estimatedCost(string name = null)
         {
             if (name == null)
                 name = "";
             DevName = name;
+            tariff = 3.6;
             this.InitializeComponent();
             try
             {
                 costData = new ObservableCollection<costPerHour>();
                 for (int i = 0; i < 24; i++)
                 {
-                    costData.Add(new costPerHour(i+1, i * 10));
+                    costData.Add(new costPerHour(i + 1, i * 10));
                 }
 
                 ((ColumnSeries)ColumnChart.Series[0]).ItemsSource = costData;
@@ -58,7 +68,7 @@ namespace GuzzlerMobileApp.views
                 //};
 
 
-               // ((ColumnSeries)ColumnChart.Series[0]).ItemsSource = costData;
+                // ((ColumnSeries)ColumnChart.Series[0]).ItemsSource = costData;
             }
             catch (Exception e)
             {

@@ -45,6 +45,7 @@ namespace GuzzlerMobileApp.views
             DateTime todayAndNow = DateTimeOffset.Now.ToLocalTime().Date;
             if (date.ToLocalTime().Date.CompareTo(todayAndNow) > 0)
             {
+                showMSG.showOkMSG("NO INFO","Sorry, still can not look into the future!");
                 return;
             }
             Window.Current.Content = new dayLog(selectedDate, DevName, date);

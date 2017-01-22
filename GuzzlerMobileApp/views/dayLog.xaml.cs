@@ -8,7 +8,6 @@ using System.ComponentModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using WinRTXamlToolkit.Controls.DataVisualization.Charting;
-using static GuzzlerMobileApp.Common.deviceGraphAnalysis;
 
 namespace GuzzlerMobileApp.views
 {
@@ -18,13 +17,13 @@ namespace GuzzlerMobileApp.views
         public string DevName { get; private set; }
         public string Date { get; private set; }
         DateTimeOffset DateChosed;
-		ObservableCollection<costPerHour> costData { get; set; }
+        ObservableCollection<costPerHour> costData { get; set; }
         List<powerTimeItem> powerData { get; set; }
         public DateTime maxTimeVal { get; set; }
         public DateTime minTimeVal { get; set; }
         DateTime todayAndNow;
-		deviceGraphAnalysis analysis = new deviceGraphAnalysis();
-		
+        deviceGraphAnalysis analysis = new deviceGraphAnalysis();
+        private Boolean dataExists = true;
         public dayLog(string specificDate, string devName, DateTimeOffset DateTime)
         {
             if (specificDate == null)
@@ -37,8 +36,10 @@ namespace GuzzlerMobileApp.views
             DateChosed = DateTime;
             todayAndNow = DateTimeOffset.Now.ToLocalTime().Date;
             this.InitializeComponent();
-			powerData = analysis.getPowerValuesForDate(DateTime, devName);
+            powerData = analysis.getPowerValuesForDate(DateTime, devName);
             setCharts();
+            if (!dataExists)
+                backButton_Click(this, null);
         }
 
         private void setCharts()
@@ -46,31 +47,32 @@ namespace GuzzlerMobileApp.views
             try
             {
 
-                if (DateChosed.ToLocalTime().Date.Equals(todayAndNow))
-                {
-                    maxTimeVal = DateTimeOffset.Now.ToLocalTime().DateTime;
-                }
-                else
-                    maxTimeVal = new DateTime(2017, 1, 21, 23, 59, 59);
-                minTimeVal = new DateTime(2017, 1, 21, 1, 0, 0);
 
+                if (powerData.Count == 0)
+                {
+                    showMSG.showOkMSG("NO INFO", "Sorry, no data for " + DevName + " on " + deviceGraphAnalysis.dateToString(DateChosed.Date));
+                    dataExists = false;
+                    return;
+                }
+                // there is at least one data point
+                minTimeVal= powerData.ToArray()[0].time;
+                if (DateChosed.ToLocalTime().Date.Equals(todayAndNow))
+                    maxTimeVal = DateTimeOffset.Now.ToLocalTime().DateTime;
+               
+                else
+                    maxTimeVal = powerData.ToArray()[powerData.Count - 1].time;
+                if (powerData.Count == 1)
+                {
+                    minTimeVal = minTimeVal.AddHours(-1);
+                    maxTimeVal= maxTimeVal.AddHours(1);
+                }
+          
                 costData = new ObservableCollection<costPerHour>();
                 for (int i = 0; i < 24; i++)
                 {
                     costData.Add(new costPerHour(i + 1, i * 10));
                 }
-                //powerData = new ObservableCollection<powerTimeItem>();
-                //int j = 0;
-                //for (int i = 0; i < 60; i++)
-                //{
-                //    if (i < 30)
-                //        powerData.Add(new powerTimeItem(new DateTime(2017, 1, 21, 1, (i) % 50, (i + 8) % 50), i * 10));
-                //    else
-                //    {
-                //        powerData.Add(new powerTimeItem(new DateTime(2017, 1, 21, 1, (i) % 50, (i + 8) % 50), j * 10));
-                //        j++;
-                //    }
-                //}
+
                 ((ColumnSeries)ColumnChart.Series[0]).ItemsSource = costData;
                 ((LineSeries)LineChart.Series[0]).ItemsSource = powerData;
                 ((LineSeries)LineChart.Series[0]).IndependentAxis = new DateTimeAxis()
@@ -88,7 +90,7 @@ namespace GuzzlerMobileApp.views
             }
         }
 
-     
+
 
 
 
@@ -98,7 +100,11 @@ namespace GuzzlerMobileApp.views
             Window.Current.Activate();
 
         }
-
+        private void Pie_Click(object sender, RoutedEventArgs e)
+        {
+            Window.Current.Content = new dailyPie(DateChosed.ToLocalTime().DateTime, DevName);
+            Window.Current.Activate();
+        }
         #region INotifyPropertyChange
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(string propertyName = "")
@@ -111,10 +117,6 @@ namespace GuzzlerMobileApp.views
 
         #endregion
 
-        private void Pie_Click(object sender, RoutedEventArgs e)
-        {
-            Window.Current.Content = new dailyPie(DateChosed.ToLocalTime().DateTime, DevName);
-            Window.Current.Activate();
-        }
+
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace GuzzlerMobileApp.DataModel
 {
     // data structure to use in power/time graph
-    public class powerTimeItem
+    public class powerTimeItem : IComparable< powerTimeItem>
     {
         public powerTimeItem(DateTime time, double v)
         {
@@ -16,6 +16,28 @@ namespace GuzzlerMobileApp.DataModel
         }
         public DateTime time { get; set; }
         public double value { get; set; }
+        public class TimeFirst : IComparer<powerTimeItem>
+        {
+            //// Compares by time
+           
+            public int Compare(powerTimeItem x, powerTimeItem y)
+            {
+                if (x.time.CompareTo(y.time) != 0)
+                {
+                    return x.time.CompareTo(y.time);
+                }
+                return 0;
+            }
+        }
+
+        public int CompareTo(powerTimeItem other)
+        {
+            if (this.time.CompareTo(other.time) != 0)
+            {
+                return this.time.CompareTo(other.time);
+            }
+            return 0;
+        }
     }
     // data structure to use in power/day graph
     public class powerItem
@@ -42,7 +64,7 @@ namespace GuzzlerMobileApp.DataModel
     // This is the Devices existing in our database.
     static public class existingDevsModel
     {
-        static public  List<string> existingDevs;
+        static public List<string> existingDevs;
         static public Dictionary<string, string> nickToId;
 
     }

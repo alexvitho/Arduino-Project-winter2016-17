@@ -4,6 +4,7 @@ using Microsoft.WindowsAzure.Storage.Auth;
 using Microsoft.WindowsAzure.Storage.Table;
 using System;
 using System.Collections.Generic;
+using static GuzzlerMobileApp.DataModel.powerTimeItem;
 
 namespace GuzzlerMobileApp.Common
 {
@@ -42,8 +43,8 @@ namespace GuzzlerMobileApp.Common
                 endTime = new DateTimeOffset(DateChosed.Year, DateChosed.Month, DateChosed.Day, 23, 59, 59, new TimeSpan());
             }
 
-            string startTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.GreaterThanOrEqual, startTime.LocalDateTime);
-            string endTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.LessThanOrEqual, endTime.LocalDateTime);
+            string startTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.GreaterThanOrEqual, startTime);
+            string endTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.LessThanOrEqual, endTime);
             string dateFilter = TableQuery.CombineFilters(TableQuery.CombineFilters(partitionFilter, TableOperators.And, startTimeFilter), TableOperators.And, endTimeFilter);
             // ************************************** End of date filter ********************************************//
             // **************************************  power filter ********************************************//
@@ -55,12 +56,11 @@ namespace GuzzlerMobileApp.Common
             var queryOutput = devicesGraphsTable.ExecuteQuerySegmentedAsync<DynamicTableEntity>(query, null);
             var results = queryOutput.Result.Results;
             List<powerTimeItem> retValue = new List<powerTimeItem>();
-      
            foreach (var entity in results)
             {
                 retValue.Add(new powerTimeItem(entity.Timestamp.LocalDateTime, (Double.Parse((entity.Properties["realPower"].PropertyAsObject).ToString()))));
             }
-
+            retValue.Sort();
             return retValue;
         }
     }
