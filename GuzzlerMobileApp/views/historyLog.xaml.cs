@@ -35,7 +35,11 @@ namespace GuzzlerMobileApp.views
 
         private void CalendarView_SelectedDatesChanged(CalendarView sender, CalendarViewSelectedDatesChangedEventArgs args)
         {
-            date = args.AddedDates.First();
+            if (args.AddedDates.Count != 0)
+                date = args.AddedDates.First();
+            else
+                date = args.RemovedDates.First();
+
             selectedDate = dateToString(date.DateTime);
             dateChosed_Click();
         }
@@ -45,12 +49,12 @@ namespace GuzzlerMobileApp.views
             DateTime todayAndNow = DateTimeOffset.Now.ToLocalTime().Date;
             if (date.ToLocalTime().Date.CompareTo(todayAndNow) > 0)
             {
-                showMSG.showOkMSG("NO INFO","Sorry, still can not look into the future!");
+                showMSG.showOkMSG("NO INFO", "Sorry, still can not look into the future!");
                 return;
             }
             if (analysis.getPowerValuesForDate(date, DevName).Count == 0)
             {
-                showMSG.showOkMSG("NO DATA", "Sorry, no data for this day.\nprobably "+DevName+" was off on "+ selectedDate);
+                showMSG.showOkMSG("NO DATA", "Sorry, no data for this day.\nprobably " + DevName + " was off on " + selectedDate);
                 return;
             }
 

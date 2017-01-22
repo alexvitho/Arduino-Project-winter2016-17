@@ -9,13 +9,12 @@ using static GuzzlerMobileApp.Common.deviceGraphAnalysis;
 
 namespace GuzzlerMobileApp.views
 {
-  
+
 
     public sealed partial class dailyPie : Page
     {
         public string DevName { get; private set; }
         public ObservableCollection<piePowerItem> powerPartition { get; private set; }
-        public string DevPower { get; private set; }
         public string DevGuzzeled { get; private set; }
         DateTime Date { get; set; }
 
@@ -30,11 +29,13 @@ namespace GuzzlerMobileApp.views
                 Date = DateTime;
 
             this.InitializeComponent();
-            DevGuzzeled = DevName + " Guzzled:";
 
             double guzzeldDevPower = 40;
-            DevPower = guzzeldDevPower.ToString() + " kW on " + dateToString(Date);
             double guzzeldTotalPower = 140;
+
+            string DevPower = guzzeldDevPower.ToString() + " kW on " + dateToString(Date);
+            DevGuzzeled = DevName + " Guzzled: " + DevPower;
+            
             try
             {
                 powerPartition = new ObservableCollection<piePowerItem>();
@@ -50,9 +51,9 @@ namespace GuzzlerMobileApp.views
         }
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
-            Window.Current.Content = new dayLog(dateToString(Date), DevName, Date.ToUniversalTime());
+            Window.Current.Content = new dailyLog(dateToString(Date), DevName, Date.ToUniversalTime());
             Window.Current.Activate();
         }
-  
+
     }
 }

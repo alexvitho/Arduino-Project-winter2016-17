@@ -115,9 +115,6 @@
     <Compile Include="views\dailyPie.xaml.cs">
       <DependentUpon>dailyPie.xaml</DependentUpon>
     </Compile>
-    <Compile Include="views\dayLog.xaml.cs">
-      <DependentUpon>dayLog.xaml</DependentUpon>
-    </Compile>
     <Compile Include="views\deviceDetails.xaml.cs">
       <DependentUpon>deviceDetails.xaml</DependentUpon>
     </Compile>
@@ -199,10 +196,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="views\dailyPie.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="views\dayLog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

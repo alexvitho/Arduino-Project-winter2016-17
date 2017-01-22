@@ -17,20 +17,18 @@
     </Page.Resources>
     <Grid Background="{ThemeResource splashBackColor}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition Width="6*" />
-            <ColumnDefinition />
+            <ColumnDefinition  Width="0.5*"/>
+            <ColumnDefinition  Width="6*" />
+            <ColumnDefinition  Width="0.5*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*" />
             <RowDefinition Height="1*" />
+            <RowDefinition Height="0.7*" />
             <RowDefinition Height="1*" />
-            <RowDefinition Height="1*" MinHeight="50" />
-            <RowDefinition Height="3*" MinHeight="80" MaxHeight="100" />
-            <RowDefinition Height="0.5*"/>
-            <RowDefinition Height="5*" />
-            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="4*" />
             <RowDefinition Height="1*" />
-            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*" />
 
         </Grid.RowDefinitions>
         <Grid Grid.Row="1" Grid.Column="1">
@@ -39,33 +37,24 @@
         <Grid Grid.Row="2" Grid.Column="1" >
             <TextBox Style="{StaticResource explanationText}" FontSize="24" Text="Daily Precentage" VerticalAlignment="Top" />
         </Grid>
-        <Grid Grid.Column="1" Grid.Row="4">
-        </Grid>
         <Grid Grid.Column="1" Grid.Row="3">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*" />
-                <RowDefinition Height="1*" />
-            </Grid.RowDefinitions>
-            <Grid Grid.Column="1" Grid.Row="0">
-                <TextBox   Background="{StaticResource buttonBack}" Style="{StaticResource explanationText}"  HorizontalAlignment="Stretch" VerticalAlignment="Center"  Text="{x:Bind DevGuzzeled ,Mode=TwoWay}"/>
-            </Grid>
-            <Grid Grid.Column="1" Grid.Row="1">
-                <TextBox  Background="{StaticResource buttonBack}" Style="{StaticResource explanationText}" Text="{x:Bind DevPower ,Mode=OneWay}"    HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="50 0" />
-            </Grid>
+            <TextBox   Background="{StaticResource buttonBack}" Style="{StaticResource explanationText}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Text="{x:Bind DevGuzzeled ,Mode=TwoWay}"/>
         </Grid>
+        <Grid Grid.Column="1" Grid.Row="4">
 
+        </Grid>
 
         <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5">
-            <Charting:Chart Margin="20 0" FontSize="10" Foreground="Yellow" x:Name="PieChart" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   Title="Consumption chart" TitleStyle="{StaticResource LightTitleContentStyle}" BorderThickness="2" BorderBrush="Yellow"  >
+           <!-- <Charting:Chart Margin="20 0" FontSize="10" Foreground="Yellow" x:Name="PieChart" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   Title="Consumption chart" TitleStyle="{StaticResource LightTitleContentStyle}" BorderThickness="2" BorderBrush="Yellow"  >
                 <Charting:PieSeries    ItemsSource="{Binding powerPartition}"  IndependentValuePath="Dev" DependentValuePath="Val"  />
                 <Charting:Chart.LegendStyle>
                     <Style TargetType="datavis:Legend">
                         <Setter Property="Width" Value="100"  />
                     </Style>
                 </Charting:Chart.LegendStyle>
-            </Charting:Chart>
+            </Charting:Chart> -->
         </Grid>
-        <Grid Grid.Row="7" Grid.Column="1">
+        <Grid Grid.Row="5" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="2*" />

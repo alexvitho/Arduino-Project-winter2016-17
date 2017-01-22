@@ -156,7 +156,7 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[135];
+            _typeNameTable = new string[132];
             _typeNameTable[0] = "GuzzlerMobileApp.ExtendedSplash";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -262,38 +262,35 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
             _typeNameTable[102] = "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.DataModel.piePowerItem>";
             _typeNameTable[103] = "System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.DataModel.piePowerItem>";
             _typeNameTable[104] = "GuzzlerMobileApp.DataModel.piePowerItem";
-            _typeNameTable[105] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries";
-            _typeNameTable[106] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>";
-            _typeNameTable[107] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint";
-            _typeNameTable[108] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint";
-            _typeNameTable[109] = "GuzzlerMobileApp.views.dayLog";
-            _typeNameTable[110] = "GuzzlerMobileApp.views.deviceDetails";
-            _typeNameTable[111] = "GuzzlerMobileApp.views.devices";
-            _typeNameTable[112] = "GuzzlerMobileApp.views.estimatedCost";
-            _typeNameTable[113] = "GuzzlerMobileApp.views.historyLog";
-            _typeNameTable[114] = "GuzzlerMobileApp.views.message";
-            _typeNameTable[115] = "Windows.UI.Xaml.Controls.ContentDialog";
-            _typeNameTable[116] = "Windows.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[117] = "GuzzlerMobileApp.views.MyResult";
-            _typeNameTable[118] = "GuzzlerMobileApp.views.PointShapeLineExample";
-            _typeNameTable[119] = "LiveCharts.Uwp.LineSeries";
-            _typeNameTable[120] = "LiveCharts.Uwp.Series";
-            _typeNameTable[121] = "System.Collections.Generic.IEnumerable`1<LiveCharts.ChartPoint>";
-            _typeNameTable[122] = "LiveCharts.Uwp.PointGeometry";
-            _typeNameTable[123] = "LiveCharts.Uwp.Separator";
-            _typeNameTable[124] = "GuzzlerMobileApp.views.realTimeMeasure";
-            _typeNameTable[125] = "LiveCharts.ChartValues`1<GuzzlerMobileApp.views.MeasureModel>";
-            _typeNameTable[126] = "LiveCharts.Helpers.NoisyCollection`1<GuzzlerMobileApp.views.MeasureModel>";
-            _typeNameTable[127] = "GuzzlerMobileApp.views.MeasureModel";
-            _typeNameTable[128] = "Windows.UI.Xaml.DispatcherTimer";
-            _typeNameTable[129] = "System.Random";
-            _typeNameTable[130] = "GuzzlerMobileApp.views.realTimePower";
-            _typeNameTable[131] = "GuzzlerMobileApp.views.regDev";
-            _typeNameTable[132] = "GuzzlerMobileApp.views.specialDev";
-            _typeNameTable[133] = "LiveCharts.Uwp.Points.PieSlice";
-            _typeNameTable[134] = "Windows.UI.Xaml.Shapes.Path";
+            _typeNameTable[105] = "GuzzlerMobileApp.views.deviceDetails";
+            _typeNameTable[106] = "GuzzlerMobileApp.views.devices";
+            _typeNameTable[107] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries";
+            _typeNameTable[108] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>";
+            _typeNameTable[109] = "GuzzlerMobileApp.views.estimatedCost";
+            _typeNameTable[110] = "GuzzlerMobileApp.views.historyLog";
+            _typeNameTable[111] = "GuzzlerMobileApp.views.message";
+            _typeNameTable[112] = "Windows.UI.Xaml.Controls.ContentDialog";
+            _typeNameTable[113] = "Windows.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[114] = "GuzzlerMobileApp.views.MyResult";
+            _typeNameTable[115] = "GuzzlerMobileApp.views.PointShapeLineExample";
+            _typeNameTable[116] = "LiveCharts.Uwp.LineSeries";
+            _typeNameTable[117] = "LiveCharts.Uwp.Series";
+            _typeNameTable[118] = "System.Collections.Generic.IEnumerable`1<LiveCharts.ChartPoint>";
+            _typeNameTable[119] = "LiveCharts.Uwp.PointGeometry";
+            _typeNameTable[120] = "LiveCharts.Uwp.Separator";
+            _typeNameTable[121] = "GuzzlerMobileApp.views.realTimeMeasure";
+            _typeNameTable[122] = "LiveCharts.ChartValues`1<GuzzlerMobileApp.views.MeasureModel>";
+            _typeNameTable[123] = "LiveCharts.Helpers.NoisyCollection`1<GuzzlerMobileApp.views.MeasureModel>";
+            _typeNameTable[124] = "GuzzlerMobileApp.views.MeasureModel";
+            _typeNameTable[125] = "Windows.UI.Xaml.DispatcherTimer";
+            _typeNameTable[126] = "System.Random";
+            _typeNameTable[127] = "GuzzlerMobileApp.views.realTimePower";
+            _typeNameTable[128] = "GuzzlerMobileApp.views.regDev";
+            _typeNameTable[129] = "GuzzlerMobileApp.views.specialDev";
+            _typeNameTable[130] = "LiveCharts.Uwp.Points.PieSlice";
+            _typeNameTable[131] = "Windows.UI.Xaml.Shapes.Path";
 
-            _typeTable = new global::System.Type[135];
+            _typeTable = new global::System.Type[132];
             _typeTable[0] = typeof(global::GuzzlerMobileApp.ExtendedSplash);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -399,36 +396,33 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
             _typeTable[102] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.DataModel.piePowerItem>);
             _typeTable[103] = typeof(global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.DataModel.piePowerItem>);
             _typeTable[104] = typeof(global::GuzzlerMobileApp.DataModel.piePowerItem);
-            _typeTable[105] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries);
-            _typeTable[106] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>);
-            _typeTable[107] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint);
-            _typeTable[108] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint);
-            _typeTable[109] = typeof(global::GuzzlerMobileApp.views.dayLog);
-            _typeTable[110] = typeof(global::GuzzlerMobileApp.views.deviceDetails);
-            _typeTable[111] = typeof(global::GuzzlerMobileApp.views.devices);
-            _typeTable[112] = typeof(global::GuzzlerMobileApp.views.estimatedCost);
-            _typeTable[113] = typeof(global::GuzzlerMobileApp.views.historyLog);
-            _typeTable[114] = typeof(global::GuzzlerMobileApp.views.message);
-            _typeTable[115] = typeof(global::Windows.UI.Xaml.Controls.ContentDialog);
-            _typeTable[116] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
-            _typeTable[117] = typeof(global::GuzzlerMobileApp.views.MyResult);
-            _typeTable[118] = typeof(global::GuzzlerMobileApp.views.PointShapeLineExample);
-            _typeTable[119] = typeof(global::LiveCharts.Uwp.LineSeries);
-            _typeTable[120] = typeof(global::LiveCharts.Uwp.Series);
-            _typeTable[121] = typeof(global::System.Collections.Generic.IEnumerable<global::LiveCharts.ChartPoint>);
-            _typeTable[122] = typeof(global::LiveCharts.Uwp.PointGeometry);
-            _typeTable[123] = typeof(global::LiveCharts.Uwp.Separator);
-            _typeTable[124] = typeof(global::GuzzlerMobileApp.views.realTimeMeasure);
-            _typeTable[125] = typeof(global::LiveCharts.ChartValues<global::GuzzlerMobileApp.views.MeasureModel>);
-            _typeTable[126] = typeof(global::LiveCharts.Helpers.NoisyCollection<global::GuzzlerMobileApp.views.MeasureModel>);
-            _typeTable[127] = typeof(global::GuzzlerMobileApp.views.MeasureModel);
-            _typeTable[128] = typeof(global::Windows.UI.Xaml.DispatcherTimer);
-            _typeTable[129] = typeof(global::System.Random);
-            _typeTable[130] = typeof(global::GuzzlerMobileApp.views.realTimePower);
-            _typeTable[131] = typeof(global::GuzzlerMobileApp.views.regDev);
-            _typeTable[132] = typeof(global::GuzzlerMobileApp.views.specialDev);
-            _typeTable[133] = typeof(global::LiveCharts.Uwp.Points.PieSlice);
-            _typeTable[134] = typeof(global::Windows.UI.Xaml.Shapes.Path);
+            _typeTable[105] = typeof(global::GuzzlerMobileApp.views.deviceDetails);
+            _typeTable[106] = typeof(global::GuzzlerMobileApp.views.devices);
+            _typeTable[107] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries);
+            _typeTable[108] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>);
+            _typeTable[109] = typeof(global::GuzzlerMobileApp.views.estimatedCost);
+            _typeTable[110] = typeof(global::GuzzlerMobileApp.views.historyLog);
+            _typeTable[111] = typeof(global::GuzzlerMobileApp.views.message);
+            _typeTable[112] = typeof(global::Windows.UI.Xaml.Controls.ContentDialog);
+            _typeTable[113] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
+            _typeTable[114] = typeof(global::GuzzlerMobileApp.views.MyResult);
+            _typeTable[115] = typeof(global::GuzzlerMobileApp.views.PointShapeLineExample);
+            _typeTable[116] = typeof(global::LiveCharts.Uwp.LineSeries);
+            _typeTable[117] = typeof(global::LiveCharts.Uwp.Series);
+            _typeTable[118] = typeof(global::System.Collections.Generic.IEnumerable<global::LiveCharts.ChartPoint>);
+            _typeTable[119] = typeof(global::LiveCharts.Uwp.PointGeometry);
+            _typeTable[120] = typeof(global::LiveCharts.Uwp.Separator);
+            _typeTable[121] = typeof(global::GuzzlerMobileApp.views.realTimeMeasure);
+            _typeTable[122] = typeof(global::LiveCharts.ChartValues<global::GuzzlerMobileApp.views.MeasureModel>);
+            _typeTable[123] = typeof(global::LiveCharts.Helpers.NoisyCollection<global::GuzzlerMobileApp.views.MeasureModel>);
+            _typeTable[124] = typeof(global::GuzzlerMobileApp.views.MeasureModel);
+            _typeTable[125] = typeof(global::Windows.UI.Xaml.DispatcherTimer);
+            _typeTable[126] = typeof(global::System.Random);
+            _typeTable[127] = typeof(global::GuzzlerMobileApp.views.realTimePower);
+            _typeTable[128] = typeof(global::GuzzlerMobileApp.views.regDev);
+            _typeTable[129] = typeof(global::GuzzlerMobileApp.views.specialDev);
+            _typeTable[130] = typeof(global::LiveCharts.Uwp.Points.PieSlice);
+            _typeTable[131] = typeof(global::Windows.UI.Xaml.Shapes.Path);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -495,21 +489,20 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
         private object Activate_88_List() { return new global::System.Collections.Generic.List<global::Windows.UI.Color>(); }
         private object Activate_102_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.DataModel.piePowerItem>(); }
         private object Activate_103_Collection() { return new global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.DataModel.piePowerItem>(); }
-        private object Activate_105_ColumnSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries(); }
-        private object Activate_107_LineDataPoint() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint(); }
-        private object Activate_111_devices() { return new global::GuzzlerMobileApp.views.devices(); }
-        private object Activate_114_message() { return new global::GuzzlerMobileApp.views.message(); }
-        private object Activate_118_PointShapeLineExample() { return new global::GuzzlerMobileApp.views.PointShapeLineExample(); }
-        private object Activate_119_LineSeries() { return new global::LiveCharts.Uwp.LineSeries(); }
-        private object Activate_122_PointGeometry() { return new global::LiveCharts.Uwp.PointGeometry(); }
-        private object Activate_123_Separator() { return new global::LiveCharts.Uwp.Separator(); }
-        private object Activate_124_realTimeMeasure() { return new global::GuzzlerMobileApp.views.realTimeMeasure(); }
-        private object Activate_125_ChartValues() { return new global::LiveCharts.ChartValues<global::GuzzlerMobileApp.views.MeasureModel>(); }
-        private object Activate_126_NoisyCollection() { return new global::LiveCharts.Helpers.NoisyCollection<global::GuzzlerMobileApp.views.MeasureModel>(); }
-        private object Activate_127_MeasureModel() { return new global::GuzzlerMobileApp.views.MeasureModel(); }
-        private object Activate_129_Random() { return new global::System.Random(); }
-        private object Activate_131_regDev() { return new global::GuzzlerMobileApp.views.regDev(); }
-        private object Activate_133_PieSlice() { return new global::LiveCharts.Uwp.Points.PieSlice(); }
+        private object Activate_106_devices() { return new global::GuzzlerMobileApp.views.devices(); }
+        private object Activate_107_ColumnSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries(); }
+        private object Activate_111_message() { return new global::GuzzlerMobileApp.views.message(); }
+        private object Activate_115_PointShapeLineExample() { return new global::GuzzlerMobileApp.views.PointShapeLineExample(); }
+        private object Activate_116_LineSeries() { return new global::LiveCharts.Uwp.LineSeries(); }
+        private object Activate_119_PointGeometry() { return new global::LiveCharts.Uwp.PointGeometry(); }
+        private object Activate_120_Separator() { return new global::LiveCharts.Uwp.Separator(); }
+        private object Activate_121_realTimeMeasure() { return new global::GuzzlerMobileApp.views.realTimeMeasure(); }
+        private object Activate_122_ChartValues() { return new global::LiveCharts.ChartValues<global::GuzzlerMobileApp.views.MeasureModel>(); }
+        private object Activate_123_NoisyCollection() { return new global::LiveCharts.Helpers.NoisyCollection<global::GuzzlerMobileApp.views.MeasureModel>(); }
+        private object Activate_124_MeasureModel() { return new global::GuzzlerMobileApp.views.MeasureModel(); }
+        private object Activate_126_Random() { return new global::System.Random(); }
+        private object Activate_128_regDev() { return new global::GuzzlerMobileApp.views.regDev(); }
+        private object Activate_130_PieSlice() { return new global::LiveCharts.Uwp.Points.PieSlice(); }
         private void VectorAdd_5_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>)instance;
@@ -660,13 +653,13 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
             var newItem = (global::GuzzlerMobileApp.DataModel.piePowerItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_125_ChartValues(object instance, object item)
+        private void VectorAdd_122_ChartValues(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.views.MeasureModel>)instance;
             var newItem = (global::GuzzlerMobileApp.views.MeasureModel)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_126_NoisyCollection(object instance, object item)
+        private void VectorAdd_123_NoisyCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.views.MeasureModel>)instance;
             var newItem = (global::GuzzlerMobileApp.views.MeasureModel)item;
@@ -1435,7 +1428,6 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.AddMemberName("DevName");
                 userType.AddMemberName("powerPartition");
-                userType.AddMemberName("DevPower");
                 userType.AddMemberName("DevGuzzeled");
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -1463,52 +1455,7 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 105:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries
-                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>"));
-                userType.Activator = Activate_105_ColumnSeries;
-                xamlType = userType;
-                break;
-
-            case 106:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>
-                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes"));
-                userType.AddMemberName("DependentRangeAxis");
-                userType.AddMemberName("IndependentAxis");
-                userType.AddMemberName("ActualDependentRangeAxis");
-                userType.AddMemberName("ActualIndependentAxis");
-                xamlType = userType;
-                break;
-
-            case 107:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint
-                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint"));
-                userType.Activator = Activate_107_LineDataPoint;
-                xamlType = userType;
-                break;
-
-            case 108:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint
-                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.AddMemberName("IsSelectionEnabled");
-                userType.AddMemberName("ActualDependentValue");
-                userType.AddMemberName("DependentValue");
-                userType.AddMemberName("DependentValueStringFormat");
-                userType.AddMemberName("FormattedDependentValue");
-                userType.AddMemberName("FormattedIndependentValue");
-                userType.AddMemberName("IndependentValue");
-                userType.AddMemberName("IndependentValueStringFormat");
-                userType.AddMemberName("ActualIndependentValue");
-                xamlType = userType;
-                break;
-
-            case 109:   //  GuzzlerMobileApp.views.dayLog
-                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.AddMemberName("DevName");
-                userType.AddMemberName("Date");
-                userType.AddMemberName("maxTimeVal");
-                userType.AddMemberName("minTimeVal");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 110:   //  GuzzlerMobileApp.views.deviceDetails
+            case 105:   //  GuzzlerMobileApp.views.deviceDetails
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.AddMemberName("DevName");
                 userType.AddMemberName("Manufacturer");
@@ -1521,9 +1468,9 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 111:   //  GuzzlerMobileApp.views.devices
+            case 106:   //  GuzzlerMobileApp.views.devices
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_111_devices;
+                userType.Activator = Activate_106_devices;
                 userType.AddMemberName("IsNextEnabled");
                 userType.AddMemberName("ChosenDev");
                 userType.AddMemberName("DevToRemove");
@@ -1531,7 +1478,22 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 112:   //  GuzzlerMobileApp.views.estimatedCost
+            case 107:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries
+                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>"));
+                userType.Activator = Activate_107_ColumnSeries;
+                xamlType = userType;
+                break;
+
+            case 108:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>
+                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes"));
+                userType.AddMemberName("DependentRangeAxis");
+                userType.AddMemberName("IndependentAxis");
+                userType.AddMemberName("ActualDependentRangeAxis");
+                userType.AddMemberName("ActualIndependentAxis");
+                xamlType = userType;
+                break;
+
+            case 109:   //  GuzzlerMobileApp.views.estimatedCost
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.AddMemberName("DevName");
                 userType.AddMemberName("Tariff");
@@ -1539,16 +1501,16 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 113:   //  GuzzlerMobileApp.views.historyLog
+            case 110:   //  GuzzlerMobileApp.views.historyLog
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.AddMemberName("DevName");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 114:   //  GuzzlerMobileApp.views.message
+            case 111:   //  GuzzlerMobileApp.views.message
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentDialog"));
-                userType.Activator = Activate_114_message;
+                userType.Activator = Activate_111_message;
                 userType.AddMemberName("Result");
                 userType.AddMemberName("mTitle");
                 userType.AddMemberName("Msg");
@@ -1556,15 +1518,15 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 115:   //  Windows.UI.Xaml.Controls.ContentDialog
+            case 112:   //  Windows.UI.Xaml.Controls.ContentDialog
                 xamlType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 116:   //  Windows.UI.Xaml.Controls.ContentControl
+            case 113:   //  Windows.UI.Xaml.Controls.ContentControl
                 xamlType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 117:   //  GuzzlerMobileApp.views.MyResult
+            case 114:   //  GuzzlerMobileApp.views.MyResult
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Yes", global::GuzzlerMobileApp.views.MyResult.Yes);
                 userType.AddEnumValue("No", global::GuzzlerMobileApp.views.MyResult.No);
@@ -1574,9 +1536,9 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 118:   //  GuzzlerMobileApp.views.PointShapeLineExample
+            case 115:   //  GuzzlerMobileApp.views.PointShapeLineExample
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_118_PointShapeLineExample;
+                userType.Activator = Activate_115_PointShapeLineExample;
                 userType.AddMemberName("SeriesCollection");
                 userType.AddMemberName("Labels");
                 userType.AddMemberName("YFormatter");
@@ -1584,9 +1546,9 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 119:   //  LiveCharts.Uwp.LineSeries
+            case 116:   //  LiveCharts.Uwp.LineSeries
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("LiveCharts.Uwp.Series"));
-                userType.Activator = Activate_119_LineSeries;
+                userType.Activator = Activate_116_LineSeries;
                 userType.AddMemberName("PointGeometrySize");
                 userType.AddMemberName("PointForeround");
                 userType.AddMemberName("LineSmoothness");
@@ -1594,7 +1556,7 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 120:   //  LiveCharts.Uwp.Series
+            case 117:   //  LiveCharts.Uwp.Series
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
                 userType.AddMemberName("Values");
                 userType.AddMemberName("StrokeThickness");
@@ -1621,21 +1583,21 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 121:   //  System.Collections.Generic.IEnumerable`1<LiveCharts.ChartPoint>
+            case 118:   //  System.Collections.Generic.IEnumerable`1<LiveCharts.ChartPoint>
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 122:   //  LiveCharts.Uwp.PointGeometry
+            case 119:   //  LiveCharts.Uwp.PointGeometry
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 123:   //  LiveCharts.Uwp.Separator
+            case 120:   //  LiveCharts.Uwp.Separator
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_123_Separator;
+                userType.Activator = Activate_120_Separator;
                 userType.AddMemberName("Step");
                 userType.AddMemberName("Chart");
                 userType.AddMemberName("Stroke");
@@ -1645,9 +1607,9 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 124:   //  GuzzlerMobileApp.views.realTimeMeasure
+            case 121:   //  GuzzlerMobileApp.views.realTimeMeasure
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_124_realTimeMeasure;
+                userType.Activator = Activate_121_realTimeMeasure;
                 userType.AddMemberName("ChartValues");
                 userType.AddMemberName("DateTimeFormatter");
                 userType.AddMemberName("AxisStep");
@@ -1660,40 +1622,40 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 125:   //  LiveCharts.ChartValues`1<GuzzlerMobileApp.views.MeasureModel>
+            case 122:   //  LiveCharts.ChartValues`1<GuzzlerMobileApp.views.MeasureModel>
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("LiveCharts.Helpers.NoisyCollection`1<GuzzlerMobileApp.views.MeasureModel>"));
-                userType.CollectionAdd = VectorAdd_125_ChartValues;
+                userType.CollectionAdd = VectorAdd_122_ChartValues;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 126:   //  LiveCharts.Helpers.NoisyCollection`1<GuzzlerMobileApp.views.MeasureModel>
+            case 123:   //  LiveCharts.Helpers.NoisyCollection`1<GuzzlerMobileApp.views.MeasureModel>
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_126_NoisyCollection;
-                userType.CollectionAdd = VectorAdd_126_NoisyCollection;
+                userType.Activator = Activate_123_NoisyCollection;
+                userType.CollectionAdd = VectorAdd_123_NoisyCollection;
                 xamlType = userType;
                 break;
 
-            case 127:   //  GuzzlerMobileApp.views.MeasureModel
+            case 124:   //  GuzzlerMobileApp.views.MeasureModel
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_127_MeasureModel;
+                userType.Activator = Activate_124_MeasureModel;
                 userType.AddMemberName("DateTime");
                 userType.AddMemberName("Value");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 128:   //  Windows.UI.Xaml.DispatcherTimer
+            case 125:   //  Windows.UI.Xaml.DispatcherTimer
                 xamlType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 129:   //  System.Random
+            case 126:   //  System.Random
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 130:   //  GuzzlerMobileApp.views.realTimePower
+            case 127:   //  GuzzlerMobileApp.views.realTimePower
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.AddMemberName("DevName");
                 userType.AddMemberName("RealTimeViewLink");
@@ -1701,9 +1663,9 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 131:   //  GuzzlerMobileApp.views.regDev
+            case 128:   //  GuzzlerMobileApp.views.regDev
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_131_regDev;
+                userType.Activator = Activate_128_regDev;
                 userType.AddMemberName("DevName");
                 userType.AddMemberName("Manufacturer");
                 userType.AddMemberName("GuzzlerId");
@@ -1714,16 +1676,16 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 132:   //  GuzzlerMobileApp.views.specialDev
+            case 129:   //  GuzzlerMobileApp.views.specialDev
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.AddMemberName("DeviceName");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 133:   //  LiveCharts.Uwp.Points.PieSlice
+            case 130:   //  LiveCharts.Uwp.Points.PieSlice
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Shapes.Path"));
-                userType.Activator = Activate_133_PieSlice;
+                userType.Activator = Activate_130_PieSlice;
                 userType.AddMemberName("Radius");
                 userType.AddMemberName("PushOut");
                 userType.AddMemberName("InnerRadius");
@@ -1737,7 +1699,7 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 134:   //  Windows.UI.Xaml.Shapes.Path
+            case 131:   //  Windows.UI.Xaml.Shapes.Path
                 xamlType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -3133,887 +3095,772 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
             var that = (global::GuzzlerMobileApp.DataModel.piePowerItem)instance;
             that.Val = (global::System.Double)Value;
         }
-        private object get_149_dailyPie_DevPower(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.dailyPie)instance;
-            return that.DevPower;
-        }
-        private object get_150_dailyPie_DevGuzzeled(object instance)
+        private object get_149_dailyPie_DevGuzzeled(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.dailyPie)instance;
             return that.DevGuzzeled;
         }
-        private object get_151_ColumnBarBaseSeries_DependentRangeAxis(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
-            return that.DependentRangeAxis;
-        }
-        private void set_151_ColumnBarBaseSeries_DependentRangeAxis(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
-            that.DependentRangeAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis)Value;
-        }
-        private object get_152_ColumnBarBaseSeries_IndependentAxis(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
-            return that.IndependentAxis;
-        }
-        private void set_152_ColumnBarBaseSeries_IndependentAxis(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
-            that.IndependentAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)Value;
-        }
-        private object get_153_ColumnBarBaseSeries_ActualDependentRangeAxis(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
-            return that.ActualDependentRangeAxis;
-        }
-        private object get_154_ColumnBarBaseSeries_ActualIndependentAxis(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
-            return that.ActualIndependentAxis;
-        }
-        private object get_155_DataPoint_IsSelectionEnabled(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            return that.IsSelectionEnabled;
-        }
-        private void set_155_DataPoint_IsSelectionEnabled(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            that.IsSelectionEnabled = (global::System.Boolean)Value;
-        }
-        private object get_156_DataPoint_ActualDependentValue(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            return that.ActualDependentValue;
-        }
-        private void set_156_DataPoint_ActualDependentValue(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            that.ActualDependentValue = (global::System.Double)Value;
-        }
-        private object get_157_DataPoint_DependentValue(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            return that.DependentValue;
-        }
-        private void set_157_DataPoint_DependentValue(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            that.DependentValue = (global::System.Double)Value;
-        }
-        private object get_158_DataPoint_DependentValueStringFormat(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            return that.DependentValueStringFormat;
-        }
-        private void set_158_DataPoint_DependentValueStringFormat(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            that.DependentValueStringFormat = (global::System.String)Value;
-        }
-        private object get_159_DataPoint_FormattedDependentValue(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            return that.FormattedDependentValue;
-        }
-        private object get_160_DataPoint_FormattedIndependentValue(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            return that.FormattedIndependentValue;
-        }
-        private object get_161_DataPoint_IndependentValue(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            return that.IndependentValue;
-        }
-        private void set_161_DataPoint_IndependentValue(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            that.IndependentValue = (global::System.Object)Value;
-        }
-        private object get_162_DataPoint_IndependentValueStringFormat(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            return that.IndependentValueStringFormat;
-        }
-        private void set_162_DataPoint_IndependentValueStringFormat(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            that.IndependentValueStringFormat = (global::System.String)Value;
-        }
-        private object get_163_DataPoint_ActualIndependentValue(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            return that.ActualIndependentValue;
-        }
-        private void set_163_DataPoint_ActualIndependentValue(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint)instance;
-            that.ActualIndependentValue = (global::System.Object)Value;
-        }
-        private object get_164_dayLog_DevName(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.dayLog)instance;
-            return that.DevName;
-        }
-        private object get_165_dayLog_Date(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.dayLog)instance;
-            return that.Date;
-        }
-        private object get_166_dayLog_maxTimeVal(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.dayLog)instance;
-            return that.maxTimeVal;
-        }
-        private void set_166_dayLog_maxTimeVal(object instance, object Value)
-        {
-            var that = (global::GuzzlerMobileApp.views.dayLog)instance;
-            that.maxTimeVal = (global::System.DateTime)Value;
-        }
-        private object get_167_dayLog_minTimeVal(object instance)
-        {
-            var that = (global::GuzzlerMobileApp.views.dayLog)instance;
-            return that.minTimeVal;
-        }
-        private void set_167_dayLog_minTimeVal(object instance, object Value)
-        {
-            var that = (global::GuzzlerMobileApp.views.dayLog)instance;
-            that.minTimeVal = (global::System.DateTime)Value;
-        }
-        private object get_168_deviceDetails_DevName(object instance)
+        private object get_150_deviceDetails_DevName(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
             return that.DevName;
         }
-        private void set_168_deviceDetails_DevName(object instance, object Value)
+        private void set_150_deviceDetails_DevName(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
             that.DevName = (global::System.String)Value;
         }
-        private object get_169_deviceDetails_Manufacturer(object instance)
+        private object get_151_deviceDetails_Manufacturer(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
             return that.Manufacturer;
         }
-        private void set_169_deviceDetails_Manufacturer(object instance, object Value)
+        private void set_151_deviceDetails_Manufacturer(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
             that.Manufacturer = (global::System.String)Value;
         }
-        private object get_170_deviceDetails_GuzzlerId(object instance)
+        private object get_152_deviceDetails_GuzzlerId(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
             return that.GuzzlerId;
         }
-        private void set_170_deviceDetails_GuzzlerId(object instance, object Value)
+        private void set_152_deviceDetails_GuzzlerId(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
             that.GuzzlerId = (global::System.String)Value;
         }
-        private object get_171_deviceDetails_DevType(object instance)
+        private object get_153_deviceDetails_DevType(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
             return that.DevType;
         }
-        private void set_171_deviceDetails_DevType(object instance, object Value)
+        private void set_153_deviceDetails_DevType(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
             that.DevType = (global::System.String)Value;
         }
-        private object get_172_deviceDetails_Model(object instance)
+        private object get_154_deviceDetails_Model(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
             return that.Model;
         }
-        private void set_172_deviceDetails_Model(object instance, object Value)
+        private void set_154_deviceDetails_Model(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
             that.Model = (global::System.String)Value;
         }
-        private object get_173_deviceDetails_Serial(object instance)
+        private object get_155_deviceDetails_Serial(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
             return that.Serial;
         }
-        private void set_173_deviceDetails_Serial(object instance, object Value)
+        private void set_155_deviceDetails_Serial(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
             that.Serial = (global::System.String)Value;
         }
-        private object get_174_deviceDetails_TimeCreated(object instance)
+        private object get_156_deviceDetails_TimeCreated(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
             return that.TimeCreated;
         }
-        private void set_174_deviceDetails_TimeCreated(object instance, object Value)
+        private void set_156_deviceDetails_TimeCreated(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.deviceDetails)instance;
             that.TimeCreated = (global::System.String)Value;
         }
-        private object get_175_devices_IsNextEnabled(object instance)
+        private object get_157_devices_IsNextEnabled(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.devices)instance;
             return that.IsNextEnabled;
         }
-        private void set_175_devices_IsNextEnabled(object instance, object Value)
+        private void set_157_devices_IsNextEnabled(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.devices)instance;
             that.IsNextEnabled = (global::System.Boolean)Value;
         }
-        private object get_176_devices_ChosenDev(object instance)
+        private object get_158_devices_ChosenDev(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.devices)instance;
             return that.ChosenDev;
         }
-        private void set_176_devices_ChosenDev(object instance, object Value)
+        private void set_158_devices_ChosenDev(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.devices)instance;
             that.ChosenDev = (global::System.String)Value;
         }
-        private object get_177_devices_DevToRemove(object instance)
+        private object get_159_devices_DevToRemove(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.devices)instance;
             return that.DevToRemove;
         }
-        private void set_177_devices_DevToRemove(object instance, object Value)
+        private void set_159_devices_DevToRemove(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.devices)instance;
             that.DevToRemove = (global::System.String)Value;
         }
-        private object get_178_estimatedCost_DevName(object instance)
+        private object get_160_ColumnBarBaseSeries_DependentRangeAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
+            return that.DependentRangeAxis;
+        }
+        private void set_160_ColumnBarBaseSeries_DependentRangeAxis(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
+            that.DependentRangeAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis)Value;
+        }
+        private object get_161_ColumnBarBaseSeries_IndependentAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
+            return that.IndependentAxis;
+        }
+        private void set_161_ColumnBarBaseSeries_IndependentAxis(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
+            that.IndependentAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)Value;
+        }
+        private object get_162_ColumnBarBaseSeries_ActualDependentRangeAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
+            return that.ActualDependentRangeAxis;
+        }
+        private object get_163_ColumnBarBaseSeries_ActualIndependentAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
+            return that.ActualIndependentAxis;
+        }
+        private object get_164_estimatedCost_DevName(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.estimatedCost)instance;
             return that.DevName;
         }
-        private object get_179_estimatedCost_Tariff(object instance)
+        private object get_165_estimatedCost_Tariff(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.estimatedCost)instance;
             return that.Tariff;
         }
-        private object get_180_historyLog_DevName(object instance)
+        private object get_166_historyLog_DevName(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.historyLog)instance;
             return that.DevName;
         }
-        private object get_181_message_Result(object instance)
+        private object get_167_message_Result(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.message)instance;
             return that.Result;
         }
-        private void set_181_message_Result(object instance, object Value)
+        private void set_167_message_Result(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.message)instance;
             that.Result = (global::GuzzlerMobileApp.views.MyResult)Value;
         }
-        private object get_182_message_mTitle(object instance)
+        private object get_168_message_mTitle(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.message)instance;
             return that.mTitle;
         }
-        private void set_182_message_mTitle(object instance, object Value)
+        private void set_168_message_mTitle(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.message)instance;
             that.mTitle = (global::System.String)Value;
         }
-        private object get_183_message_Msg(object instance)
+        private object get_169_message_Msg(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.message)instance;
             return that.Msg;
         }
-        private void set_183_message_Msg(object instance, object Value)
+        private void set_169_message_Msg(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.message)instance;
             that.Msg = (global::System.String)Value;
         }
-        private object get_184_PointShapeLineExample_SeriesCollection(object instance)
+        private object get_170_PointShapeLineExample_SeriesCollection(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.PointShapeLineExample)instance;
             return that.SeriesCollection;
         }
-        private void set_184_PointShapeLineExample_SeriesCollection(object instance, object Value)
+        private void set_170_PointShapeLineExample_SeriesCollection(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.PointShapeLineExample)instance;
             that.SeriesCollection = (global::LiveCharts.SeriesCollection)Value;
         }
-        private object get_185_PointShapeLineExample_Labels(object instance)
+        private object get_171_PointShapeLineExample_Labels(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.PointShapeLineExample)instance;
             return that.Labels;
         }
-        private void set_185_PointShapeLineExample_Labels(object instance, object Value)
+        private void set_171_PointShapeLineExample_Labels(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.PointShapeLineExample)instance;
             that.Labels = (global::System.String[])Value;
         }
-        private object get_186_PointShapeLineExample_YFormatter(object instance)
+        private object get_172_PointShapeLineExample_YFormatter(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.PointShapeLineExample)instance;
             return that.YFormatter;
         }
-        private void set_186_PointShapeLineExample_YFormatter(object instance, object Value)
+        private void set_172_PointShapeLineExample_YFormatter(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.PointShapeLineExample)instance;
             that.YFormatter = (global::System.Func<global::System.Double, global::System.String>)Value;
         }
-        private object get_187_Series_Values(object instance)
+        private object get_173_Series_Values(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.Values;
         }
-        private void set_187_Series_Values(object instance, object Value)
+        private void set_173_Series_Values(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.Values = (global::LiveCharts.IChartValues)Value;
         }
-        private object get_188_LineSeries_PointGeometrySize(object instance)
+        private object get_174_LineSeries_PointGeometrySize(object instance)
         {
             var that = (global::LiveCharts.Uwp.LineSeries)instance;
             return that.PointGeometrySize;
         }
-        private void set_188_LineSeries_PointGeometrySize(object instance, object Value)
+        private void set_174_LineSeries_PointGeometrySize(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.LineSeries)instance;
             that.PointGeometrySize = (global::System.Double)Value;
         }
-        private object get_189_Series_StrokeThickness(object instance)
+        private object get_175_Series_StrokeThickness(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.StrokeThickness;
         }
-        private void set_189_Series_StrokeThickness(object instance, object Value)
+        private void set_175_Series_StrokeThickness(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.StrokeThickness = (global::System.Double)Value;
         }
-        private object get_190_LineSeries_PointForeround(object instance)
+        private object get_176_LineSeries_PointForeround(object instance)
         {
             var that = (global::LiveCharts.Uwp.LineSeries)instance;
             return that.PointForeround;
         }
-        private void set_190_LineSeries_PointForeround(object instance, object Value)
+        private void set_176_LineSeries_PointForeround(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.LineSeries)instance;
             that.PointForeround = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_191_LineSeries_LineSmoothness(object instance)
+        private object get_177_LineSeries_LineSmoothness(object instance)
         {
             var that = (global::LiveCharts.Uwp.LineSeries)instance;
             return that.LineSmoothness;
         }
-        private void set_191_LineSeries_LineSmoothness(object instance, object Value)
+        private void set_177_LineSeries_LineSmoothness(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.LineSeries)instance;
             that.LineSmoothness = (global::System.Double)Value;
         }
-        private object get_192_LineSeries_AreaLimit(object instance)
+        private object get_178_LineSeries_AreaLimit(object instance)
         {
             var that = (global::LiveCharts.Uwp.LineSeries)instance;
             return that.AreaLimit;
         }
-        private void set_192_LineSeries_AreaLimit(object instance, object Value)
+        private void set_178_LineSeries_AreaLimit(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.LineSeries)instance;
             that.AreaLimit = (global::System.Double)Value;
         }
-        private object get_193_Series_Model(object instance)
+        private object get_179_Series_Model(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.Model;
         }
-        private void set_193_Series_Model(object instance, object Value)
+        private void set_179_Series_Model(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.Model = (global::LiveCharts.SeriesAlgorithm)Value;
         }
-        private object get_194_Series_ActualValues(object instance)
+        private object get_180_Series_ActualValues(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.ActualValues;
         }
-        private object get_195_Series_IsSeriesVisible(object instance)
+        private object get_181_Series_IsSeriesVisible(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.IsSeriesVisible;
         }
-        private object get_196_Series_ChartPoints(object instance)
+        private object get_182_Series_ChartPoints(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.ChartPoints;
         }
-        private object get_197_Series_Title(object instance)
+        private object get_183_Series_Title(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.Title;
         }
-        private void set_197_Series_Title(object instance, object Value)
+        private void set_183_Series_Title(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.Title = (global::System.String)Value;
         }
-        private object get_198_Series_Stroke(object instance)
+        private object get_184_Series_Stroke(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.Stroke;
         }
-        private void set_198_Series_Stroke(object instance, object Value)
+        private void set_184_Series_Stroke(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.Stroke = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_199_Series_Fill(object instance)
+        private object get_185_Series_Fill(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.Fill;
         }
-        private void set_199_Series_Fill(object instance, object Value)
+        private void set_185_Series_Fill(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.Fill = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_200_Series_DataLabels(object instance)
+        private object get_186_Series_DataLabels(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.DataLabels;
         }
-        private void set_200_Series_DataLabels(object instance, object Value)
+        private void set_186_Series_DataLabels(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.DataLabels = (global::System.Boolean)Value;
         }
-        private object get_201_Series_FontFamily(object instance)
+        private object get_187_Series_FontFamily(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.FontFamily;
         }
-        private void set_201_Series_FontFamily(object instance, object Value)
+        private void set_187_Series_FontFamily(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.FontFamily = (global::Windows.UI.Xaml.Media.FontFamily)Value;
         }
-        private object get_202_Series_FontSize(object instance)
+        private object get_188_Series_FontSize(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.FontSize;
         }
-        private void set_202_Series_FontSize(object instance, object Value)
+        private void set_188_Series_FontSize(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.FontSize = (global::System.Double)Value;
         }
-        private object get_203_Series_FontWeight(object instance)
+        private object get_189_Series_FontWeight(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.FontWeight;
         }
-        private void set_203_Series_FontWeight(object instance, object Value)
+        private void set_189_Series_FontWeight(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.FontWeight = (global::Windows.UI.Text.FontWeight)Value;
         }
-        private object get_204_Series_FontStyle(object instance)
+        private object get_190_Series_FontStyle(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.FontStyle;
         }
-        private void set_204_Series_FontStyle(object instance, object Value)
+        private void set_190_Series_FontStyle(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.FontStyle = (global::Windows.UI.Text.FontStyle)Value;
         }
-        private object get_205_Series_FontStretch(object instance)
+        private object get_191_Series_FontStretch(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.FontStretch;
         }
-        private void set_205_Series_FontStretch(object instance, object Value)
+        private void set_191_Series_FontStretch(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.FontStretch = (global::Windows.UI.Text.FontStretch)Value;
         }
-        private object get_206_Series_Foreground(object instance)
+        private object get_192_Series_Foreground(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.Foreground;
         }
-        private void set_206_Series_Foreground(object instance, object Value)
+        private void set_192_Series_Foreground(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.Foreground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_207_Series_StrokeDashArray(object instance)
+        private object get_193_Series_StrokeDashArray(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.StrokeDashArray;
         }
-        private void set_207_Series_StrokeDashArray(object instance, object Value)
+        private void set_193_Series_StrokeDashArray(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.StrokeDashArray = (global::Windows.UI.Xaml.Media.DoubleCollection)Value;
         }
-        private object get_208_Series_PointGeometry(object instance)
+        private object get_194_Series_PointGeometry(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.PointGeometry;
         }
-        private void set_208_Series_PointGeometry(object instance, object Value)
+        private void set_194_Series_PointGeometry(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.PointGeometry = (global::LiveCharts.Uwp.PointGeometry)Value;
         }
-        private object get_209_Series_ScalesXAt(object instance)
+        private object get_195_Series_ScalesXAt(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.ScalesXAt;
         }
-        private void set_209_Series_ScalesXAt(object instance, object Value)
+        private void set_195_Series_ScalesXAt(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.ScalesXAt = (global::System.Int32)Value;
         }
-        private object get_210_Series_ScalesYAt(object instance)
+        private object get_196_Series_ScalesYAt(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.ScalesYAt;
         }
-        private void set_210_Series_ScalesYAt(object instance, object Value)
+        private void set_196_Series_ScalesYAt(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.ScalesYAt = (global::System.Int32)Value;
         }
-        private object get_211_Series_LabelPoint(object instance)
+        private object get_197_Series_LabelPoint(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.LabelPoint;
         }
-        private void set_211_Series_LabelPoint(object instance, object Value)
+        private void set_197_Series_LabelPoint(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.LabelPoint = (global::System.Func<global::LiveCharts.ChartPoint, global::System.String>)Value;
         }
-        private object get_212_Series_Configuration(object instance)
+        private object get_198_Series_Configuration(object instance)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             return that.Configuration;
         }
-        private void set_212_Series_Configuration(object instance, object Value)
+        private void set_198_Series_Configuration(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Series)instance;
             that.Configuration = (global::System.Object)Value;
         }
-        private object get_213_Separator_Step(object instance)
+        private object get_199_Separator_Step(object instance)
         {
             var that = (global::LiveCharts.Uwp.Separator)instance;
             return that.Step;
         }
-        private void set_213_Separator_Step(object instance, object Value)
+        private void set_199_Separator_Step(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Separator)instance;
             that.Step = (global::System.Double)Value;
         }
-        private object get_214_Separator_Chart(object instance)
+        private object get_200_Separator_Chart(object instance)
         {
             var that = (global::LiveCharts.Uwp.Separator)instance;
             return that.Chart;
         }
-        private void set_214_Separator_Chart(object instance, object Value)
+        private void set_200_Separator_Chart(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Separator)instance;
             that.Chart = (global::LiveCharts.Charts.ChartCore)Value;
         }
-        private object get_215_Separator_Stroke(object instance)
+        private object get_201_Separator_Stroke(object instance)
         {
             var that = (global::LiveCharts.Uwp.Separator)instance;
             return that.Stroke;
         }
-        private void set_215_Separator_Stroke(object instance, object Value)
+        private void set_201_Separator_Stroke(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Separator)instance;
             that.Stroke = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_216_Separator_StrokeThickness(object instance)
+        private object get_202_Separator_StrokeThickness(object instance)
         {
             var that = (global::LiveCharts.Uwp.Separator)instance;
             return that.StrokeThickness;
         }
-        private void set_216_Separator_StrokeThickness(object instance, object Value)
+        private void set_202_Separator_StrokeThickness(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Separator)instance;
             that.StrokeThickness = (global::System.Double)Value;
         }
-        private object get_217_Separator_StrokeDashArray(object instance)
+        private object get_203_Separator_StrokeDashArray(object instance)
         {
             var that = (global::LiveCharts.Uwp.Separator)instance;
             return that.StrokeDashArray;
         }
-        private void set_217_Separator_StrokeDashArray(object instance, object Value)
+        private void set_203_Separator_StrokeDashArray(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Separator)instance;
             that.StrokeDashArray = (global::Windows.UI.Xaml.Media.DoubleCollection)Value;
         }
-        private object get_218_Separator_AxisOrientation(object instance)
+        private object get_204_Separator_AxisOrientation(object instance)
         {
             var that = (global::LiveCharts.Uwp.Separator)instance;
             return that.AxisOrientation;
         }
-        private object get_219_realTimeMeasure_ChartValues(object instance)
+        private object get_205_realTimeMeasure_ChartValues(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             return that.ChartValues;
         }
-        private void set_219_realTimeMeasure_ChartValues(object instance, object Value)
+        private void set_205_realTimeMeasure_ChartValues(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             that.ChartValues = (global::LiveCharts.ChartValues<global::GuzzlerMobileApp.views.MeasureModel>)Value;
         }
-        private object get_220_MeasureModel_DateTime(object instance)
+        private object get_206_MeasureModel_DateTime(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.MeasureModel)instance;
             return that.DateTime;
         }
-        private void set_220_MeasureModel_DateTime(object instance, object Value)
+        private void set_206_MeasureModel_DateTime(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.MeasureModel)instance;
             that.DateTime = (global::System.DateTime)Value;
         }
-        private object get_221_MeasureModel_Value(object instance)
+        private object get_207_MeasureModel_Value(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.MeasureModel)instance;
             return that.Value;
         }
-        private void set_221_MeasureModel_Value(object instance, object Value)
+        private void set_207_MeasureModel_Value(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.MeasureModel)instance;
             that.Value = (global::System.Double)Value;
         }
-        private object get_222_realTimeMeasure_DateTimeFormatter(object instance)
+        private object get_208_realTimeMeasure_DateTimeFormatter(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             return that.DateTimeFormatter;
         }
-        private void set_222_realTimeMeasure_DateTimeFormatter(object instance, object Value)
+        private void set_208_realTimeMeasure_DateTimeFormatter(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             that.DateTimeFormatter = (global::System.Func<global::System.Double, global::System.String>)Value;
         }
-        private object get_223_realTimeMeasure_AxisStep(object instance)
+        private object get_209_realTimeMeasure_AxisStep(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             return that.AxisStep;
         }
-        private void set_223_realTimeMeasure_AxisStep(object instance, object Value)
+        private void set_209_realTimeMeasure_AxisStep(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             that.AxisStep = (global::System.Double)Value;
         }
-        private object get_224_realTimeMeasure_AxisMax(object instance)
+        private object get_210_realTimeMeasure_AxisMax(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             return that.AxisMax;
         }
-        private void set_224_realTimeMeasure_AxisMax(object instance, object Value)
+        private void set_210_realTimeMeasure_AxisMax(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             that.AxisMax = (global::System.Double)Value;
         }
-        private object get_225_realTimeMeasure_AxisMin(object instance)
+        private object get_211_realTimeMeasure_AxisMin(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             return that.AxisMin;
         }
-        private void set_225_realTimeMeasure_AxisMin(object instance, object Value)
+        private void set_211_realTimeMeasure_AxisMin(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             that.AxisMin = (global::System.Double)Value;
         }
-        private object get_226_realTimeMeasure_Timer(object instance)
+        private object get_212_realTimeMeasure_Timer(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             return that.Timer;
         }
-        private void set_226_realTimeMeasure_Timer(object instance, object Value)
+        private void set_212_realTimeMeasure_Timer(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             that.Timer = (global::Windows.UI.Xaml.DispatcherTimer)Value;
         }
-        private object get_227_realTimeMeasure_IsDataInjectionRunning(object instance)
+        private object get_213_realTimeMeasure_IsDataInjectionRunning(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             return that.IsDataInjectionRunning;
         }
-        private void set_227_realTimeMeasure_IsDataInjectionRunning(object instance, object Value)
+        private void set_213_realTimeMeasure_IsDataInjectionRunning(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             that.IsDataInjectionRunning = (global::System.Boolean)Value;
         }
-        private object get_228_realTimeMeasure_R(object instance)
+        private object get_214_realTimeMeasure_R(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             return that.R;
         }
-        private void set_228_realTimeMeasure_R(object instance, object Value)
+        private void set_214_realTimeMeasure_R(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.realTimeMeasure)instance;
             that.R = (global::System.Random)Value;
         }
-        private object get_229_realTimePower_DevName(object instance)
+        private object get_215_realTimePower_DevName(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.realTimePower)instance;
             return that.DevName;
         }
-        private object get_230_realTimePower_RealTimeViewLink(object instance)
+        private object get_216_realTimePower_RealTimeViewLink(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.realTimePower)instance;
             return that.RealTimeViewLink;
         }
-        private object get_231_regDev_DevName(object instance)
+        private object get_217_regDev_DevName(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.regDev)instance;
             return that.DevName;
         }
-        private void set_231_regDev_DevName(object instance, object Value)
+        private void set_217_regDev_DevName(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.regDev)instance;
             that.DevName = (global::System.String)Value;
         }
-        private object get_232_regDev_Manufacturer(object instance)
+        private object get_218_regDev_Manufacturer(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.regDev)instance;
             return that.Manufacturer;
         }
-        private void set_232_regDev_Manufacturer(object instance, object Value)
+        private void set_218_regDev_Manufacturer(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.regDev)instance;
             that.Manufacturer = (global::System.String)Value;
         }
-        private object get_233_regDev_GuzzlerId(object instance)
+        private object get_219_regDev_GuzzlerId(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.regDev)instance;
             return that.GuzzlerId;
         }
-        private void set_233_regDev_GuzzlerId(object instance, object Value)
+        private void set_219_regDev_GuzzlerId(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.regDev)instance;
             that.GuzzlerId = (global::System.String)Value;
         }
-        private object get_234_regDev_DevType(object instance)
+        private object get_220_regDev_DevType(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.regDev)instance;
             return that.DevType;
         }
-        private void set_234_regDev_DevType(object instance, object Value)
+        private void set_220_regDev_DevType(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.regDev)instance;
             that.DevType = (global::System.String)Value;
         }
-        private object get_235_regDev_Model(object instance)
+        private object get_221_regDev_Model(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.regDev)instance;
             return that.Model;
         }
-        private void set_235_regDev_Model(object instance, object Value)
+        private void set_221_regDev_Model(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.regDev)instance;
             that.Model = (global::System.String)Value;
         }
-        private object get_236_regDev_Serial(object instance)
+        private object get_222_regDev_Serial(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.regDev)instance;
             return that.Serial;
         }
-        private void set_236_regDev_Serial(object instance, object Value)
+        private void set_222_regDev_Serial(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.regDev)instance;
             that.Serial = (global::System.String)Value;
         }
-        private object get_237_specialDev_DeviceName(object instance)
+        private object get_223_specialDev_DeviceName(object instance)
         {
             var that = (global::GuzzlerMobileApp.views.specialDev)instance;
             return that.DeviceName;
         }
-        private object get_238_PieSlice_Radius(object instance)
+        private object get_224_PieSlice_Radius(object instance)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             return that.Radius;
         }
-        private void set_238_PieSlice_Radius(object instance, object Value)
+        private void set_224_PieSlice_Radius(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             that.Radius = (global::System.Double)Value;
         }
-        private object get_239_PieSlice_PushOut(object instance)
+        private object get_225_PieSlice_PushOut(object instance)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             return that.PushOut;
         }
-        private void set_239_PieSlice_PushOut(object instance, object Value)
+        private void set_225_PieSlice_PushOut(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             that.PushOut = (global::System.Double)Value;
         }
-        private object get_240_PieSlice_InnerRadius(object instance)
+        private object get_226_PieSlice_InnerRadius(object instance)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             return that.InnerRadius;
         }
-        private void set_240_PieSlice_InnerRadius(object instance, object Value)
+        private void set_226_PieSlice_InnerRadius(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             that.InnerRadius = (global::System.Double)Value;
         }
-        private object get_241_PieSlice_WedgeAngle(object instance)
+        private object get_227_PieSlice_WedgeAngle(object instance)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             return that.WedgeAngle;
         }
-        private void set_241_PieSlice_WedgeAngle(object instance, object Value)
+        private void set_227_PieSlice_WedgeAngle(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             that.WedgeAngle = (global::System.Double)Value;
         }
-        private object get_242_PieSlice_RotationAngle(object instance)
+        private object get_228_PieSlice_RotationAngle(object instance)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             return that.RotationAngle;
         }
-        private void set_242_PieSlice_RotationAngle(object instance, object Value)
+        private void set_228_PieSlice_RotationAngle(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             that.RotationAngle = (global::System.Double)Value;
         }
-        private object get_243_PieSlice_XOffset(object instance)
+        private object get_229_PieSlice_XOffset(object instance)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             return that.XOffset;
         }
-        private void set_243_PieSlice_XOffset(object instance, object Value)
+        private void set_229_PieSlice_XOffset(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             that.XOffset = (global::System.Double)Value;
         }
-        private object get_244_PieSlice_YOffset(object instance)
+        private object get_230_PieSlice_YOffset(object instance)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             return that.YOffset;
         }
-        private void set_244_PieSlice_YOffset(object instance, object Value)
+        private void set_230_PieSlice_YOffset(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             that.YOffset = (global::System.Double)Value;
         }
-        private object get_245_PieSlice_Percentage(object instance)
+        private object get_231_PieSlice_Percentage(object instance)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             return that.Percentage;
         }
-        private object get_246_PieSlice_PieceValue(object instance)
+        private object get_232_PieSlice_PieceValue(object instance)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             return that.PieceValue;
         }
-        private void set_246_PieSlice_PieceValue(object instance, object Value)
+        private void set_232_PieSlice_PieceValue(object instance, object Value)
         {
             var that = (global::LiveCharts.Uwp.Points.PieSlice)instance;
             that.PieceValue = (global::System.Double)Value;
@@ -4999,640 +4846,547 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlMember.Getter = get_148_piePowerItem_Val;
                 xamlMember.Setter = set_148_piePowerItem_Val;
                 break;
-            case "GuzzlerMobileApp.views.dailyPie.DevPower":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.dailyPie");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevPower", "String");
-                xamlMember.Getter = get_149_dailyPie_DevPower;
-                xamlMember.SetIsReadOnly();
-                break;
             case "GuzzlerMobileApp.views.dailyPie.DevGuzzeled":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.dailyPie");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevGuzzeled", "String");
-                xamlMember.Getter = get_150_dailyPie_DevGuzzeled;
+                xamlMember.Getter = get_149_dailyPie_DevGuzzeled;
                 xamlMember.SetIsReadOnly();
+                break;
+            case "GuzzlerMobileApp.views.deviceDetails.DevName":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevName", "String");
+                xamlMember.Getter = get_150_deviceDetails_DevName;
+                xamlMember.Setter = set_150_deviceDetails_DevName;
+                break;
+            case "GuzzlerMobileApp.views.deviceDetails.Manufacturer":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Manufacturer", "String");
+                xamlMember.Getter = get_151_deviceDetails_Manufacturer;
+                xamlMember.Setter = set_151_deviceDetails_Manufacturer;
+                break;
+            case "GuzzlerMobileApp.views.deviceDetails.GuzzlerId":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "GuzzlerId", "String");
+                xamlMember.Getter = get_152_deviceDetails_GuzzlerId;
+                xamlMember.Setter = set_152_deviceDetails_GuzzlerId;
+                break;
+            case "GuzzlerMobileApp.views.deviceDetails.DevType":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevType", "String");
+                xamlMember.Getter = get_153_deviceDetails_DevType;
+                xamlMember.Setter = set_153_deviceDetails_DevType;
+                break;
+            case "GuzzlerMobileApp.views.deviceDetails.Model":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Model", "String");
+                xamlMember.Getter = get_154_deviceDetails_Model;
+                xamlMember.Setter = set_154_deviceDetails_Model;
+                break;
+            case "GuzzlerMobileApp.views.deviceDetails.Serial":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Serial", "String");
+                xamlMember.Getter = get_155_deviceDetails_Serial;
+                xamlMember.Setter = set_155_deviceDetails_Serial;
+                break;
+            case "GuzzlerMobileApp.views.deviceDetails.TimeCreated":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "TimeCreated", "String");
+                xamlMember.Getter = get_156_deviceDetails_TimeCreated;
+                xamlMember.Setter = set_156_deviceDetails_TimeCreated;
+                break;
+            case "GuzzlerMobileApp.views.devices.IsNextEnabled":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.devices");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "IsNextEnabled", "Boolean");
+                xamlMember.Getter = get_157_devices_IsNextEnabled;
+                xamlMember.Setter = set_157_devices_IsNextEnabled;
+                break;
+            case "GuzzlerMobileApp.views.devices.ChosenDev":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.devices");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "ChosenDev", "String");
+                xamlMember.Getter = get_158_devices_ChosenDev;
+                xamlMember.Setter = set_158_devices_ChosenDev;
+                break;
+            case "GuzzlerMobileApp.views.devices.DevToRemove":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.devices");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevToRemove", "String");
+                xamlMember.Getter = get_159_devices_DevToRemove;
+                xamlMember.Setter = set_159_devices_DevToRemove;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>.DependentRangeAxis":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DependentRangeAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_151_ColumnBarBaseSeries_DependentRangeAxis;
-                xamlMember.Setter = set_151_ColumnBarBaseSeries_DependentRangeAxis;
+                xamlMember.Getter = get_160_ColumnBarBaseSeries_DependentRangeAxis;
+                xamlMember.Setter = set_160_ColumnBarBaseSeries_DependentRangeAxis;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>.IndependentAxis":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "IndependentAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_152_ColumnBarBaseSeries_IndependentAxis;
-                xamlMember.Setter = set_152_ColumnBarBaseSeries_IndependentAxis;
+                xamlMember.Getter = get_161_ColumnBarBaseSeries_IndependentAxis;
+                xamlMember.Setter = set_161_ColumnBarBaseSeries_IndependentAxis;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>.ActualDependentRangeAxis":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "ActualDependentRangeAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis");
-                xamlMember.Getter = get_153_ColumnBarBaseSeries_ActualDependentRangeAxis;
+                xamlMember.Getter = get_162_ColumnBarBaseSeries_ActualDependentRangeAxis;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>.ActualIndependentAxis":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "ActualIndependentAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
-                xamlMember.Getter = get_154_ColumnBarBaseSeries_ActualIndependentAxis;
+                xamlMember.Getter = get_163_ColumnBarBaseSeries_ActualIndependentAxis;
                 xamlMember.SetIsReadOnly();
-                break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint.IsSelectionEnabled":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "IsSelectionEnabled", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_155_DataPoint_IsSelectionEnabled;
-                xamlMember.Setter = set_155_DataPoint_IsSelectionEnabled;
-                break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint.ActualDependentValue":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "ActualDependentValue", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_156_DataPoint_ActualDependentValue;
-                xamlMember.Setter = set_156_DataPoint_ActualDependentValue;
-                break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint.DependentValue":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DependentValue", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_157_DataPoint_DependentValue;
-                xamlMember.Setter = set_157_DataPoint_DependentValue;
-                break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint.DependentValueStringFormat":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DependentValueStringFormat", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_158_DataPoint_DependentValueStringFormat;
-                xamlMember.Setter = set_158_DataPoint_DependentValueStringFormat;
-                break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint.FormattedDependentValue":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "FormattedDependentValue", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_159_DataPoint_FormattedDependentValue;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint.FormattedIndependentValue":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "FormattedIndependentValue", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_160_DataPoint_FormattedIndependentValue;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint.IndependentValue":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "IndependentValue", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_161_DataPoint_IndependentValue;
-                xamlMember.Setter = set_161_DataPoint_IndependentValue;
-                break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint.IndependentValueStringFormat":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "IndependentValueStringFormat", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_162_DataPoint_IndependentValueStringFormat;
-                xamlMember.Setter = set_162_DataPoint_IndependentValueStringFormat;
-                break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint.ActualIndependentValue":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPoint");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "ActualIndependentValue", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_163_DataPoint_ActualIndependentValue;
-                xamlMember.Setter = set_163_DataPoint_ActualIndependentValue;
-                break;
-            case "GuzzlerMobileApp.views.dayLog.DevName":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.dayLog");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevName", "String");
-                xamlMember.Getter = get_164_dayLog_DevName;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "GuzzlerMobileApp.views.dayLog.Date":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.dayLog");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Date", "String");
-                xamlMember.Getter = get_165_dayLog_Date;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "GuzzlerMobileApp.views.dayLog.maxTimeVal":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.dayLog");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "maxTimeVal", "System.DateTime");
-                xamlMember.Getter = get_166_dayLog_maxTimeVal;
-                xamlMember.Setter = set_166_dayLog_maxTimeVal;
-                break;
-            case "GuzzlerMobileApp.views.dayLog.minTimeVal":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.dayLog");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "minTimeVal", "System.DateTime");
-                xamlMember.Getter = get_167_dayLog_minTimeVal;
-                xamlMember.Setter = set_167_dayLog_minTimeVal;
-                break;
-            case "GuzzlerMobileApp.views.deviceDetails.DevName":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevName", "String");
-                xamlMember.Getter = get_168_deviceDetails_DevName;
-                xamlMember.Setter = set_168_deviceDetails_DevName;
-                break;
-            case "GuzzlerMobileApp.views.deviceDetails.Manufacturer":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Manufacturer", "String");
-                xamlMember.Getter = get_169_deviceDetails_Manufacturer;
-                xamlMember.Setter = set_169_deviceDetails_Manufacturer;
-                break;
-            case "GuzzlerMobileApp.views.deviceDetails.GuzzlerId":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "GuzzlerId", "String");
-                xamlMember.Getter = get_170_deviceDetails_GuzzlerId;
-                xamlMember.Setter = set_170_deviceDetails_GuzzlerId;
-                break;
-            case "GuzzlerMobileApp.views.deviceDetails.DevType":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevType", "String");
-                xamlMember.Getter = get_171_deviceDetails_DevType;
-                xamlMember.Setter = set_171_deviceDetails_DevType;
-                break;
-            case "GuzzlerMobileApp.views.deviceDetails.Model":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Model", "String");
-                xamlMember.Getter = get_172_deviceDetails_Model;
-                xamlMember.Setter = set_172_deviceDetails_Model;
-                break;
-            case "GuzzlerMobileApp.views.deviceDetails.Serial":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Serial", "String");
-                xamlMember.Getter = get_173_deviceDetails_Serial;
-                xamlMember.Setter = set_173_deviceDetails_Serial;
-                break;
-            case "GuzzlerMobileApp.views.deviceDetails.TimeCreated":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.deviceDetails");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "TimeCreated", "String");
-                xamlMember.Getter = get_174_deviceDetails_TimeCreated;
-                xamlMember.Setter = set_174_deviceDetails_TimeCreated;
-                break;
-            case "GuzzlerMobileApp.views.devices.IsNextEnabled":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.devices");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "IsNextEnabled", "Boolean");
-                xamlMember.Getter = get_175_devices_IsNextEnabled;
-                xamlMember.Setter = set_175_devices_IsNextEnabled;
-                break;
-            case "GuzzlerMobileApp.views.devices.ChosenDev":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.devices");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "ChosenDev", "String");
-                xamlMember.Getter = get_176_devices_ChosenDev;
-                xamlMember.Setter = set_176_devices_ChosenDev;
-                break;
-            case "GuzzlerMobileApp.views.devices.DevToRemove":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.devices");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevToRemove", "String");
-                xamlMember.Getter = get_177_devices_DevToRemove;
-                xamlMember.Setter = set_177_devices_DevToRemove;
                 break;
             case "GuzzlerMobileApp.views.estimatedCost.DevName":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.estimatedCost");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevName", "String");
-                xamlMember.Getter = get_178_estimatedCost_DevName;
+                xamlMember.Getter = get_164_estimatedCost_DevName;
                 xamlMember.SetIsReadOnly();
                 break;
             case "GuzzlerMobileApp.views.estimatedCost.Tariff":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.estimatedCost");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Tariff", "String");
-                xamlMember.Getter = get_179_estimatedCost_Tariff;
+                xamlMember.Getter = get_165_estimatedCost_Tariff;
                 xamlMember.SetIsReadOnly();
                 break;
             case "GuzzlerMobileApp.views.historyLog.DevName":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.historyLog");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevName", "String");
-                xamlMember.Getter = get_180_historyLog_DevName;
+                xamlMember.Getter = get_166_historyLog_DevName;
                 xamlMember.SetIsReadOnly();
                 break;
             case "GuzzlerMobileApp.views.message.Result":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.message");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Result", "GuzzlerMobileApp.views.MyResult");
-                xamlMember.Getter = get_181_message_Result;
-                xamlMember.Setter = set_181_message_Result;
+                xamlMember.Getter = get_167_message_Result;
+                xamlMember.Setter = set_167_message_Result;
                 break;
             case "GuzzlerMobileApp.views.message.mTitle":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.message");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "mTitle", "String");
-                xamlMember.Getter = get_182_message_mTitle;
-                xamlMember.Setter = set_182_message_mTitle;
+                xamlMember.Getter = get_168_message_mTitle;
+                xamlMember.Setter = set_168_message_mTitle;
                 break;
             case "GuzzlerMobileApp.views.message.Msg":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.message");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Msg", "String");
-                xamlMember.Getter = get_183_message_Msg;
-                xamlMember.Setter = set_183_message_Msg;
+                xamlMember.Getter = get_169_message_Msg;
+                xamlMember.Setter = set_169_message_Msg;
                 break;
             case "GuzzlerMobileApp.views.PointShapeLineExample.SeriesCollection":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.PointShapeLineExample");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "SeriesCollection", "LiveCharts.SeriesCollection");
-                xamlMember.Getter = get_184_PointShapeLineExample_SeriesCollection;
-                xamlMember.Setter = set_184_PointShapeLineExample_SeriesCollection;
+                xamlMember.Getter = get_170_PointShapeLineExample_SeriesCollection;
+                xamlMember.Setter = set_170_PointShapeLineExample_SeriesCollection;
                 break;
             case "GuzzlerMobileApp.views.PointShapeLineExample.Labels":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.PointShapeLineExample");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Labels", "String[]");
-                xamlMember.Getter = get_185_PointShapeLineExample_Labels;
-                xamlMember.Setter = set_185_PointShapeLineExample_Labels;
+                xamlMember.Getter = get_171_PointShapeLineExample_Labels;
+                xamlMember.Setter = set_171_PointShapeLineExample_Labels;
                 break;
             case "GuzzlerMobileApp.views.PointShapeLineExample.YFormatter":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.PointShapeLineExample");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "YFormatter", "System.Func`2<Double, String>");
-                xamlMember.Getter = get_186_PointShapeLineExample_YFormatter;
-                xamlMember.Setter = set_186_PointShapeLineExample_YFormatter;
+                xamlMember.Getter = get_172_PointShapeLineExample_YFormatter;
+                xamlMember.Setter = set_172_PointShapeLineExample_YFormatter;
                 break;
             case "LiveCharts.Uwp.Series.Values":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Values", "LiveCharts.IChartValues");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_187_Series_Values;
-                xamlMember.Setter = set_187_Series_Values;
+                xamlMember.Getter = get_173_Series_Values;
+                xamlMember.Setter = set_173_Series_Values;
                 break;
             case "LiveCharts.Uwp.LineSeries.PointGeometrySize":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.LineSeries");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "PointGeometrySize", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_188_LineSeries_PointGeometrySize;
-                xamlMember.Setter = set_188_LineSeries_PointGeometrySize;
+                xamlMember.Getter = get_174_LineSeries_PointGeometrySize;
+                xamlMember.Setter = set_174_LineSeries_PointGeometrySize;
                 break;
             case "LiveCharts.Uwp.Series.StrokeThickness":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "StrokeThickness", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_189_Series_StrokeThickness;
-                xamlMember.Setter = set_189_Series_StrokeThickness;
+                xamlMember.Getter = get_175_Series_StrokeThickness;
+                xamlMember.Setter = set_175_Series_StrokeThickness;
                 break;
             case "LiveCharts.Uwp.LineSeries.PointForeround":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.LineSeries");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "PointForeround", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_190_LineSeries_PointForeround;
-                xamlMember.Setter = set_190_LineSeries_PointForeround;
+                xamlMember.Getter = get_176_LineSeries_PointForeround;
+                xamlMember.Setter = set_176_LineSeries_PointForeround;
                 break;
             case "LiveCharts.Uwp.LineSeries.LineSmoothness":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.LineSeries");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "LineSmoothness", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_191_LineSeries_LineSmoothness;
-                xamlMember.Setter = set_191_LineSeries_LineSmoothness;
+                xamlMember.Getter = get_177_LineSeries_LineSmoothness;
+                xamlMember.Setter = set_177_LineSeries_LineSmoothness;
                 break;
             case "LiveCharts.Uwp.LineSeries.AreaLimit":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.LineSeries");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "AreaLimit", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_192_LineSeries_AreaLimit;
-                xamlMember.Setter = set_192_LineSeries_AreaLimit;
+                xamlMember.Getter = get_178_LineSeries_AreaLimit;
+                xamlMember.Setter = set_178_LineSeries_AreaLimit;
                 break;
             case "LiveCharts.Uwp.Series.Model":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Model", "LiveCharts.SeriesAlgorithm");
-                xamlMember.Getter = get_193_Series_Model;
-                xamlMember.Setter = set_193_Series_Model;
+                xamlMember.Getter = get_179_Series_Model;
+                xamlMember.Setter = set_179_Series_Model;
                 break;
             case "LiveCharts.Uwp.Series.ActualValues":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "ActualValues", "LiveCharts.IChartValues");
-                xamlMember.Getter = get_194_Series_ActualValues;
+                xamlMember.Getter = get_180_Series_ActualValues;
                 xamlMember.SetIsReadOnly();
                 break;
             case "LiveCharts.Uwp.Series.IsSeriesVisible":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "IsSeriesVisible", "Boolean");
-                xamlMember.Getter = get_195_Series_IsSeriesVisible;
+                xamlMember.Getter = get_181_Series_IsSeriesVisible;
                 xamlMember.SetIsReadOnly();
                 break;
             case "LiveCharts.Uwp.Series.ChartPoints":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "ChartPoints", "System.Collections.Generic.IEnumerable`1<LiveCharts.ChartPoint>");
-                xamlMember.Getter = get_196_Series_ChartPoints;
+                xamlMember.Getter = get_182_Series_ChartPoints;
                 xamlMember.SetIsReadOnly();
                 break;
             case "LiveCharts.Uwp.Series.Title":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Title", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_197_Series_Title;
-                xamlMember.Setter = set_197_Series_Title;
+                xamlMember.Getter = get_183_Series_Title;
+                xamlMember.Setter = set_183_Series_Title;
                 break;
             case "LiveCharts.Uwp.Series.Stroke":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Stroke", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_198_Series_Stroke;
-                xamlMember.Setter = set_198_Series_Stroke;
+                xamlMember.Getter = get_184_Series_Stroke;
+                xamlMember.Setter = set_184_Series_Stroke;
                 break;
             case "LiveCharts.Uwp.Series.Fill":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Fill", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_199_Series_Fill;
-                xamlMember.Setter = set_199_Series_Fill;
+                xamlMember.Getter = get_185_Series_Fill;
+                xamlMember.Setter = set_185_Series_Fill;
                 break;
             case "LiveCharts.Uwp.Series.DataLabels":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DataLabels", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_200_Series_DataLabels;
-                xamlMember.Setter = set_200_Series_DataLabels;
+                xamlMember.Getter = get_186_Series_DataLabels;
+                xamlMember.Setter = set_186_Series_DataLabels;
                 break;
             case "LiveCharts.Uwp.Series.FontFamily":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "FontFamily", "Windows.UI.Xaml.Media.FontFamily");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_201_Series_FontFamily;
-                xamlMember.Setter = set_201_Series_FontFamily;
+                xamlMember.Getter = get_187_Series_FontFamily;
+                xamlMember.Setter = set_187_Series_FontFamily;
                 break;
             case "LiveCharts.Uwp.Series.FontSize":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "FontSize", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_202_Series_FontSize;
-                xamlMember.Setter = set_202_Series_FontSize;
+                xamlMember.Getter = get_188_Series_FontSize;
+                xamlMember.Setter = set_188_Series_FontSize;
                 break;
             case "LiveCharts.Uwp.Series.FontWeight":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "FontWeight", "Windows.UI.Text.FontWeight");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_203_Series_FontWeight;
-                xamlMember.Setter = set_203_Series_FontWeight;
+                xamlMember.Getter = get_189_Series_FontWeight;
+                xamlMember.Setter = set_189_Series_FontWeight;
                 break;
             case "LiveCharts.Uwp.Series.FontStyle":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "FontStyle", "Windows.UI.Text.FontStyle");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_204_Series_FontStyle;
-                xamlMember.Setter = set_204_Series_FontStyle;
+                xamlMember.Getter = get_190_Series_FontStyle;
+                xamlMember.Setter = set_190_Series_FontStyle;
                 break;
             case "LiveCharts.Uwp.Series.FontStretch":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "FontStretch", "Windows.UI.Text.FontStretch");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_205_Series_FontStretch;
-                xamlMember.Setter = set_205_Series_FontStretch;
+                xamlMember.Getter = get_191_Series_FontStretch;
+                xamlMember.Setter = set_191_Series_FontStretch;
                 break;
             case "LiveCharts.Uwp.Series.Foreground":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Foreground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_206_Series_Foreground;
-                xamlMember.Setter = set_206_Series_Foreground;
+                xamlMember.Getter = get_192_Series_Foreground;
+                xamlMember.Setter = set_192_Series_Foreground;
                 break;
             case "LiveCharts.Uwp.Series.StrokeDashArray":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "StrokeDashArray", "Windows.UI.Xaml.Media.DoubleCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_207_Series_StrokeDashArray;
-                xamlMember.Setter = set_207_Series_StrokeDashArray;
+                xamlMember.Getter = get_193_Series_StrokeDashArray;
+                xamlMember.Setter = set_193_Series_StrokeDashArray;
                 break;
             case "LiveCharts.Uwp.Series.PointGeometry":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "PointGeometry", "LiveCharts.Uwp.PointGeometry");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_208_Series_PointGeometry;
-                xamlMember.Setter = set_208_Series_PointGeometry;
+                xamlMember.Getter = get_194_Series_PointGeometry;
+                xamlMember.Setter = set_194_Series_PointGeometry;
                 break;
             case "LiveCharts.Uwp.Series.ScalesXAt":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "ScalesXAt", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_209_Series_ScalesXAt;
-                xamlMember.Setter = set_209_Series_ScalesXAt;
+                xamlMember.Getter = get_195_Series_ScalesXAt;
+                xamlMember.Setter = set_195_Series_ScalesXAt;
                 break;
             case "LiveCharts.Uwp.Series.ScalesYAt":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "ScalesYAt", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_210_Series_ScalesYAt;
-                xamlMember.Setter = set_210_Series_ScalesYAt;
+                xamlMember.Getter = get_196_Series_ScalesYAt;
+                xamlMember.Setter = set_196_Series_ScalesYAt;
                 break;
             case "LiveCharts.Uwp.Series.LabelPoint":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "LabelPoint", "System.Func`2<LiveCharts.ChartPoint, String>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_211_Series_LabelPoint;
-                xamlMember.Setter = set_211_Series_LabelPoint;
+                xamlMember.Getter = get_197_Series_LabelPoint;
+                xamlMember.Setter = set_197_Series_LabelPoint;
                 break;
             case "LiveCharts.Uwp.Series.Configuration":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Series");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Configuration", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_212_Series_Configuration;
-                xamlMember.Setter = set_212_Series_Configuration;
+                xamlMember.Getter = get_198_Series_Configuration;
+                xamlMember.Setter = set_198_Series_Configuration;
                 break;
             case "LiveCharts.Uwp.Separator.Step":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Separator");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Step", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_213_Separator_Step;
-                xamlMember.Setter = set_213_Separator_Step;
+                xamlMember.Getter = get_199_Separator_Step;
+                xamlMember.Setter = set_199_Separator_Step;
                 break;
             case "LiveCharts.Uwp.Separator.Chart":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Separator");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Chart", "LiveCharts.Charts.ChartCore");
-                xamlMember.Getter = get_214_Separator_Chart;
-                xamlMember.Setter = set_214_Separator_Chart;
+                xamlMember.Getter = get_200_Separator_Chart;
+                xamlMember.Setter = set_200_Separator_Chart;
                 break;
             case "LiveCharts.Uwp.Separator.Stroke":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Separator");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Stroke", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_215_Separator_Stroke;
-                xamlMember.Setter = set_215_Separator_Stroke;
+                xamlMember.Getter = get_201_Separator_Stroke;
+                xamlMember.Setter = set_201_Separator_Stroke;
                 break;
             case "LiveCharts.Uwp.Separator.StrokeThickness":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Separator");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "StrokeThickness", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_216_Separator_StrokeThickness;
-                xamlMember.Setter = set_216_Separator_StrokeThickness;
+                xamlMember.Getter = get_202_Separator_StrokeThickness;
+                xamlMember.Setter = set_202_Separator_StrokeThickness;
                 break;
             case "LiveCharts.Uwp.Separator.StrokeDashArray":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Separator");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "StrokeDashArray", "Windows.UI.Xaml.Media.DoubleCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_217_Separator_StrokeDashArray;
-                xamlMember.Setter = set_217_Separator_StrokeDashArray;
+                xamlMember.Getter = get_203_Separator_StrokeDashArray;
+                xamlMember.Setter = set_203_Separator_StrokeDashArray;
                 break;
             case "LiveCharts.Uwp.Separator.AxisOrientation":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Separator");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "AxisOrientation", "LiveCharts.AxisOrientation");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_218_Separator_AxisOrientation;
+                xamlMember.Getter = get_204_Separator_AxisOrientation;
                 xamlMember.SetIsReadOnly();
                 break;
             case "GuzzlerMobileApp.views.realTimeMeasure.ChartValues":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.realTimeMeasure");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "ChartValues", "LiveCharts.ChartValues`1<GuzzlerMobileApp.views.MeasureModel>");
-                xamlMember.Getter = get_219_realTimeMeasure_ChartValues;
-                xamlMember.Setter = set_219_realTimeMeasure_ChartValues;
+                xamlMember.Getter = get_205_realTimeMeasure_ChartValues;
+                xamlMember.Setter = set_205_realTimeMeasure_ChartValues;
                 break;
             case "GuzzlerMobileApp.views.MeasureModel.DateTime":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.MeasureModel");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DateTime", "System.DateTime");
-                xamlMember.Getter = get_220_MeasureModel_DateTime;
-                xamlMember.Setter = set_220_MeasureModel_DateTime;
+                xamlMember.Getter = get_206_MeasureModel_DateTime;
+                xamlMember.Setter = set_206_MeasureModel_DateTime;
                 break;
             case "GuzzlerMobileApp.views.MeasureModel.Value":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.MeasureModel");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Value", "Double");
-                xamlMember.Getter = get_221_MeasureModel_Value;
-                xamlMember.Setter = set_221_MeasureModel_Value;
+                xamlMember.Getter = get_207_MeasureModel_Value;
+                xamlMember.Setter = set_207_MeasureModel_Value;
                 break;
             case "GuzzlerMobileApp.views.realTimeMeasure.DateTimeFormatter":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.realTimeMeasure");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DateTimeFormatter", "System.Func`2<Double, String>");
-                xamlMember.Getter = get_222_realTimeMeasure_DateTimeFormatter;
-                xamlMember.Setter = set_222_realTimeMeasure_DateTimeFormatter;
+                xamlMember.Getter = get_208_realTimeMeasure_DateTimeFormatter;
+                xamlMember.Setter = set_208_realTimeMeasure_DateTimeFormatter;
                 break;
             case "GuzzlerMobileApp.views.realTimeMeasure.AxisStep":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.realTimeMeasure");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "AxisStep", "Double");
-                xamlMember.Getter = get_223_realTimeMeasure_AxisStep;
-                xamlMember.Setter = set_223_realTimeMeasure_AxisStep;
+                xamlMember.Getter = get_209_realTimeMeasure_AxisStep;
+                xamlMember.Setter = set_209_realTimeMeasure_AxisStep;
                 break;
             case "GuzzlerMobileApp.views.realTimeMeasure.AxisMax":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.realTimeMeasure");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "AxisMax", "Double");
-                xamlMember.Getter = get_224_realTimeMeasure_AxisMax;
-                xamlMember.Setter = set_224_realTimeMeasure_AxisMax;
+                xamlMember.Getter = get_210_realTimeMeasure_AxisMax;
+                xamlMember.Setter = set_210_realTimeMeasure_AxisMax;
                 break;
             case "GuzzlerMobileApp.views.realTimeMeasure.AxisMin":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.realTimeMeasure");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "AxisMin", "Double");
-                xamlMember.Getter = get_225_realTimeMeasure_AxisMin;
-                xamlMember.Setter = set_225_realTimeMeasure_AxisMin;
+                xamlMember.Getter = get_211_realTimeMeasure_AxisMin;
+                xamlMember.Setter = set_211_realTimeMeasure_AxisMin;
                 break;
             case "GuzzlerMobileApp.views.realTimeMeasure.Timer":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.realTimeMeasure");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Timer", "Windows.UI.Xaml.DispatcherTimer");
-                xamlMember.Getter = get_226_realTimeMeasure_Timer;
-                xamlMember.Setter = set_226_realTimeMeasure_Timer;
+                xamlMember.Getter = get_212_realTimeMeasure_Timer;
+                xamlMember.Setter = set_212_realTimeMeasure_Timer;
                 break;
             case "GuzzlerMobileApp.views.realTimeMeasure.IsDataInjectionRunning":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.realTimeMeasure");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "IsDataInjectionRunning", "Boolean");
-                xamlMember.Getter = get_227_realTimeMeasure_IsDataInjectionRunning;
-                xamlMember.Setter = set_227_realTimeMeasure_IsDataInjectionRunning;
+                xamlMember.Getter = get_213_realTimeMeasure_IsDataInjectionRunning;
+                xamlMember.Setter = set_213_realTimeMeasure_IsDataInjectionRunning;
                 break;
             case "GuzzlerMobileApp.views.realTimeMeasure.R":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.realTimeMeasure");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "R", "System.Random");
-                xamlMember.Getter = get_228_realTimeMeasure_R;
-                xamlMember.Setter = set_228_realTimeMeasure_R;
+                xamlMember.Getter = get_214_realTimeMeasure_R;
+                xamlMember.Setter = set_214_realTimeMeasure_R;
                 break;
             case "GuzzlerMobileApp.views.realTimePower.DevName":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.realTimePower");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevName", "String");
-                xamlMember.Getter = get_229_realTimePower_DevName;
+                xamlMember.Getter = get_215_realTimePower_DevName;
                 xamlMember.SetIsReadOnly();
                 break;
             case "GuzzlerMobileApp.views.realTimePower.RealTimeViewLink":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.realTimePower");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "RealTimeViewLink", "String");
-                xamlMember.Getter = get_230_realTimePower_RealTimeViewLink;
+                xamlMember.Getter = get_216_realTimePower_RealTimeViewLink;
                 xamlMember.SetIsReadOnly();
                 break;
             case "GuzzlerMobileApp.views.regDev.DevName":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.regDev");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevName", "String");
-                xamlMember.Getter = get_231_regDev_DevName;
-                xamlMember.Setter = set_231_regDev_DevName;
+                xamlMember.Getter = get_217_regDev_DevName;
+                xamlMember.Setter = set_217_regDev_DevName;
                 break;
             case "GuzzlerMobileApp.views.regDev.Manufacturer":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.regDev");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Manufacturer", "String");
-                xamlMember.Getter = get_232_regDev_Manufacturer;
-                xamlMember.Setter = set_232_regDev_Manufacturer;
+                xamlMember.Getter = get_218_regDev_Manufacturer;
+                xamlMember.Setter = set_218_regDev_Manufacturer;
                 break;
             case "GuzzlerMobileApp.views.regDev.GuzzlerId":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.regDev");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "GuzzlerId", "String");
-                xamlMember.Getter = get_233_regDev_GuzzlerId;
-                xamlMember.Setter = set_233_regDev_GuzzlerId;
+                xamlMember.Getter = get_219_regDev_GuzzlerId;
+                xamlMember.Setter = set_219_regDev_GuzzlerId;
                 break;
             case "GuzzlerMobileApp.views.regDev.DevType":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.regDev");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DevType", "String");
-                xamlMember.Getter = get_234_regDev_DevType;
-                xamlMember.Setter = set_234_regDev_DevType;
+                xamlMember.Getter = get_220_regDev_DevType;
+                xamlMember.Setter = set_220_regDev_DevType;
                 break;
             case "GuzzlerMobileApp.views.regDev.Model":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.regDev");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Model", "String");
-                xamlMember.Getter = get_235_regDev_Model;
-                xamlMember.Setter = set_235_regDev_Model;
+                xamlMember.Getter = get_221_regDev_Model;
+                xamlMember.Setter = set_221_regDev_Model;
                 break;
             case "GuzzlerMobileApp.views.regDev.Serial":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.regDev");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Serial", "String");
-                xamlMember.Getter = get_236_regDev_Serial;
-                xamlMember.Setter = set_236_regDev_Serial;
+                xamlMember.Getter = get_222_regDev_Serial;
+                xamlMember.Setter = set_222_regDev_Serial;
                 break;
             case "GuzzlerMobileApp.views.specialDev.DeviceName":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.specialDev");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "DeviceName", "String");
-                xamlMember.Getter = get_237_specialDev_DeviceName;
+                xamlMember.Getter = get_223_specialDev_DeviceName;
                 xamlMember.SetIsReadOnly();
                 break;
             case "LiveCharts.Uwp.Points.PieSlice.Radius":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Points.PieSlice");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Radius", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_238_PieSlice_Radius;
-                xamlMember.Setter = set_238_PieSlice_Radius;
+                xamlMember.Getter = get_224_PieSlice_Radius;
+                xamlMember.Setter = set_224_PieSlice_Radius;
                 break;
             case "LiveCharts.Uwp.Points.PieSlice.PushOut":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Points.PieSlice");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "PushOut", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_239_PieSlice_PushOut;
-                xamlMember.Setter = set_239_PieSlice_PushOut;
+                xamlMember.Getter = get_225_PieSlice_PushOut;
+                xamlMember.Setter = set_225_PieSlice_PushOut;
                 break;
             case "LiveCharts.Uwp.Points.PieSlice.InnerRadius":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Points.PieSlice");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "InnerRadius", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_240_PieSlice_InnerRadius;
-                xamlMember.Setter = set_240_PieSlice_InnerRadius;
+                xamlMember.Getter = get_226_PieSlice_InnerRadius;
+                xamlMember.Setter = set_226_PieSlice_InnerRadius;
                 break;
             case "LiveCharts.Uwp.Points.PieSlice.WedgeAngle":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Points.PieSlice");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "WedgeAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_241_PieSlice_WedgeAngle;
-                xamlMember.Setter = set_241_PieSlice_WedgeAngle;
+                xamlMember.Getter = get_227_PieSlice_WedgeAngle;
+                xamlMember.Setter = set_227_PieSlice_WedgeAngle;
                 break;
             case "LiveCharts.Uwp.Points.PieSlice.RotationAngle":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Points.PieSlice");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "RotationAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_242_PieSlice_RotationAngle;
-                xamlMember.Setter = set_242_PieSlice_RotationAngle;
+                xamlMember.Getter = get_228_PieSlice_RotationAngle;
+                xamlMember.Setter = set_228_PieSlice_RotationAngle;
                 break;
             case "LiveCharts.Uwp.Points.PieSlice.XOffset":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Points.PieSlice");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "XOffset", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_243_PieSlice_XOffset;
-                xamlMember.Setter = set_243_PieSlice_XOffset;
+                xamlMember.Getter = get_229_PieSlice_XOffset;
+                xamlMember.Setter = set_229_PieSlice_XOffset;
                 break;
             case "LiveCharts.Uwp.Points.PieSlice.YOffset":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Points.PieSlice");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "YOffset", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_244_PieSlice_YOffset;
-                xamlMember.Setter = set_244_PieSlice_YOffset;
+                xamlMember.Getter = get_230_PieSlice_YOffset;
+                xamlMember.Setter = set_230_PieSlice_YOffset;
                 break;
             case "LiveCharts.Uwp.Points.PieSlice.Percentage":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Points.PieSlice");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Percentage", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_245_PieSlice_Percentage;
+                xamlMember.Getter = get_231_PieSlice_Percentage;
                 xamlMember.SetIsReadOnly();
                 break;
             case "LiveCharts.Uwp.Points.PieSlice.PieceValue":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("LiveCharts.Uwp.Points.PieSlice");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "PieceValue", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_246_PieSlice_PieceValue;
-                xamlMember.Setter = set_246_PieSlice_PieceValue;
+                xamlMember.Getter = get_232_PieSlice_PieceValue;
+                xamlMember.Setter = set_232_PieSlice_PieceValue;
                 break;
             }
             return xamlMember;
