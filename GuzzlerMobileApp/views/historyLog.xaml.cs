@@ -1,10 +1,10 @@
-﻿using System;
+﻿using GuzzlerMobileApp.Common;
+using System;
 using System.Linq;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using static GuzzlerMobileApp.Common.deviceGraphAnalysis;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace GuzzlerMobileApp.views
 {
@@ -15,7 +15,7 @@ namespace GuzzlerMobileApp.views
         public string selectedDate;
         private DateTimeOffset date;
 
-
+        deviceGraphAnalysis analysis = new deviceGraphAnalysis();
 
 
         public historyLog(string name = null)
@@ -48,6 +48,13 @@ namespace GuzzlerMobileApp.views
                 showMSG.showOkMSG("NO INFO","Sorry, still can not look into the future!");
                 return;
             }
+            if (analysis.getPowerValuesForDate(date, DevName).Count == 0)
+            {
+                showMSG.showOkMSG("NO DATA", "Sorry, no data for this day.\nprobably "+DevName+" was off on "+ selectedDate);
+                return;
+            }
+
+
             //  Window.Current.Content = new dayLog(selectedDate, DevName, date);
             Window.Current.Content = new dailyLog(selectedDate, DevName, date);
             Window.Current.Activate();
