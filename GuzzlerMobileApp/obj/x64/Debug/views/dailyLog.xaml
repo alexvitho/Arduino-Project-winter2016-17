@@ -28,14 +28,14 @@
             <RowDefinition Height="0.7*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="4*" />
-            <RowDefinition Height="2*" />
+            <RowDefinition Height="1.2*" MinHeight="80"/>
             <RowDefinition Height="0.5*" />
         </Grid.RowDefinitions>
         <Grid Grid.Row="1" Grid.Column="1">
-            <TextBox x:ConnectionId='7' Style="{StaticResource TitleText}" FontSize="24"                                        FontWeight="Light" />
+            <TextBox x:ConnectionId='6' Style="{StaticResource TitleText}" FontSize="24"                                        FontWeight="Light" />
         </Grid>
         <Grid Grid.Row="2" Grid.Column="1">
-            <TextBox x:ConnectionId='6' Style="{StaticResource TitleText}" FontSize="24"                                      FontWeight="Light" />
+            <TextBox x:ConnectionId='5' Style="{StaticResource TitleText}" FontSize="24"                                      FontWeight="Light" />
         </Grid>
         <Grid Grid.Row="3" Grid.Column="1" >
             <TextBox Style="{StaticResource explanationText}" FontSize="17" Text="Daily Power Consumption kW/time" VerticalAlignment="Top" />
@@ -60,27 +60,23 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*" />
                     <RowDefinition Height="1*" />
-                    <RowDefinition Height="1*" />
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="2">
-                    <Button x:ConnectionId='5' Content="&lt; Back"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center"                          />
+                    <Button x:ConnectionId='4' Content="&lt; Back"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center"                          />
                 </Grid>
             </Grid>
             <Grid Grid.Row="5" Grid.Column="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*" />
                     <RowDefinition Height="1*" />
-                    <RowDefinition Height="1*" />
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0"  >
-                    <Button x:ConnectionId='4' Content="column chart"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center"                   />
+                    <Button x:ConnectionId='3' Content="column chart"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center"                   />
                 </Grid>
                 <Grid Grid.Row="1" >
-                    <Button x:ConnectionId='3' Content="Pie chart"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center"                   />
+                    <Button x:ConnectionId='2' Content="Pie chart"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center"                   />
                 </Grid>
-                <Grid Grid.Row="2" >
-                    <Button x:ConnectionId='2' Content="stats"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center"                          />
-                </Grid>
+                
             </Grid>
 
         </Grid>
