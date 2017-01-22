@@ -3,6 +3,7 @@ ExtendedSplash.xbf
 styles.xbf
 views\chartTry.xbf
 views\checkNow.xbf
+views\dailyLog.xbf
 views\dailyPie.xbf
 views\dayLog.xbf
 views\deviceDetails.xbf
@@ -10,6 +11,8 @@ views\devices.xbf
 views\estimatedCost.xbf
 views\historyLog.xbf
 views\message.xbf
+views\PointShapeLineExample .xbf
+views\realTimeMeasure.xbf
 views\realTimePower.xbf
 views\regDev.xbf
 views\specialDev.xbf

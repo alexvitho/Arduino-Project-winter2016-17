@@ -1,10 +1,4 @@
-﻿using GuzzlerMobileApp.DataModel;
-using GuzzlerMobileApp.views;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using GuzzlerMobileApp.views;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
@@ -30,6 +24,7 @@ namespace GuzzlerMobileApp.Common
             if (rootFrame == null)
             {
                 CurrentWin = Window.Current.Content = new devices();
+        //      CurrentWin = Window.Current.Content = new realTimeMeasure();
                 Window.Current.Activate();
 
             }

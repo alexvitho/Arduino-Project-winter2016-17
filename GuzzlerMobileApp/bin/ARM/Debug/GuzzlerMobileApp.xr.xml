@@ -6,7 +6,9 @@
     <RootPropertyPathName Name="DropDownOpenedHeight" />
     <RootPropertyPathName Name="Data2" />
     <RootPropertyPathName Name="Data1" />
+    <RootPropertyPathName Name="powerPartition" />
     <RootPropertyPathName Name="costData" />
+    <RootPropertyPathName Name="powerData" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -28,6 +30,9 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Resources" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="MaxWidth" />
       <RootMethod Name="GetColumnSpan" />
       <RootMethod Name="SetColumnSpan" />
       <RootMethod Name="GetRow" />
@@ -61,7 +66,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="HorizontalContentAlignment" />
-      <RootEvent Name="TextChanged" />
+      <RootProperty Name="VerticalContentAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
@@ -225,6 +230,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
       <RootProperty Name="MinHeight" />
+      <RootProperty Name="MaxHeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
       <RootProperty Name="States" />
@@ -381,14 +387,15 @@
       <RootProperty Name="FallbackValue" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.checkNow" />
-    <RootType FullName="GuzzlerMobileApp.views.dayLog" />
-    <RootType FullName="GuzzlerMobileApp.views.deviceDetails" />
-    <RootType FullName="GuzzlerMobileApp.views.devices" />
+    <RootType FullName="GuzzlerMobileApp.views.dailyPie" />
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="IndependentValuePath" />
       <RootProperty Name="DependentValuePath" />
     </RootType>
+    <RootType FullName="GuzzlerMobileApp.views.dayLog" />
+    <RootType FullName="GuzzlerMobileApp.views.deviceDetails" />
+    <RootType FullName="GuzzlerMobileApp.views.devices" />
     <RootType FullName="GuzzlerMobileApp.views.estimatedCost" />
     <RootType FullName="Windows.UI.Xaml.Controls.CalendarView">
       <RootProperty Name="HorizontalAlignment" />
@@ -412,8 +419,17 @@
       <RootEvent Name="SelectedDatesChanged" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.historyLog" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentDialog">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Title" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="GuzzlerMobileApp.views.message" />
     <RootType FullName="Windows.UI.Xaml.Controls.WebView">
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Source" />
     </RootType>

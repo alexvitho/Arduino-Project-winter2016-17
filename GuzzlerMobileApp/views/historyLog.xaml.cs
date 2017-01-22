@@ -48,7 +48,8 @@ namespace GuzzlerMobileApp.views
                 showMSG.showOkMSG("NO INFO","Sorry, still can not look into the future!");
                 return;
             }
-            Window.Current.Content = new dayLog(selectedDate, DevName, date);
+            //  Window.Current.Content = new dayLog(selectedDate, DevName, date);
+            Window.Current.Content = new dailyLog(selectedDate, DevName, date);
             Window.Current.Activate();
 
         }

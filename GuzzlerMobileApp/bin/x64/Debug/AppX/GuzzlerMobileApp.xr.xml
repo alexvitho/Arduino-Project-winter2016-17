@@ -6,9 +6,21 @@
     <RootPropertyPathName Name="DropDownOpenedHeight" />
     <RootPropertyPathName Name="Data2" />
     <RootPropertyPathName Name="Data1" />
+    <RootPropertyPathName Name="Series" />
+    <RootPropertyPathName Name="Formatter" />
+    <RootPropertyPathName Name="minTimeVal" />
+    <RootPropertyPathName Name="maxTimeVal" />
     <RootPropertyPathName Name="powerPartition" />
     <RootPropertyPathName Name="costData" />
     <RootPropertyPathName Name="powerData" />
+    <RootPropertyPathName Name="SeriesCollection" />
+    <RootPropertyPathName Name="YFormatter" />
+    <RootPropertyPathName Name="Labels" />
+    <RootPropertyPathName Name="ChartValues" />
+    <RootPropertyPathName Name="DateTimeFormatter" />
+    <RootPropertyPathName Name="AxisMax" />
+    <RootPropertyPathName Name="AxisMin" />
+    <RootPropertyPathName Name="AxisStep" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -380,6 +392,9 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="DependentValuePath" />
       <RootProperty Name="IsSelectionEnabled" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="DataPointStyle" />
+      <RootProperty Name="PolylineStyle" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.chartTry" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
@@ -387,11 +402,48 @@
       <RootProperty Name="FallbackValue" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.checkNow" />
+    <RootType FullName="LiveCharts.Uwp.CartesianChart">
+      <RootProperty Name="Series" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="AxisX" />
+      <RootProperty Name="AxisY" />
+      <RootProperty Name="LegendLocation" />
+    </RootType>
+    <RootType FullName="LiveCharts.Uwp.Axis">
+      <RootProperty Name="Title" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="LabelFormatter" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="MinValue" />
+      <RootProperty Name="MaxValue" />
+      <RootProperty Name="Labels" />
+      <RootProperty Name="DisableAnimations" />
+      <RootProperty Name="Separator" />
+    </RootType>
+    <RootType FullName="GuzzlerMobileApp.views.dailyLog" />
     <RootType FullName="GuzzlerMobileApp.views.dailyPie" />
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="IndependentValuePath" />
       <RootProperty Name="DependentValuePath" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Polyline">
+      <RootProperty Name="Style" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="Points" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Shape">
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="StrokeMiterLimit" />
+    </RootType>
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.dayLog" />
     <RootType FullName="GuzzlerMobileApp.views.deviceDetails" />
@@ -427,6 +479,16 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.message" />
+    <RootType FullName="GuzzlerMobileApp.views.PointShapeLineExample" />
+    <RootType FullName="LiveCharts.Uwp.LineSeries">
+      <RootProperty Name="Values" />
+      <RootProperty Name="PointGeometrySize" />
+      <RootProperty Name="StrokeThickness" />
+    </RootType>
+    <RootType FullName="LiveCharts.Uwp.Separator">
+      <RootProperty Name="Step" />
+    </RootType>
+    <RootType FullName="GuzzlerMobileApp.views.realTimeMeasure" />
     <RootType FullName="Windows.UI.Xaml.Controls.WebView">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />

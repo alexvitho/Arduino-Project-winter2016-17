@@ -1,6 +1,7 @@
 ﻿{
   "dependencies": {
     "FourToolkit.Charts": "1.2.0",
+    "LiveCharts.Uwp": "0.8.0",
     "Microsoft.Azure.Mobile.Client": "3.0.3",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
     "Newtonsoft.Json": "9.0.1",

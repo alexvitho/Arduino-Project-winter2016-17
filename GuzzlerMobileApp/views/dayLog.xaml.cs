@@ -42,6 +42,7 @@ namespace GuzzlerMobileApp.views
                 backButton_Click(this, null);
         }
 
+    
         private void setCharts()
         {
             try
@@ -74,6 +75,10 @@ namespace GuzzlerMobileApp.views
                 }
 
                 ((ColumnSeries)ColumnChart.Series[0]).ItemsSource = costData;
+
+
+
+                ((LineSeries)LineChart.Series[0]).IsTextScaleFactorEnabled = true;
                 ((LineSeries)LineChart.Series[0]).ItemsSource = powerData;
                 ((LineSeries)LineChart.Series[0]).IndependentAxis = new DateTimeAxis()
                 {

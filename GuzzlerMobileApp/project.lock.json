@@ -15,6 +15,29 @@
           "lib/uap10.0/FourToolkit.Charts.dll": {}
         }
       },
+      "LiveCharts/0.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.dll": {}
+        }
+      },
+      "LiveCharts.Uwp/0.8.0": {
+        "type": "package",
+        "dependencies": {
+          "LiveCharts": "0.8.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/LiveCharts.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LiveCharts.Uwp.dll": {}
+        }
+      },
       "Microsoft.Azure.Mobile.Client/3.0.3": {
         "type": "package",
         "dependencies": {
@@ -422,6 +445,17 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -2419,6 +2453,29 @@
           "lib/uap10.0/FourToolkit.Charts.dll": {}
         }
       },
+      "LiveCharts/0.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.dll": {}
+        }
+      },
+      "LiveCharts.Uwp/0.8.0": {
+        "type": "package",
+        "dependencies": {
+          "LiveCharts": "0.8.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/LiveCharts.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LiveCharts.Uwp.dll": {}
+        }
+      },
       "Microsoft.Azure.Mobile.Client/3.0.3": {
         "type": "package",
         "dependencies": {
@@ -2774,6 +2831,17 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -4920,6 +4988,29 @@
           "lib/uap10.0/FourToolkit.Charts.dll": {}
         }
       },
+      "LiveCharts/0.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.dll": {}
+        }
+      },
+      "LiveCharts.Uwp/0.8.0": {
+        "type": "package",
+        "dependencies": {
+          "LiveCharts": "0.8.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/LiveCharts.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LiveCharts.Uwp.dll": {}
+        }
+      },
       "Microsoft.Azure.Mobile.Client/3.0.3": {
         "type": "package",
         "dependencies": {
@@ -5276,6 +5367,17 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -7460,6 +7562,29 @@
           "lib/uap10.0/FourToolkit.Charts.dll": {}
         }
       },
+      "LiveCharts/0.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.dll": {}
+        }
+      },
+      "LiveCharts.Uwp/0.8.0": {
+        "type": "package",
+        "dependencies": {
+          "LiveCharts": "0.8.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/LiveCharts.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LiveCharts.Uwp.dll": {}
+        }
+      },
       "Microsoft.Azure.Mobile.Client/3.0.3": {
         "type": "package",
         "dependencies": {
@@ -7818,6 +7943,17 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -9970,6 +10106,29 @@
           "lib/uap10.0/FourToolkit.Charts.dll": {}
         }
       },
+      "LiveCharts/0.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.dll": {}
+        }
+      },
+      "LiveCharts.Uwp/0.8.0": {
+        "type": "package",
+        "dependencies": {
+          "LiveCharts": "0.8.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/LiveCharts.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LiveCharts.Uwp.dll": {}
+        }
+      },
       "Microsoft.Azure.Mobile.Client/3.0.3": {
         "type": "package",
         "dependencies": {
@@ -10329,6 +10488,17 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -12519,6 +12689,29 @@
           "lib/uap10.0/FourToolkit.Charts.dll": {}
         }
       },
+      "LiveCharts/0.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.dll": {}
+        }
+      },
+      "LiveCharts.Uwp/0.8.0": {
+        "type": "package",
+        "dependencies": {
+          "LiveCharts": "0.8.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/LiveCharts.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LiveCharts.Uwp.dll": {}
+        }
+      },
       "Microsoft.Azure.Mobile.Client/3.0.3": {
         "type": "package",
         "dependencies": {
@@ -12877,6 +13070,17 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -15029,6 +15233,29 @@
           "lib/uap10.0/FourToolkit.Charts.dll": {}
         }
       },
+      "LiveCharts/0.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.dll": {}
+        }
+      },
+      "LiveCharts.Uwp/0.8.0": {
+        "type": "package",
+        "dependencies": {
+          "LiveCharts": "0.8.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/LiveCharts.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/LiveCharts.Uwp.dll": {}
+        }
+      },
       "Microsoft.Azure.Mobile.Client/3.0.3": {
         "type": "package",
         "dependencies": {
@@ -15388,6 +15615,17 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -17577,6 +17815,41 @@
         "lib/uap10.0/FourToolkit.Charts.dll"
       ]
     },
+    "LiveCharts/0.8.0": {
+      "sha512": "Ak+ayWj4jtaiHcXuvOXP+ogjghd44XUr5VB4wzKqS6ACosgj27ymr8jmRXRPxXXaXzwesvdSNXslCWOLFurfuw==",
+      "type": "package",
+      "path": "LiveCharts/0.8.0",
+      "files": [
+        "LiveCharts.0.8.0.nupkg.sha512",
+        "LiveCharts.nuspec",
+        "lib/net40/LiveCharts.XML",
+        "lib/net40/Livecharts.dll",
+        "lib/net40/Livecharts.pdb",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.XML",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/LiveCharts.pdb",
+        "readme.txt"
+      ]
+    },
+    "LiveCharts.Uwp/0.8.0": {
+      "sha512": "Jla7J35r8PE5ULjufwM5O5rFNseemAJAdT2plRlkht/U50pNzuux44zZ6iEgHlI8alccSaTkMd0NKmrksBcZpQ==",
+      "type": "package",
+      "path": "LiveCharts.Uwp/0.8.0",
+      "files": [
+        "LiveCharts.Uwp.0.8.0.nupkg.sha512",
+        "LiveCharts.Uwp.nuspec",
+        "lib/uap10.0/LiveCharts.Uwp.XML",
+        "lib/uap10.0/LiveCharts.Uwp.dll",
+        "lib/uap10.0/LiveCharts.Uwp.pdb",
+        "lib/uap10.0/LiveCharts.Uwp.pri",
+        "lib/uap10.0/LiveCharts.Uwp/DefaultGeoMapTooltip.xaml",
+        "lib/uap10.0/LiveCharts.Uwp/DefaultLegend.xaml",
+        "lib/uap10.0/LiveCharts.Uwp/DefaultTooltip.xaml",
+        "lib/uap10.0/LiveCharts.Uwp/HeatColorRange.xaml",
+        "lib/uap10.0/LiveCharts.Uwp/LiveCharts.Uwp.xr.xml",
+        "tools/install.ps1"
+      ]
+    },
     "Microsoft.Azure.Mobile.Client/3.0.3": {
       "sha512": "7JoZIO+zC8LpD9/Pi5cKa1tq+0ujTQeZpxFZmMXz7x6ma2kpTfIUE7WFKIwt3l7z9T4FyHfKlX8/tqjO9ObR2A==",
       "type": "package",
@@ -18194,6 +18467,23 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0": {
+      "sha512": "LfzU68PVP33nqsuSlO5xAYuoI/itVKz4VVJSIunrS7iqqxE3sy0Q+VvtoYnFcBAoGnY83ZVn8Mnc9HYqOBiPmg==",
+      "type": "package",
+      "path": "Microsoft.Xaml.Behaviors.Uwp.Managed/2.0.0",
+      "files": [
+        "Microsoft.Xaml.Behaviors.Uwp.Managed.2.0.0.nupkg.sha512",
+        "Microsoft.Xaml.Behaviors.Uwp.Managed.nuspec",
+        "lib/uap10.0/Design/Microsoft.Xaml.Interactions.Design.dll",
+        "lib/uap10.0/Design/Microsoft.Xaml.Interactivity.Design.dll",
+        "lib/uap10.0/Microsoft.Xaml.Interactions.dll",
+        "lib/uap10.0/Microsoft.Xaml.Interactions.pri",
+        "lib/uap10.0/Microsoft.Xaml.Interactions.xml",
+        "lib/uap10.0/Microsoft.Xaml.Interactivity.dll",
+        "lib/uap10.0/Microsoft.Xaml.Interactivity.pri",
+        "lib/uap10.0/Microsoft.Xaml.Interactivity.xml"
       ]
     },
     "Newtonsoft.Json/9.0.1": {
@@ -25625,6 +25915,7 @@
   "projectFileDependencyGroups": {
     "": [
       "FourToolkit.Charts >= 1.2.0",
+      "LiveCharts.Uwp >= 0.8.0",
       "Microsoft.Azure.Mobile.Client >= 3.0.3",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
       "Newtonsoft.Json >= 9.0.1",
