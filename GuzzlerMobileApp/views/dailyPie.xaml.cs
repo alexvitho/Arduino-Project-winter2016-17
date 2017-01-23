@@ -31,71 +31,39 @@ namespace GuzzlerMobileApp.views
                 Date = DateTimeOffset.Now.ToLocalTime().Date;
             else
                 Date = DateTime;
-
+            double guzzeldDevPower =0;
+            double totalPower = 0;
             this.InitializeComponent();
-
-            double guzzeldDevPower = 40;
-    //        double guzzeldTotalPower = 140;
-
-            string DevPower = guzzeldDevPower.ToString() + " kW on " + dateToString(Date);
-            DevGuzzeled = DevName + " Guzzled: " + DevPower;
-
-
-
-            powerPartition =(new Common.deviceGraphAnalysis()).getDailyPowerPie(Date.ToLocalTime()) ;
-         //   powerPartition.Add(new piePowerItem("leon", 0.36));
-          //  powerPartition.Add(new piePowerItem("rest", 0.64));
-
-            string[] devs = new string[2] { "leon" ,"rest" };
-            double[] vals = new double[2] { 0.31,0.69 };
-
-
+            powerPartition = (new Common.deviceGraphAnalysis()).getDailyPowerPie(Date.ToLocalTime());
+            foreach (piePowerItem it in powerPartition) {
+                totalPower += it.Val;
+                if (it.Dev.Equals(DevName))
+                    guzzeldDevPower = Math.Round(it.Val,6);
+            }
+            totalPower = Math.Round(totalPower, 6);
+            string DevPower ="On " + dateToString(Date) +"\n"+DevName+" guzzled: "+ guzzeldDevPower +" kW";
+            DevGuzzeled = DevPower+ "\nTotal guzzled: " + totalPower + " kW";
+  
             try
             {
-                
+
                 Series = new SeriesCollection();
-                
-                foreach(piePowerItem it in powerPartition)
+
+                foreach (piePowerItem it in powerPartition)
                 {
                     Series.Add(new PieSeries()
                     {
-                        Values = new ChartValues<double>(new double[] { (Math.Round(it.Val,6)) })
+                        Values = new ChartValues<double>(new double[] { (Math.Round(it.Val, 6)) })
                                        ,
-                        Title = it.Dev ,
+                        Title = it.Dev,
+                      
                     });
                 }
-
-                //for (int i =0; i< 2; i++)
-                //{
-                //    Series.Add(new PieSeries() { Values = new ChartValues<double>(new double[] { (vals[i]) })
-                //    ,
-                //    Title = "a"+ i});
-
-                //}
-
-
-
-                //  {
-                //new PieSeries
-                //{
-                //    Values =  new ChartValues<double>( vals)
-
-                //},
-                // };
-                //Series.Add(new PieSeries() { Values = Values0 });
-                //Series.Add(new PieSeries() { Values = Values1 });
-
-                //  Series = new PieSeries();
-                //  Series.Values = new ChartValues<double>( vals);
-
-                PointLabel = chartPoint =>
-                  string.Format("({0})", chartPoint.Y);
+                     
+                
+                PointLabel = chartPoint => chartPoint.Y.ToString();
 
                 DataContext = this;
-                //powerPartition = new ObservableCollection<piePowerItem>();
-                //powerPartition.Add(new piePowerItem(DevName, guzzeldDevPower / guzzeldTotalPower));
-                //powerPartition.Add(new piePowerItem("else", (guzzeldTotalPower - guzzeldDevPower) / guzzeldTotalPower));
-                //((PieSeries)PieChart.Series[0]).ItemsSource = powerPartition;
             }
             catch (Exception e)
             {
@@ -105,12 +73,7 @@ namespace GuzzlerMobileApp.views
         }
         public Func<ChartPoint, string> PointLabel { get; set; }
         public SeriesCollection Series { get; set; }
-        public IChartValues Values0 { get; set; } = new ChartValues<int>(new int[] { 1});
 
-        public IChartValues Values1 { get; set; } = new ChartValues<int>(new int[] { 3 });
-        public IChartValues Values2 { get; set; } = new ChartValues<int>(new int[] { 3 });
-        public IChartValues Values3 { get; set; } = new ChartValues<int>(new int[] { 3 });
-        public IChartValues Values4 { get; set; } = new ChartValues<int>(new int[] { 3 });
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
             Window.Current.Content = new dailyLog(dateToString(Date), DevName, Date.ToUniversalTime());

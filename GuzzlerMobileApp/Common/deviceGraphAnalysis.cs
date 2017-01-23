@@ -97,6 +97,26 @@ namespace GuzzlerMobileApp.Common
             }
             return hourlyPower;
         }
+        public List<powerTimeItem> getAverageEvery10SAmples(List<powerTimeItem> dailyPower)
+        {
+            // List<powerTimeItem> dailyPower = getPowerValuesForDate(DateChosed, deviceName);
+            List<powerTimeItem> dailyAveragePower = new List<powerTimeItem>();
+            int i = 0;
+           double average = 0;
+            foreach (var entity in dailyPower)
+            {
+                average += entity.value;
+                i++;
+                if (i == 10)
+                {
+                    var temp = new powerTimeItem(entity.time, (average /= 10));
+                    dailyAveragePower.Add(temp);
+                    i = 0;
+                }
+                
+            }
+            return dailyAveragePower;
+        }
         public double getDailyPower(DateTimeOffset DateChosed, string deviceName)
         {
             double[] hourlyPower = getDailyPowerPerHour(DateChosed, deviceName);

@@ -6,7 +6,6 @@ namespace GuzzlerMobileApp.Common
 {
    public class controller
     {
-        private Frame rootFrame = null;
         private UIElement currentWin = null;
         public UIElement CurrentWin
         {

@@ -417,6 +417,8 @@
     <RootType FullName="LiveCharts.Uwp.PieChart">
       <RootProperty Name="LegendLocation" />
       <RootProperty Name="Series" />
+      <RootProperty Name="AnimationsSpeed" />
+      <RootProperty Name="Hoverable" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.dailyPie" />
     <RootType FullName="GuzzlerMobileApp.views.deviceDetails" />
