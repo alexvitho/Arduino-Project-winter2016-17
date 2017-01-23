@@ -85,7 +85,16 @@ namespace GuzzlerMobileApp.Common
             }
             return tmp;
         }
-
+        public List<string> getLocalNames()
+        {
+            
+            List<string> tmp = new List<string>();
+            foreach (var entity in DataModel.existingDevsModel.existingDevs)
+            {
+                tmp.Add(entity);
+            }
+            return tmp;
+        }
     }
 
 }

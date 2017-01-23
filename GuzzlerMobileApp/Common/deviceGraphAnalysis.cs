@@ -156,7 +156,7 @@ namespace GuzzlerMobileApp.Common
         public List<piePowerItem> getDailyPowerPie(DateTimeOffset date)
         {
             List<piePowerItem> pieList = new List<piePowerItem>();     
-            foreach(string name in (new deviceManager()).getAllDevicesNames())
+            foreach(string name in (new deviceManager()).getLocalNames())
             {
                 pieList.Add(new piePowerItem(name, getDailyPower(date, name)));
 
