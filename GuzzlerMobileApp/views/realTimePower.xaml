@@ -58,7 +58,7 @@
                     </lvc:Axis>
                 </lvc:CartesianChart.AxisX>
                 <lvc:CartesianChart.AxisY>
-                    <lvc:Axis LabelFormatter="{Binding pointFormatter}" Title="kW" FontSize="12" Foreground="Yellow"/>
+                    <lvc:Axis LabelFormatter="{Binding valueFormatter}" Title="kW" FontSize="12" Foreground="Yellow"/>
                 </lvc:CartesianChart.AxisY>
             </lvc:CartesianChart>
           
