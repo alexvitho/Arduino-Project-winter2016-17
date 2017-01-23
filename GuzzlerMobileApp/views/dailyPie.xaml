@@ -43,35 +43,8 @@
             <TextBox   Background="{StaticResource buttonBack}" Style="{StaticResource explanationText}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Text="{x:Bind DevGuzzeled ,Mode=TwoWay}"/>
         </Grid>
         <Grid Grid.Column="1"  Grid.ColumnSpan="1"  Grid.Row="5" >
-            <lvc:PieChart x:Name="pieChart" LegendLocation="None" Series="{Binding Series}" >
-            <!--    <lvc:PieChart.Series  >
-                    <lvc:PieSeries Title="Maria" Values="{Binding Values0}" DataLabels="True" PushOut="20" 
-                               LabelPoint="{Binding PointLabel}"/>
-                    <lvc:PieSeries Title="Maria" Values="{Binding Values1}" DataLabels="True" PushOut="20" 
-                               LabelPoint="{Binding PointLabel}"/>
-                    <lvc:PieSeries Title="Charles" Values="{Binding Values2}" DataLabels="True" 
-                               LabelPoint="{Binding PointLabel}"/>
-                    <lvc:PieSeries Title="Frida" Values="{Binding Values3}" DataLabels="True" 
-                               LabelPoint="{Binding PointLabel}"/>
-                    <lvc:PieSeries Title="Frederic" Values="{Binding Values4}" DataLabels="True" 
-                               LabelPoint="{Binding PointLabel}"/>
-                </lvc:PieChart.Series> -->
-            </lvc:PieChart>
-
-
-        </Grid>
-
-        <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5">
-           <!-- <Charting:Chart Margin="20 0" FontSize="10" Foreground="Yellow" x:Name="PieChart" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   Title="Consumption chart" TitleStyle="{StaticResource LightTitleContentStyle}" BorderThickness="2" BorderBrush="Yellow"  >
-                <Charting:PieSeries    ItemsSource="{Binding powerPartition}"  IndependentValuePath="Dev" DependentValuePath="Val"  />
-                <Charting:Chart.LegendStyle>
-                    <Style TargetType="datavis:Legend">
-                        <Setter Property="Width" Value="100"  />
-                    </Style>
-                </Charting:Chart.LegendStyle>
-            </Charting:Chart> -->
-            
-        </Grid>
+            <lvc:PieChart x:Name="pieChart" LegendLocation="Top" Series="{Binding Series}" />
+       </Grid>
         <Grid Grid.Row="6" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />

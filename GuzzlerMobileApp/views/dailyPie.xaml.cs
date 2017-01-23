@@ -59,7 +59,7 @@ namespace GuzzlerMobileApp.views
                 {
                     Series.Add(new PieSeries()
                     {
-                        Values = new ChartValues<double>(new double[] { (Math.Round(it.Val)) })
+                        Values = new ChartValues<double>(new double[] { (Math.Round(it.Val,6)) })
                                        ,
                         Title = it.Dev ,
                     });
