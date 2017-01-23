@@ -71,9 +71,9 @@
       <RootProperty Name="IsReadOnly" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="TextAlignment" />
+      <RootProperty Name="VerticalContentAlignment" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
-      <RootProperty Name="VerticalContentAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="HorizontalContentAlignment" />
@@ -391,6 +391,17 @@
       <RootProperty Name="IsSelectionEnabled" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.chartTry" />
+    <RootType FullName="LiveCharts.Uwp.PieChart">
+      <RootProperty Name="LegendLocation" />
+      <RootProperty Name="Series" />
+      <RootProperty Name="AnimationsSpeed" />
+      <RootProperty Name="Hoverable" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="FallbackValue" />
+    </RootType>
+    <RootType FullName="GuzzlerMobileApp.views.dailyColumn" />
     <RootType FullName="LiveCharts.Uwp.CartesianChart">
       <RootProperty Name="Series" />
       <RootProperty Name="Margin" />
@@ -409,17 +420,7 @@
       <RootProperty Name="DisableAnimations" />
       <RootProperty Name="Separator" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
-      <RootProperty Name="Mode" />
-      <RootProperty Name="FallbackValue" />
-    </RootType>
     <RootType FullName="GuzzlerMobileApp.views.dailyLog" />
-    <RootType FullName="LiveCharts.Uwp.PieChart">
-      <RootProperty Name="LegendLocation" />
-      <RootProperty Name="Series" />
-      <RootProperty Name="AnimationsSpeed" />
-      <RootProperty Name="Hoverable" />
-    </RootType>
     <RootType FullName="GuzzlerMobileApp.views.dailyPie" />
     <RootType FullName="GuzzlerMobileApp.views.deviceDetails" />
     <RootType FullName="GuzzlerMobileApp.views.devices" />

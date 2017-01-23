@@ -624,6 +624,7 @@ C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\App.xbf
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\ExtendedSplash.xbf
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\styles.xbf
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\views\chartTry.xbf
+C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\views\dailyColumn.xbf
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\views\dailyLog.xbf
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\views\dailyPie.xbf
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\views\deviceDetails.xbf
@@ -811,6 +812,8 @@ C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\ExtendedSpla
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\ExtendedSplash.g.cs
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\chartTry.g.i.cs
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\chartTry.g.cs
+C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\dailyColumn.g.i.cs
+C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\dailyColumn.g.cs
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\dailyLog.g.i.cs
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\dailyLog.g.cs
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\dailyPie.g.i.cs
@@ -838,7 +841,8 @@ C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\App.xaml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\ExtendedSplash.xaml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\styles.xaml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\chartTry.xaml
-C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\dailyLog.xaml
+C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\dailyColumn.xaml
+C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\dailyPie.xaml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\deviceDetails.xaml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\devices.xaml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\estimatedCost.xaml
@@ -848,12 +852,13 @@ C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\PointS
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\realTimePower.xaml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\regDev.xaml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\specialDev.xaml
-C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\dailyPie.xaml
+C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\dailyLog.xaml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\App.xbf
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\ExtendedSplash.xbf
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\styles.xbf
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\chartTry.xbf
-C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\dailyLog.xbf
+C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\dailyColumn.xbf
+C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\dailyPie.xbf
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\deviceDetails.xbf
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\devices.xbf
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\estimatedCost.xbf
@@ -863,7 +868,7 @@ C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\PointS
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\realTimePower.xbf
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\regDev.xbf
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\specialDev.xbf
-C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\dailyPie.xbf
+C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\views\dailyLog.xbf
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\XamlSaveStateFile.xml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\GuzzlerMobileApp.exe
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\GuzzlerMobileApp.pdb
@@ -954,4 +959,3 @@ C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\Microsoft.Xa
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\WinRTXamlToolkit.pri.xml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\WinRTXamlToolkit.Controls.DataVisualization.pri.xml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\ProjectArchitectures.txt
-C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\GuzzlerMobileApp.csprojResolveAssemblyReference.cache

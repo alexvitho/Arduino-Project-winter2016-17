@@ -106,6 +106,9 @@
     <Compile Include="views\chartTry.xaml.cs">
       <DependentUpon>chartTry.xaml</DependentUpon>
     </Compile>
+    <Compile Include="views\dailyColumn.xaml.cs">
+      <DependentUpon>dailyColumn.xaml</DependentUpon>
+    </Compile>
     <Compile Include="views\dailyLog.xaml.cs">
       <DependentUpon>dailyLog.xaml</DependentUpon>
     </Compile>
@@ -180,6 +183,10 @@
     <Page Include="views\chartTry.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\dailyColumn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="views\dailyLog.xaml">
       <SubType>Designer</SubType>
