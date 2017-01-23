@@ -147,9 +147,31 @@ namespace GuzzlerMobileApp.Common
             }
             return( overalSum / numOfDays);
         }
+
         double getElectricityTaarif(string country , string year)
         {
             return double.Parse(getValueFromTable( country, year, "KwCost", taarifTable));
+        }
+
+        public List<piePowerItem> getDailyPowerPie(DateTimeOffset date)
+        {
+            List<piePowerItem> pieList = new List<piePowerItem>();     
+            foreach(string name in (new deviceManager()).getAllDevicesNames())
+            {
+                pieList.Add(new piePowerItem(name, getDailyPower(date, name)));
+
+            }
+             return pieList;
+        }
+        public List<piePowerItem> getMonthlyPowerPie(DateTimeOffset date)
+        {
+            List<piePowerItem> pieList = new List<piePowerItem>();
+            foreach (string name in (new deviceManager()).getAllDevicesNames())
+            {
+                pieList.Add(new piePowerItem(name, getMonthPower(date, name)));
+
+            }
+            return pieList;
         }
 
 
