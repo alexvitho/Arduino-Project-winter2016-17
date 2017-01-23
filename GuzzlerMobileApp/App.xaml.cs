@@ -32,6 +32,7 @@ namespace GuzzlerMobileApp
         {
             InitializeComponent();
             Suspending += OnSuspending;
+            
         }
 
         /// <summary>

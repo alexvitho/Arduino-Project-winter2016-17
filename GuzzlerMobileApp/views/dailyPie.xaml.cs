@@ -35,7 +35,7 @@ namespace GuzzlerMobileApp.views
             this.InitializeComponent();
 
             double guzzeldDevPower = 40;
-            double guzzeldTotalPower = 140;
+    //        double guzzeldTotalPower = 140;
 
             string DevPower = guzzeldDevPower.ToString() + " kW on " + dateToString(Date);
             DevGuzzeled = DevName + " Guzzled: " + DevPower;
@@ -59,9 +59,9 @@ namespace GuzzlerMobileApp.views
                 {
                     Series.Add(new PieSeries()
                     {
-                        Values = new ChartValues<double>(new double[] { (it.Val) })
+                        Values = new ChartValues<double>(new double[] { (Math.Round(it.Val)) })
                                        ,
-                        Title = it.Dev
+                        Title = it.Dev ,
                     });
                 }
 
@@ -70,16 +70,16 @@ namespace GuzzlerMobileApp.views
                 //    Series.Add(new PieSeries() { Values = new ChartValues<double>(new double[] { (vals[i]) })
                 //    ,
                 //    Title = "a"+ i});
-               
+
                 //}
-                
-                
-                
+
+
+
                 //  {
                 //new PieSeries
                 //{
                 //    Values =  new ChartValues<double>( vals)
-                
+
                 //},
                 // };
                 //Series.Add(new PieSeries() { Values = Values0 });
@@ -89,7 +89,7 @@ namespace GuzzlerMobileApp.views
                 //  Series.Values = new ChartValues<double>( vals);
 
                 PointLabel = chartPoint =>
-                 string.Format("{0:P}",  chartPoint.Participation);
+                  string.Format("({0})", chartPoint.Y);
 
                 DataContext = this;
                 //powerPartition = new ObservableCollection<piePowerItem>();

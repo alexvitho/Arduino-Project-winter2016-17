@@ -5,6 +5,7 @@
     xmlns:local="using:GuzzlerMobileApp.views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:lvc="using:LiveCharts.Uwp"
     mc:Ignorable="d">
 
 
@@ -22,10 +23,10 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
             <RowDefinition Height="2*" />
             <RowDefinition Height="2*" MinHeight="80" />
-            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height= "1*"/>
             <RowDefinition Height="8*" />
             <RowDefinition Height="0.5*"/>
             <RowDefinition Height="2*" />
@@ -36,10 +37,27 @@
             <TextBox x:ConnectionId='4' Style="{StaticResource TitleText}" FontSize="24"                                                                  FontWeight="Light" />
         </Grid>
         <Grid Grid.Row="2" Grid.Column="1" >
-            <TextBox Style="{StaticResource explanationText}" FontSize="24" Text="Real time power guzzling" VerticalAlignment="Top" />
+            <Button x:ConnectionId='3'                        HorizontalAlignment="Stretch" Style="{StaticResource defaultButton}" VerticalAlignment="Stretch" >
+                Real time power guzzling
+            </Button>
+           
         </Grid>
         <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="4">
-            <WebView x:ConnectionId='3' HorizontalAlignment="Stretch" Margin="20 0" VerticalAlignment="Stretch"                                     />
+            <lvc:CartesianChart Grid.Row="1">
+                <lvc:CartesianChart.Series>
+                    <lvc:LineSeries Values="{Binding ChartValues}" PointGeometrySize="18" StrokeThickness="4" />
+                </lvc:CartesianChart.Series>
+                <lvc:CartesianChart.AxisX>
+                    <lvc:Axis LabelFormatter="{Binding DateTimeFormatter}" 
+                          MaxValue="{Binding AxisMax}" 
+                          MinValue="{Binding AxisMin}"
+                          DisableAnimations="True">
+                        <lvc:Axis.Separator>
+                            <lvc:Separator Step="{Binding AxisStep}"></lvc:Separator>
+                        </lvc:Axis.Separator>
+                    </lvc:Axis>
+                </lvc:CartesianChart.AxisX>
+            </lvc:CartesianChart>
 
         </Grid>
         <Grid Grid.Row="6" Grid.Column="1">

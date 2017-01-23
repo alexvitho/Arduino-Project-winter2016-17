@@ -27,6 +27,7 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="0.7*" />
             <RowDefinition Height="0.7*" />
+            <RowDefinition Height="0.3*" />
             <RowDefinition Height="4*" />
             <RowDefinition Height="0.7*" />
             <RowDefinition Height="0.3*" />
@@ -41,8 +42,8 @@
         <Grid Grid.Column="1" Grid.Row="3">
             <TextBox   Background="{StaticResource buttonBack}" Style="{StaticResource explanationText}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Text="{x:Bind DevGuzzeled ,Mode=TwoWay}"/>
         </Grid>
-        <Grid Grid.Column="0"  Grid.ColumnSpan="3"  Grid.Row="4" >
-            <lvc:PieChart x:Name="pieChart" LegendLocation="Left" Series="{Binding Series}" >
+        <Grid Grid.Column="1"  Grid.ColumnSpan="1"  Grid.Row="5" >
+            <lvc:PieChart x:Name="pieChart" LegendLocation="None" Series="{Binding Series}" >
             <!--    <lvc:PieChart.Series  >
                     <lvc:PieSeries Title="Maria" Values="{Binding Values0}" DataLabels="True" PushOut="20" 
                                LabelPoint="{Binding PointLabel}"/>
@@ -71,7 +72,7 @@
             </Charting:Chart> -->
             
         </Grid>
-        <Grid Grid.Row="5" Grid.Column="1">
+        <Grid Grid.Row="6" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="2*" />

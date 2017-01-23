@@ -106,9 +106,6 @@
     <Compile Include="views\chartTry.xaml.cs">
       <DependentUpon>chartTry.xaml</DependentUpon>
     </Compile>
-    <Compile Include="views\checkNow.xaml.cs">
-      <DependentUpon>checkNow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="views\dailyLog.xaml.cs">
       <DependentUpon>dailyLog.xaml</DependentUpon>
     </Compile>
@@ -132,9 +129,6 @@
     </Compile>
     <Compile Include="views\PointShapeLineExample .xaml.cs">
       <DependentUpon>PointShapeLineExample .xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\realTimeMeasure.xaml.cs">
-      <DependentUpon>realTimeMeasure.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\realTimePower.xaml.cs">
       <DependentUpon>realTimePower.xaml</DependentUpon>
@@ -187,10 +181,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="views\checkNow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="views\dailyLog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -220,10 +210,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="views\PointShapeLineExample .xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="views\realTimeMeasure.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

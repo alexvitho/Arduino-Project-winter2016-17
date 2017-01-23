@@ -391,11 +391,6 @@
       <RootProperty Name="IsSelectionEnabled" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.chartTry" />
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
-      <RootProperty Name="Mode" />
-      <RootProperty Name="FallbackValue" />
-    </RootType>
-    <RootType FullName="GuzzlerMobileApp.views.checkNow" />
     <RootType FullName="LiveCharts.Uwp.CartesianChart">
       <RootProperty Name="Series" />
       <RootProperty Name="Margin" />
@@ -413,6 +408,10 @@
       <RootProperty Name="Labels" />
       <RootProperty Name="DisableAnimations" />
       <RootProperty Name="Separator" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="FallbackValue" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.dailyLog" />
     <RootType FullName="LiveCharts.Uwp.PieChart">
@@ -466,13 +465,6 @@
     </RootType>
     <RootType FullName="LiveCharts.Uwp.Separator">
       <RootProperty Name="Step" />
-    </RootType>
-    <RootType FullName="GuzzlerMobileApp.views.realTimeMeasure" />
-    <RootType FullName="Windows.UI.Xaml.Controls.WebView">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Source" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.realTimePower" />
     <RootType FullName="GuzzlerMobileApp.views.regDev" />

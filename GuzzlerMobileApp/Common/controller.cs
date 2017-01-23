@@ -4,7 +4,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace GuzzlerMobileApp.Common
 {
-    class controller
+   public class controller
     {
         private Frame rootFrame = null;
         private UIElement currentWin = null;
@@ -19,15 +19,12 @@ namespace GuzzlerMobileApp.Common
 
         public controller()
         {
-            CurrentWin = Window.Current.Content;
 
-            if (rootFrame == null)
-            {
-                CurrentWin = Window.Current.Content = new devices();
+                 Window.Current.Content = new devices();
         //      CurrentWin = Window.Current.Content = new realTimeMeasure();
                 Window.Current.Activate();
 
-            }
+            
         }
 
 
