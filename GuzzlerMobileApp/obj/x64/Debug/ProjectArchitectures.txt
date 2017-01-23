@@ -1,1 +1,1 @@
-C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\GuzzlerMobileApp.csproj;x64
+C:\git\Arduino-Project-winter2016-17\GuzzlerMobileApp\GuzzlerMobileApp.csproj;x64

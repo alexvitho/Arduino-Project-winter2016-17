@@ -1,4 +1,5 @@
 ﻿using GuzzlerMobileApp.Common;
+using GuzzlerMobileApp.DataModel;
 using LiveCharts;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Auth;
@@ -123,7 +124,7 @@ namespace GuzzlerMobileApp.views
         private void TimerOnTick(object sender, object eventArgs)
         {
             var now = DateTime.Now;
-            string partitionFilter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, devName); // should be guzzlerId
+            string partitionFilter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, existingDevsModel.nickToId[devName]); 
             string startTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.GreaterThanOrEqual, now);
             string dateFilter = (TableQuery.CombineFilters(partitionFilter, TableOperators.And, startTimeFilter));
             var query = new TableQuery<DynamicTableEntity>().Where(dateFilter).Select(new string[] { "realPower" });
