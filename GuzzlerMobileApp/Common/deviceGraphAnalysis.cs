@@ -19,7 +19,7 @@ namespace GuzzlerMobileApp.Common
             credentials = new StorageCredentials("guzzlerstorage", "GQgI4xCFRAHvD4s+4E+QKqPAHAWGgWagsWa6zP3aWfKus8GGJ15n+Fhp0DT9tD6+OzHSGR2Ekf8Twl4w2mfPow==");
             storageAccount = new CloudStorageAccount(credentials, true);
             devicesGraphsTable = storageAccount.CreateCloudTableClient().GetTableReference("DeviceGraps");  // Retrieve a reference to the table.
-            devicesGraphsTable = storageAccount.CreateCloudTableClient().GetTableReference("ElectricityTariff");
+            taarifTable = storageAccount.CreateCloudTableClient().GetTableReference("ElectricityTariff");
         }
 
         // function to create a string representing the date day/month/year

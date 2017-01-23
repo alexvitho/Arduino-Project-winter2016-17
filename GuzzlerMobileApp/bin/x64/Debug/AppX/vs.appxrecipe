@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-23T11:28:34.874</Modified>
+      <Modified>2017-01-23T11:44:29.867</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\GuzzlerMobileApp.exe">
       <PackagePath>entrypoint\GuzzlerMobileApp.exe</PackagePath>
-      <Modified>2017-01-23T11:28:23.530</Modified>
+      <Modified>2017-01-23T11:44:28.324</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\FourToolkit.Charts\1.2.0\lib\uap10.0\FourToolkit.Charts.dll">
       <PackagePath>FourToolkit.Charts.dll</PackagePath>
@@ -795,7 +795,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\Core\GuzzlerMobileApp.exe">
       <PackagePath>GuzzlerMobileApp.exe</PackagePath>
-      <Modified>2017-01-23T11:28:34.865</Modified>
+      <Modified>2017-01-23T11:44:29.861</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
