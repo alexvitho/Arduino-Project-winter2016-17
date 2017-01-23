@@ -19,6 +19,7 @@
     <RootPropertyPathName Name="AxisMax" />
     <RootPropertyPathName Name="AxisMin" />
     <RootPropertyPathName Name="AxisStep" />
+    <RootPropertyPathName Name="valueFormatter" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
