@@ -964,4 +964,3 @@ C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\Microsoft.Xa
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\WinRTXamlToolkit.pri.xml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\WinRTXamlToolkit.Controls.DataVisualization.pri.xml
 C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\ProjectArchitectures.txt
-C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Debug\GuzzlerMobileApp.csprojResolveAssemblyReference.cache

@@ -73,22 +73,22 @@ namespace GuzzlerMobileApp.Common
             retValue.Sort();
             return retValue;
         }
-        public double[] getDailyPowerForHour(DateTimeOffset DateChosed, string deviceName)
+        public double[] getDailyPowerPerHour(DateTimeOffset DateChosed, string deviceName)
         {
             List<powerTimeItem> dailyPower = getPowerValuesForDate(DateChosed, deviceName);
             double[] hourlyPower = new double[24] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-            int[] numOfsamles = new int[24] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            int[] numOfsamples = new int[24] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
             foreach (var entity in dailyPower)
             {
                 hourlyPower[entity.time.Hour] += entity.value;
-                numOfsamles[entity.time.Hour]++; ;
+                numOfsamples[entity.time.Hour]++; ;
             }
             for  (int i = 0 ; i<24; ++i )
             {
-                if (numOfsamles[i] != 0)
+                if (numOfsamples[i] != 0)
                 {
-                    hourlyPower[i] /= numOfsamles[i];
+                    hourlyPower[i] /= numOfsamples[i];
                 }
                 else
                 {
@@ -96,6 +96,16 @@ namespace GuzzlerMobileApp.Common
                 }
             }
             return hourlyPower;
+        }
+        public double getDailyPower(DateTimeOffset DateChosed, string deviceName)
+        {
+            double[] hourlyPower = getDailyPowerPerHour(DateChosed, deviceName);
+            double overalSum = 0;
+            for(int i = 0; i< 24; ++i)
+            {
+                overalSum += hourlyPower[i];
+            }
+            return (overalSum / 24);
         }
 
         public string getValueFromTable(string pKey, string rKey, string column, CloudTable table)
@@ -112,15 +122,36 @@ namespace GuzzlerMobileApp.Common
             }
             return null;
         }
-        //public List<powerDayItem> getMonthlyPower(DateTimeOffset date, string deviceName)
-        //{
-        //    double tariff = double.Parse(getValueFromTable("Israel", "2017", "KwCost", taarifTable));
-            
-        //    double[] perDayPower = getDailyPowerForHour(date, deviceName);
+        public double[] getMonthlyPowerPerDay(DateTimeOffset date, string deviceName)
+        {
+            int numOfDays = DateTime.DaysInMonth(date.Year, date.Month);
+            double[] dailyPower = new double[numOfDays];
+            for (int i = 0; i < numOfDays; i++)
+            {
+                dailyPower[i] = 0;
+            }
+            for (int i = 0; i < numOfDays; i++)
+            {
+                dailyPower[i] = getDailyPower(date, deviceName);
+            }
+                return dailyPower;
+        }
+        public double getMonthPower(DateTimeOffset date, string deviceName)
+        {
+            int numOfDays = DateTime.DaysInMonth(date.Year, date.Month);
+            double[] dailyPower = getMonthlyPowerPerDay(date, deviceName);
+            double overalSum = 0;
+            for (int i = 0; i < numOfDays; i++)
+            {
+                overalSum += dailyPower[i];
+            }
+            return( overalSum / numOfDays);
+        }
+        double getElectricityTaarif(string country , string year)
+        {
+            return double.Parse(getValueFromTable( country, year, "KwCost", taarifTable));
+        }
 
 
-
-        //    return null;
-        //}
     }
 }

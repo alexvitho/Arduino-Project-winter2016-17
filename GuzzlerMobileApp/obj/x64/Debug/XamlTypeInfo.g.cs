@@ -204,12 +204,12 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
             _typeNameTable[44] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis";
             _typeNameTable[45] = "System.Nullable`1<Int32>";
             _typeNameTable[46] = "GuzzlerMobileApp.views.chartTry";
-            _typeNameTable[47] = "System.Collections.Generic.List`1<GuzzlerMobileApp.DataModel.powerItem>";
-            _typeNameTable[48] = "GuzzlerMobileApp.DataModel.powerItem";
+            _typeNameTable[47] = "System.Collections.Generic.List`1<GuzzlerMobileApp.DataModel.powerDayItem>";
+            _typeNameTable[48] = "GuzzlerMobileApp.DataModel.powerDayItem";
             _typeNameTable[49] = "Int32";
             _typeNameTable[50] = "Double";
-            _typeNameTable[51] = "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.DataModel.powerItem>";
-            _typeNameTable[52] = "System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.DataModel.powerItem>";
+            _typeNameTable[51] = "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.DataModel.powerDayItem>";
+            _typeNameTable[52] = "System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.DataModel.powerDayItem>";
             _typeNameTable[53] = "GuzzlerMobileApp.views.checkNow";
             _typeNameTable[54] = "LiveCharts.Uwp.CartesianChart";
             _typeNameTable[55] = "LiveCharts.Uwp.Charts.Base.Chart";
@@ -339,12 +339,12 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
             _typeTable[44] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis);
             _typeTable[45] = typeof(global::System.Nullable<global::System.Int32>);
             _typeTable[46] = typeof(global::GuzzlerMobileApp.views.chartTry);
-            _typeTable[47] = typeof(global::System.Collections.Generic.List<global::GuzzlerMobileApp.DataModel.powerItem>);
-            _typeTable[48] = typeof(global::GuzzlerMobileApp.DataModel.powerItem);
+            _typeTable[47] = typeof(global::System.Collections.Generic.List<global::GuzzlerMobileApp.DataModel.powerDayItem>);
+            _typeTable[48] = typeof(global::GuzzlerMobileApp.DataModel.powerDayItem);
             _typeTable[49] = typeof(global::System.Int32);
             _typeTable[50] = typeof(global::System.Double);
-            _typeTable[51] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.DataModel.powerItem>);
-            _typeTable[52] = typeof(global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.DataModel.powerItem>);
+            _typeTable[51] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.DataModel.powerDayItem>);
+            _typeTable[52] = typeof(global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.DataModel.powerDayItem>);
             _typeTable[53] = typeof(global::GuzzlerMobileApp.views.checkNow);
             _typeTable[54] = typeof(global::LiveCharts.Uwp.CartesianChart);
             _typeTable[55] = typeof(global::LiveCharts.Uwp.Charts.Base.Chart);
@@ -473,9 +473,10 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
         private object Activate_35_HeaderedItemsControl() { return new global::WinRTXamlToolkit.Controls.HeaderedItemsControl(); }
         private object Activate_39_LineSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries(); }
         private object Activate_46_chartTry() { return new global::GuzzlerMobileApp.views.chartTry(); }
-        private object Activate_47_List() { return new global::System.Collections.Generic.List<global::GuzzlerMobileApp.DataModel.powerItem>(); }
-        private object Activate_51_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.DataModel.powerItem>(); }
-        private object Activate_52_Collection() { return new global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.DataModel.powerItem>(); }
+        private object Activate_47_List() { return new global::System.Collections.Generic.List<global::GuzzlerMobileApp.DataModel.powerDayItem>(); }
+        private object Activate_48_powerDayItem() { return new global::GuzzlerMobileApp.DataModel.powerDayItem(); }
+        private object Activate_51_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::GuzzlerMobileApp.DataModel.powerDayItem>(); }
+        private object Activate_52_Collection() { return new global::System.Collections.ObjectModel.Collection<global::GuzzlerMobileApp.DataModel.powerDayItem>(); }
         private object Activate_54_CartesianChart() { return new global::LiveCharts.Uwp.CartesianChart(); }
         private object Activate_56_SeriesCollection() { return new global::LiveCharts.SeriesCollection(); }
         private object Activate_57_NoisyCollection() { return new global::LiveCharts.Helpers.NoisyCollection<global::LiveCharts.Definitions.Series.ISeriesView>(); }
@@ -562,20 +563,20 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
         }
         private void VectorAdd_47_List(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.DataModel.powerItem>)instance;
-            var newItem = (global::GuzzlerMobileApp.DataModel.powerItem)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.DataModel.powerDayItem>)instance;
+            var newItem = (global::GuzzlerMobileApp.DataModel.powerDayItem)item;
             collection.Add(newItem);
         }
         private void VectorAdd_51_ObservableCollection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.DataModel.powerItem>)instance;
-            var newItem = (global::GuzzlerMobileApp.DataModel.powerItem)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.DataModel.powerDayItem>)instance;
+            var newItem = (global::GuzzlerMobileApp.DataModel.powerDayItem)item;
             collection.Add(newItem);
         }
         private void VectorAdd_52_Collection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.DataModel.powerItem>)instance;
-            var newItem = (global::GuzzlerMobileApp.DataModel.powerItem)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::GuzzlerMobileApp.DataModel.powerDayItem>)instance;
+            var newItem = (global::GuzzlerMobileApp.DataModel.powerDayItem)item;
             collection.Add(newItem);
         }
         private void VectorAdd_56_SeriesCollection(object instance, object item)
@@ -984,15 +985,16 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 47:   //  System.Collections.Generic.List`1<GuzzlerMobileApp.DataModel.powerItem>
+            case 47:   //  System.Collections.Generic.List`1<GuzzlerMobileApp.DataModel.powerDayItem>
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.CollectionAdd = VectorAdd_47_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 48:   //  GuzzlerMobileApp.DataModel.powerItem
+            case 48:   //  GuzzlerMobileApp.DataModel.powerDayItem
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_48_powerDayItem;
                 userType.AddMemberName("Day");
                 userType.AddMemberName("Val");
                 userType.SetIsLocalType();
@@ -1007,14 +1009,14 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 xamlType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 51:   //  System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.DataModel.powerItem>
-                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.DataModel.powerItem>"));
+            case 51:   //  System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.DataModel.powerDayItem>
+                userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.DataModel.powerDayItem>"));
                 userType.CollectionAdd = VectorAdd_51_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 52:   //  System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.DataModel.powerItem>
+            case 52:   //  System.Collections.ObjectModel.Collection`1<GuzzlerMobileApp.DataModel.powerDayItem>
                 userType = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_52_Collection;
                 userType.CollectionAdd = VectorAdd_52_Collection;
@@ -2220,26 +2222,26 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
         private void set_49_chartTry_Data(object instance, object Value)
         {
             var that = (global::GuzzlerMobileApp.views.chartTry)instance;
-            that.Data = (global::System.Collections.Generic.List<global::GuzzlerMobileApp.DataModel.powerItem>)Value;
+            that.Data = (global::System.Collections.Generic.List<global::GuzzlerMobileApp.DataModel.powerDayItem>)Value;
         }
-        private object get_50_powerItem_Day(object instance)
+        private object get_50_powerDayItem_Day(object instance)
         {
-            var that = (global::GuzzlerMobileApp.DataModel.powerItem)instance;
+            var that = (global::GuzzlerMobileApp.DataModel.powerDayItem)instance;
             return that.Day;
         }
-        private void set_50_powerItem_Day(object instance, object Value)
+        private void set_50_powerDayItem_Day(object instance, object Value)
         {
-            var that = (global::GuzzlerMobileApp.DataModel.powerItem)instance;
+            var that = (global::GuzzlerMobileApp.DataModel.powerDayItem)instance;
             that.Day = (global::System.Int32)Value;
         }
-        private object get_51_powerItem_Val(object instance)
+        private object get_51_powerDayItem_Val(object instance)
         {
-            var that = (global::GuzzlerMobileApp.DataModel.powerItem)instance;
+            var that = (global::GuzzlerMobileApp.DataModel.powerDayItem)instance;
             return that.Val;
         }
-        private void set_51_powerItem_Val(object instance, object Value)
+        private void set_51_powerDayItem_Val(object instance, object Value)
         {
-            var that = (global::GuzzlerMobileApp.DataModel.powerItem)instance;
+            var that = (global::GuzzlerMobileApp.DataModel.powerDayItem)instance;
             that.Val = (global::System.Double)Value;
         }
         private object get_52_chartTry_Data1(object instance)
@@ -4308,31 +4310,31 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 break;
             case "GuzzlerMobileApp.views.chartTry.Data":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.chartTry");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data", "System.Collections.Generic.List`1<GuzzlerMobileApp.DataModel.powerItem>");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data", "System.Collections.Generic.List`1<GuzzlerMobileApp.DataModel.powerDayItem>");
                 xamlMember.Getter = get_49_chartTry_Data;
                 xamlMember.Setter = set_49_chartTry_Data;
                 break;
-            case "GuzzlerMobileApp.DataModel.powerItem.Day":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.DataModel.powerItem");
+            case "GuzzlerMobileApp.DataModel.powerDayItem.Day":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.DataModel.powerDayItem");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Day", "Int32");
-                xamlMember.Getter = get_50_powerItem_Day;
-                xamlMember.Setter = set_50_powerItem_Day;
+                xamlMember.Getter = get_50_powerDayItem_Day;
+                xamlMember.Setter = set_50_powerDayItem_Day;
                 break;
-            case "GuzzlerMobileApp.DataModel.powerItem.Val":
-                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.DataModel.powerItem");
+            case "GuzzlerMobileApp.DataModel.powerDayItem.Val":
+                userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.DataModel.powerDayItem");
                 xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Val", "Double");
-                xamlMember.Getter = get_51_powerItem_Val;
-                xamlMember.Setter = set_51_powerItem_Val;
+                xamlMember.Getter = get_51_powerDayItem_Val;
+                xamlMember.Setter = set_51_powerDayItem_Val;
                 break;
             case "GuzzlerMobileApp.views.chartTry.Data1":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.chartTry");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data1", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.DataModel.powerItem>");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data1", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.DataModel.powerDayItem>");
                 xamlMember.Getter = get_52_chartTry_Data1;
                 xamlMember.SetIsReadOnly();
                 break;
             case "GuzzlerMobileApp.views.chartTry.Data2":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.chartTry");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data2", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.DataModel.powerItem>");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data2", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.DataModel.powerDayItem>");
                 xamlMember.Getter = get_53_chartTry_Data2;
                 xamlMember.SetIsReadOnly();
                 break;
@@ -4350,13 +4352,13 @@ namespace GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo
                 break;
             case "GuzzlerMobileApp.views.checkNow.Data1":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.checkNow");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data1", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.DataModel.powerItem>");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data1", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.DataModel.powerDayItem>");
                 xamlMember.Getter = get_56_checkNow_Data1;
                 xamlMember.SetIsReadOnly();
                 break;
             case "GuzzlerMobileApp.views.checkNow.Data2":
                 userType = (global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("GuzzlerMobileApp.views.checkNow");
-                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data2", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.DataModel.powerItem>");
+                xamlMember = new global::GuzzlerMobileApp.GuzzlerMobileApp_XamlTypeInfo.XamlMember(this, "Data2", "System.Collections.ObjectModel.ObservableCollection`1<GuzzlerMobileApp.DataModel.powerDayItem>");
                 xamlMember.Getter = get_57_checkNow_Data2;
                 xamlMember.SetIsReadOnly();
                 break;

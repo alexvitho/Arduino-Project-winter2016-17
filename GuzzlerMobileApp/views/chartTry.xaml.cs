@@ -39,8 +39,8 @@ namespace GuzzlerMobileApp.views
         public string intXVal { get; set; }
         public string maxXVal { get; set; }
         public string minXVal { get; set; }
-        private List<powerItem> data;
-        public List<powerItem> Data
+        private List<powerDayItem> data;
+        public List<powerDayItem> Data
         {
             get { return data; }
             set
@@ -50,8 +50,8 @@ namespace GuzzlerMobileApp.views
                 NotifyPropertyChanged("Data");
             }
         }
-        public ObservableCollection<powerItem> Data1 { get; private set; }
-        public ObservableCollection<powerItem> Data2 { get; private set; }
+        public ObservableCollection<powerDayItem> Data1 { get; private set; }
+        public ObservableCollection<powerDayItem> Data2 { get; private set; }
         public chartTry()
         {
             intYVal = 1.ToString();
@@ -64,17 +64,17 @@ namespace GuzzlerMobileApp.views
             LoadChartContents();
             try
             {
-                data = new List<powerItem>();
-                Data1 = new ObservableCollection<powerItem>();
+                data = new List<powerDayItem>();
+                Data1 = new ObservableCollection<powerDayItem>();
                 for (int i = 0; i < 30; i++)
                 {
-                    data.Add(new powerItem(i, i * 10));
-                    Data1.Add(new powerItem(i, i * 10));
+                    data.Add(new powerDayItem(i, i * 10));
+                    Data1.Add(new powerDayItem(i, i * 10));
                 }
-                Data2 = new ObservableCollection<powerItem>();
+                Data2 = new ObservableCollection<powerDayItem>();
 
-                Data2.Add(new powerItem(1, 0.64));
-                Data2.Add(new powerItem(2, 0.36));
+                Data2.Add(new powerDayItem(1, 0.64));
+                Data2.Add(new powerDayItem(2, 0.36));
 
                 ((LineSeries)LineChart.Series[0]).ItemsSource = Data1;
                 ((LineSeries)LineChart.Series[0]).DependentRangeAxis = new LinearAxis()

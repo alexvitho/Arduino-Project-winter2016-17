@@ -23,8 +23,8 @@ namespace GuzzlerMobileApp.views
         public double minXVal = 1;// { get; set; }
       
 
-        public ObservableCollection<powerItem> Data1 { get; private set; }
-        public ObservableCollection<powerItem> Data2 { get; private set; }
+        public ObservableCollection<powerDayItem> Data1 { get; private set; }
+        public ObservableCollection<powerDayItem> Data2 { get; private set; }
         public checkNow(string name = null)
         {
             try
@@ -34,15 +34,15 @@ namespace GuzzlerMobileApp.views
                 DevName = name;
                 this.InitializeComponent();
                 intXVal = 12;
-                Data1 = new ObservableCollection<powerItem>();
+                Data1 = new ObservableCollection<powerDayItem>();
                 for (int i = 0; i < 130; i++)
                 {
-                    Data1.Add(new powerItem(i, i * 10));
+                    Data1.Add(new powerDayItem(i, i * 10));
                 }
-                Data2 = new ObservableCollection<powerItem>();
+                Data2 = new ObservableCollection<powerDayItem>();
 
-                Data2.Add(new powerItem(1, 0.64));
-                Data2.Add(new powerItem(2, 0.36));
+                Data2.Add(new powerDayItem(1, 0.64));
+                Data2.Add(new powerDayItem(2, 0.36));
 
                 ((LineSeries)LineChart.Series[0]).ItemsSource = Data1;
                 ((LineSeries)LineChart.Series[0]).DependentRangeAxis = new LinearAxis()
