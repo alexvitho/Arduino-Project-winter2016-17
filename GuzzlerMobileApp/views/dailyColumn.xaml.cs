@@ -42,6 +42,7 @@ namespace GuzzlerMobileApp.views
                 Date = DateTimeOffset.Now.ToLocalTime().Date;
             else
                 Date = DateTime;
+            DevGuzzeled = "Power consumption of "+DevName +"\non the "+deviceGraphAnalysis.dateToString(Date) +"\n NIS/Day";
             this.InitializeComponent();
             double[] DailyArray =analysis.getDailyPowerPerHour(Date.ToUniversalTime(), DevName);
             double tarrif = analysis.getElectricityTaarif("Israel", "2017");
@@ -55,9 +56,8 @@ namespace GuzzlerMobileApp.views
                 SeriesCollection.Add(new ColumnSeries()
 
                 {
-                    Title = "Nis",
+                   Title="",
                     Values = new ChartValues<double>(DailyArray),
-                //    LabelPoint= new Func<ChartPoint, string>(p => p.Y.ToString()+" NIS")
                 });
 
            

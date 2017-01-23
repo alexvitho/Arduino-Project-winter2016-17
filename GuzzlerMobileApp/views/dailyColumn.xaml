@@ -40,10 +40,14 @@
         <Grid Grid.Column="1"  Grid.ColumnSpan="1"  Grid.Row="4" >
             <lvc:CartesianChart Series="{Binding SeriesCollection}" LegendLocation="None">
             <lvc:CartesianChart.AxisX>
-                <lvc:Axis Title="Hours" Labels="{Binding Labels}" ShowLabels="True" Foreground="Yellow" />
-            </lvc:CartesianChart.AxisX>
+                    <lvc:Axis Title="Hours"  Labels="{Binding Labels}" ShowLabels="True" FontSize="12" Foreground="Yellow" >
+                        <lvc:Axis.Separator >
+                            <lvc:Separator IsEnabled="False" Step="1"></lvc:Separator>
+                        </lvc:Axis.Separator>
+                    </lvc:Axis>
+                </lvc:CartesianChart.AxisX>
             <lvc:CartesianChart.AxisY>
-                    <lvc:Axis Title="Nis" LabelFormatter="{Binding valFormatter}"/>
+                    <lvc:Axis Title="NIS" LabelFormatter="{Binding valFormatter}" Foreground="Yellow" FontSize="12"/>
             </lvc:CartesianChart.AxisY>
         </lvc:CartesianChart>
         </Grid>

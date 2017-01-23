@@ -130,12 +130,12 @@ namespace GuzzlerMobileApp.Common
 
         public string getValueFromTable(string pKey, string rKey, string column, CloudTable table)
         {
-            string countryFilter = TableQuery.GenerateFilterCondition("partitionKey", QueryComparisons.Equal, pKey);
-            string yearFilter = TableQuery.GenerateFilterCondition("rowKey", QueryComparisons.Equal, rKey);
+            string countryFilter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, pKey);
+            string yearFilter = TableQuery.GenerateFilterCondition("RowKey", QueryComparisons.Equal, rKey);
             string taarifFilter = TableQuery.CombineFilters(countryFilter, TableOperators.And, yearFilter);
             var query = new TableQuery<DynamicTableEntity>().Where(taarifFilter).Select(new string[] { column });
-            var queryOutput = table.ExecuteQuerySegmentedAsync<DynamicTableEntity>(query, null);
-            var results = queryOutput.Result.Results;
+            var queryOutput = table.ExecuteQuerySegmentedAsync<DynamicTableEntity>(query, null).GetAwaiter().GetResult();
+            var results = queryOutput.Results;
             foreach (var entity in results)
             {
                 return (entity.Properties[column].PropertyAsObject).ToString();
@@ -168,7 +168,7 @@ namespace GuzzlerMobileApp.Common
             return( overalSum / numOfDays);
         }
 
-        double getElectricityTaarif(string country , string year)
+        public double getElectricityTaarif(string country , string year)
         {
             return double.Parse(getValueFromTable( country, year, "KwCost", taarifTable));
         }
