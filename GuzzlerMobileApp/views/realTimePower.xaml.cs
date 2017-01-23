@@ -66,7 +66,9 @@ namespace GuzzlerMobileApp.views
             valueFormatter = value => Math.Round(value, 3).ToString();
             AxisStep = TimeSpan.FromSeconds(1).Ticks;
             SetAxisLimits(DateTime.Now);
+            pointFormatter = value => Math.Round(value,3).ToString() + " kW";
 
+            lineData.LabelPoint= new Func<ChartPoint, string>(p => Math.Round(p.Y,3).ToString()+" kW");
             //The next code simulates data changes every 300 ms
             Timer = new DispatcherTimer
             {
@@ -82,6 +84,7 @@ namespace GuzzlerMobileApp.views
         public ChartValues<MeasureModel> ChartValues { get; set; }
         public Func<double, string> DateTimeFormatter { get; set; }
         public Func<double, string> valueFormatter { get; set; }
+        public Func<double, string> pointFormatter { get; set; }
         public double AxisStep { get; set; }
 
         public double AxisMax

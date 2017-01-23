@@ -43,9 +43,9 @@
            
         </Grid>
         <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="4">
-            <lvc:CartesianChart Grid.Row="1">
+            <lvc:CartesianChart Margin="20 0">
                 <lvc:CartesianChart.Series>
-                    <lvc:LineSeries Values="{Binding ChartValues}" PointGeometrySize="18" StrokeThickness="4" />
+                    <lvc:LineSeries x:Name="lineData" Values="{Binding ChartValues}" PointGeometrySize="18" StrokeThickness="4" Title=""  />
                 </lvc:CartesianChart.Series>
                 <lvc:CartesianChart.AxisX>
                     <lvc:Axis LabelFormatter="{Binding DateTimeFormatter}" 
@@ -58,7 +58,7 @@
                     </lvc:Axis>
                 </lvc:CartesianChart.AxisX>
                 <lvc:CartesianChart.AxisY>
-                    <lvc:Axis LabelFormatter="{Binding valueFormatter}" />
+                    <lvc:Axis LabelFormatter="{Binding pointFormatter}" Title="kW" FontSize="12" Foreground="Yellow"/>
                 </lvc:CartesianChart.AxisY>
             </lvc:CartesianChart>
           
