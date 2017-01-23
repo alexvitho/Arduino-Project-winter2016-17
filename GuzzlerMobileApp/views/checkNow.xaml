@@ -27,13 +27,10 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1.5*" MinHeight="80" />
             <RowDefinition Height="4*" />
-            <RowDefinition Height="1.5*" MinHeight="80" />
-
-            <RowDefinition Height="4*" />
-
+           
             <RowDefinition Height="0.5*" />
             <RowDefinition Height="1*" />
-            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="0.3*" />
 
         </Grid.RowDefinitions>
         <Grid Grid.Row="1" Grid.Column="1">
@@ -47,7 +44,7 @@
                 <ColumnDefinition Width="37*"/>
             </Grid.ColumnDefinitions>
         </Grid>
-        <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" Grid.RowSpan="2">
+        <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="3" Grid.RowSpan="2">
             <Charting:Chart  x:Name="LineChart"  Margin="20 0 20 0" Foreground="Black" Title="" FontSize="10" TitleStyle="{StaticResource TitleContentStyle}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   BorderThickness="2" BorderBrush="Magenta"  >
                 <Charting:LineSeries    IndependentValuePath="Day"  VerticalAlignment="Stretch" DependentValuePath="Val" IsSelectionEnabled="True"  />
                 <Charting:Chart.LegendStyle>
@@ -57,10 +54,8 @@
                 </Charting:Chart.LegendStyle>
             </Charting:Chart>
         </Grid>
-        <Grid Grid.Row="4" Grid.Column="1" >
-            <TextBox Style="{StaticResource explanationText}" FontSize="24" Text="Power consumption part" VerticalAlignment="Top" />
-        </Grid>
-        <Grid Grid.Row="7" Grid.Column="1">
+    
+        <Grid Grid.Row="5" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="2*" />

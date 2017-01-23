@@ -26,10 +26,10 @@
             <RowDefinition Height="0.3*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="0.7*" />
-            <RowDefinition Height="1*" />
+            <RowDefinition Height="0.7*" />
             <RowDefinition Height="4*" />
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="0.7*" />
+            <RowDefinition Height="0.3*" />
 
         </Grid.RowDefinitions>
         <Grid Grid.Row="1" Grid.Column="1">
@@ -41,10 +41,10 @@
         <Grid Grid.Column="1" Grid.Row="3">
             <TextBox   Background="{StaticResource buttonBack}" Style="{StaticResource explanationText}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Text="{x:Bind DevGuzzeled ,Mode=TwoWay}"/>
         </Grid>
-        <Grid Grid.Column="0"  Grid.ColumnSpan="3"  Grid.Row="4">
-            <lvc:PieChart LegendLocation="Bottom"  >
-                <lvc:PieChart.Series  >
-                    <lvc:PieSeries Title="Maria" Values="{Binding Values1}" DataLabels="True" PushOut="20" 
+        <Grid Grid.Column="0"  Grid.ColumnSpan="3"  Grid.Row="4" >
+            <lvc:PieChart x:Name="pieChart" LegendLocation="Left" Series="{Binding Series}" >
+            <!--    <lvc:PieChart.Series  >
+                    <lvc:PieSeries Title="Maria" Values="{Binding Values0}" DataLabels="True" PushOut="20" 
                                LabelPoint="{Binding PointLabel}"/>
                     <lvc:PieSeries Title="Maria" Values="{Binding Values1}" DataLabels="True" PushOut="20" 
                                LabelPoint="{Binding PointLabel}"/>
@@ -54,7 +54,7 @@
                                LabelPoint="{Binding PointLabel}"/>
                     <lvc:PieSeries Title="Frederic" Values="{Binding Values4}" DataLabels="True" 
                                LabelPoint="{Binding PointLabel}"/>
-                </lvc:PieChart.Series>
+                </lvc:PieChart.Series> -->
             </lvc:PieChart>
 
 
