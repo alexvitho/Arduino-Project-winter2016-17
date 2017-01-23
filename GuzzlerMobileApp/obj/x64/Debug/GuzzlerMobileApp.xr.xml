@@ -10,7 +10,11 @@
     <RootPropertyPathName Name="Formatter" />
     <RootPropertyPathName Name="minTimeVal" />
     <RootPropertyPathName Name="maxTimeVal" />
-    <RootPropertyPathName Name="powerPartition" />
+    <RootPropertyPathName Name="Values4" />
+    <RootPropertyPathName Name="PointLabel" />
+    <RootPropertyPathName Name="Values3" />
+    <RootPropertyPathName Name="Values2" />
+    <RootPropertyPathName Name="Values1" />
     <RootPropertyPathName Name="costData" />
     <RootPropertyPathName Name="SeriesCollection" />
     <RootPropertyPathName Name="YFormatter" />
@@ -74,10 +78,10 @@
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
+      <RootProperty Name="VerticalContentAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="HorizontalContentAlignment" />
-      <RootProperty Name="VerticalContentAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
@@ -241,7 +245,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
       <RootProperty Name="MinHeight" />
-      <RootProperty Name="MaxHeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
       <RootProperty Name="States" />
@@ -417,6 +420,17 @@
       <RootProperty Name="Separator" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.dailyLog" />
+    <RootType FullName="LiveCharts.Uwp.PieChart">
+      <RootProperty Name="LegendLocation" />
+      <RootProperty Name="Series" />
+    </RootType>
+    <RootType FullName="LiveCharts.Uwp.PieSeries">
+      <RootProperty Name="Title" />
+      <RootProperty Name="Values" />
+      <RootProperty Name="DataLabels" />
+      <RootProperty Name="PushOut" />
+      <RootProperty Name="LabelPoint" />
+    </RootType>
     <RootType FullName="GuzzlerMobileApp.views.dailyPie" />
     <RootType FullName="GuzzlerMobileApp.views.deviceDetails" />
     <RootType FullName="GuzzlerMobileApp.views.devices" />
