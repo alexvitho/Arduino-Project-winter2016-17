@@ -69,10 +69,10 @@ namespace GuzzlerMobileApp.views
             pointFormatter = value => Math.Round(value,3).ToString() + " kW";
 
             lineData.LabelPoint= new Func<ChartPoint, string>(p => Math.Round(p.Y,3).ToString()+" kW");
-            //The next code simulates data changes every 300 ms
+            //The next code simulates data changes every 1500 ms
             Timer = new DispatcherTimer
             {
-                Interval = TimeSpan.FromMilliseconds(300)
+                Interval = TimeSpan.FromMilliseconds(1500)
             };
             Timer.Tick += TimerOnTick;
             IsDataInjectionRunning = false;
@@ -151,14 +151,14 @@ namespace GuzzlerMobileApp.views
 
             SetAxisLimits(now);
 
-            //lets only use the last 30 values
-            if (ChartValues.Count > 30) ChartValues.RemoveAt(0);
+            //lets only use the last 50 values
+            if (ChartValues.Count > 50) ChartValues.RemoveAt(0);
         }
 
         private void SetAxisLimits(DateTime now)
         {
             AxisMax = now.Ticks + TimeSpan.FromSeconds(1).Ticks; // lets force the axis to be 100ms ahead
-            AxisMin = now.Ticks - TimeSpan.FromSeconds(8).Ticks; //we only care about the last 8 seconds
+            AxisMin = now.Ticks - TimeSpan.FromSeconds(10).Ticks; //we only care about the last 10 seconds
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -170,6 +170,9 @@ namespace GuzzlerMobileApp.views
         }
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
+            Timer.Stop();
+            IsDataInjectionRunning = false;
+
             Window.Current.Content = new specialDev(devName);
             Window.Current.Activate();
         }
