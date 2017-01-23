@@ -109,6 +109,11 @@ namespace GuzzlerMobileApp.views
             Window.Current.Content = new dailyPie(DateChosed.ToLocalTime().DateTime, DevName);
             Window.Current.Activate();
         }
+        private void Column_Click(object sender, RoutedEventArgs e)
+        {
+            Window.Current.Content = new dailyColumn(DateChosed.ToLocalTime().DateTime, DevName);
+            Window.Current.Activate();
+        }
         #region INotifyPropertyChange
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(string propertyName = "")

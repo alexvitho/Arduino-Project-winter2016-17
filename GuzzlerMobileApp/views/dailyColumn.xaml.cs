@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GuzzlerMobileApp.Common;
+using GuzzlerMobileApp.DataModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -24,13 +26,29 @@ namespace GuzzlerMobileApp.views
     {
 
         public string DevName { get; private set; }
-   //     public List<piePowerItem> powerPartition { get; private set; }
+       public List<powerDayItem> powerPerHour { get; private set; }
         public string DevGuzzeled { get; private set; }
         DateTime Date { get; set; }
 
         public dailyColumn(DateTime DateTime, string name = null)
         {
+            if (name == null)
+                name = "";
+            DevName = name;
+            if (DateTime == null)
+                Date = DateTimeOffset.Now.ToLocalTime().Date;
+            else
+                Date = DateTime;
             this.InitializeComponent();
+
+
+        }
+
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window.Current.Content = new dailyLog(deviceGraphAnalysis.dateToString(Date), DevName, Date.ToUniversalTime());
+            Window.Current.Activate();
         }
     }
 }
