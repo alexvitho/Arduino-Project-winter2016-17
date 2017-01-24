@@ -85,7 +85,9 @@ namespace GuzzlerMobileApp.views
                     Fill = new SolidColorBrush(Windows.UI.Colors.Transparent)
                     ,
                     Stroke =new SolidColorBrush(Windows.UI.Colors.Blue),
-                    StrokeThickness = 1
+                    StrokeThickness = 1,
+                    Title="",LabelPoint= new Func<ChartPoint, string>(p => Math.Round(p.Y,3).ToString()+" kW" )
+                    
                 },
                  };
                 

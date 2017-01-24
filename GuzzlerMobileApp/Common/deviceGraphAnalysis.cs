@@ -150,9 +150,12 @@ namespace GuzzlerMobileApp.Common
             {
                 dailyPower[i] = 0;
             }
+            DateTimeOffset iterating_date = new DateTimeOffset(date.Year, date.Month,1,10,0 ,0 ,new TimeSpan());
             for (int i = 0; i < numOfDays; i++)
             {
-                dailyPower[i] = getDailyPower(date, deviceName);
+
+                dailyPower[i] = getDailyPower(iterating_date, deviceName);
+                iterating_date= iterating_date.AddDays(1);
             }
                 return dailyPower;
         }
