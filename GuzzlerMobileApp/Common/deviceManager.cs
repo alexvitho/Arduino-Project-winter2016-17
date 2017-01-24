@@ -28,6 +28,7 @@ namespace GuzzlerMobileApp.Common
         public static StorageCredentials credentials = new StorageCredentials("guzzlerstorage", "GQgI4xCFRAHvD4s+4E+QKqPAHAWGgWagsWa6zP3aWfKus8GGJ15n+Fhp0DT9tD6+OzHSGR2Ekf8Twl4w2mfPow==");
         public static CloudStorageAccount storageAccount = new CloudStorageAccount(credentials, true);
         CloudTable devicesTable = storageAccount.CreateCloudTableClient().GetTableReference("GuzzlerDevices");  // Retrieve a reference to the table.
+        CloudTable devicesRealTimeTable = storageAccount.CreateCloudTableClient().GetTableReference("DeviceGrapsReal");  // Retrieve a reference to the table.
         public Device createNewDevice(string guzzId, string deviceName, string type, string manName, string model, string serial)
         {
             Device newDevice = new Device(guzzId, deviceName);
@@ -52,6 +53,14 @@ namespace GuzzlerMobileApp.Common
              // Execute the retrieve operation.
             TableResult tableResultValue =  devicesTable.ExecuteAsync(retrieveOperation).GetAwaiter().GetResult();
             return (Device)tableResultValue.Result; 
+        }
+        public bool cheCkifDeviceStreamingLive(string name)
+        {
+            string filter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, DataModel.existingDevsModel.nickToId[name]);
+            var query = new TableQuery<DynamicTableEntity>().Where(filter).Select(new string[] { "realPower" });
+            var queryOutput = devicesRealTimeTable.ExecuteQuerySegmentedAsync<DynamicTableEntity>(query, null).GetAwaiter().GetResult();
+            var results = queryOutput.Results;
+            return (results.Count != 0);
         }
 
 

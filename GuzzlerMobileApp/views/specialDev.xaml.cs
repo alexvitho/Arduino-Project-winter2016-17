@@ -18,6 +18,11 @@ namespace GuzzlerMobileApp.views
 
         private void powerConsumption_Click(object sender, RoutedEventArgs e)
         {
+            if (App.devicesMan.cheCkifDeviceStreamingLive(DeviceName) == false)
+            {
+                showMSG.showOkMSG("No Live Stream Available", "Please check your azzure storage connection");
+                return;
+            }
             Window.Current.Content = new realTimePower(DeviceName);
             Window.Current.Activate();
         }
