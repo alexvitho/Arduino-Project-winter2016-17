@@ -1,0 +1,107 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="GuzzlerMobileApp.views.devices"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GuzzlerMobileApp.views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" >
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid Background="{StaticResource splashBackColor}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="6*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*" />
+            <RowDefinition Height="0.3*" MinHeight="40"/>
+            <RowDefinition Height="0.1*" />
+            <RowDefinition Height="0.3*" MinHeight="60"/>
+            <RowDefinition Height="0.1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="0.1*" />
+            <RowDefinition Height="0.9*"  MinHeight="80"/>
+            <RowDefinition Height="0.2*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <TextBox Style="{StaticResource TitleText}" Text="GuzzleR Devices"  FontSize="26" VerticalAlignment="Top" />
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="3">
+            <Button x:ConnectionId='7'   Content="Register New Device" Style="{StaticResource defaultButton}"  VerticalAlignment="Center" HorizontalAlignment="Stretch"                         />
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*" MinHeight="40" />
+                <RowDefinition Height="0.01*" />
+                <RowDefinition Height="0.5*" MinHeight="40" />
+                <RowDefinition Height="0.3*" />
+                <RowDefinition Height="0.3*" MinHeight="60"/>
+                <RowDefinition Height="0.1*" />
+
+                <RowDefinition Height="0.4*" MinHeight="40"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0">
+                <TextBox Style="{StaticResource LightTitleText}" Text="Choose Device:"  VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" />
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="0.2*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <ComboBox x:ConnectionId='6' x:Name="chooseDev"  ScrollViewer.VerticalScrollBarVisibility="Auto" MaxDropDownHeight="150"  MinWidth="160" HorizontalAlignment="Stretch" VerticalAlignment="Center"  PlaceholderText="Choose Device" Style="{StaticResource ComboBoxStyle}"                                                />
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="2">
+                    <HyperlinkButton x:ConnectionId='5' MinWidth="60" Content="Next" VerticalAlignment="Center" HorizontalAlignment="Stretch" Style="{StaticResource HyperlinkButtonStyle}"                                                                     />
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.3*" MinHeight="30" />
+                    <RowDefinition Height="0.1*" MinHeight="30"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Style="{StaticResource LightTitleText}" Text="Calculate monthly cost" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="Black" FontSize="18"/>
+                <TextBox Grid.Row="1" Style="{StaticResource LightTitleText}" Text="(It will take a while)"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="Black" FontSize="14"/>
+
+            </Grid>
+            <Grid Grid.Row="6" Grid.Column="0">
+                <Button x:ConnectionId='4' Content="Calculate Cost "  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"                    />
+            </Grid>
+
+        </Grid>
+        <Grid Grid.Row="7" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="3*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0">
+                <TextBox Style="{StaticResource TitleText}" Text="Remove Device:" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="#FFD8450E" />
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="0.2*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <ComboBox x:ConnectionId='3' x:Name="removeDev" ScrollViewer.VerticalScrollBarVisibility="Auto" MaxDropDownHeight="150"    MinWidth="160" HorizontalAlignment="Stretch" VerticalAlignment="Center"  PlaceholderText="Choose Device" Style="{StaticResource ComboBoxStyle}"                                                    />
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="2">
+                    <Button x:ConnectionId='2' MinWidth="60"  Content="Remove" Style="{StaticResource defaultButton}" VerticalAlignment="Center" HorizontalAlignment="Stretch"                         ClickMode="Press"/>
+                </Grid>
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Page>
+

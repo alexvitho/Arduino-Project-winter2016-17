@@ -22,89 +22,82 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.3*" />
-            <RowDefinition Height="2*"  />
-            <RowDefinition Height="1.5*" />
-            <RowDefinition Height="1*" MinHeight="45" />
-            <RowDefinition Height="10*" />
-            <RowDefinition Height="0.6*" />
-            <RowDefinition Height="0.1*" />
-            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" MinHeight="30" />
+            <RowDefinition Height="1*"  MinHeight="60"/>
+            <RowDefinition Height="1*" MinHeight="65" />
+            <RowDefinition Height="6*" />
             <RowDefinition Height="0.3*" />
-        
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="0.3*" />
+
         </Grid.RowDefinitions>
-        <Grid Grid.Column="1" Grid.Row="1">
+        <Grid Grid.Column="1" Grid.ColumnSpan="2" Margin="0.333,16,25,0" Grid.RowSpan="2">
             <TextBox Style="{StaticResource TitleText}" Text="Device Details"  FontSize="26" VerticalAlignment="Center"/>
         </Grid>
-        <Grid Grid.Column="1" Grid.Row="2">
-            <TextBox Style="{StaticResource TitleText}" FontSize="16" Text="{x:Bind  TimeCreated, Mode=OneWay}" FontWeight="Light" Background="Transparent"/>
-
+        <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" Margin="0,0,0,0.333">
+            <TextBox Margin="20 0" Style="{StaticResource TitleText}" FontSize="16" Text="{x:Bind  TimeCreated, Mode=OneWay}" FontWeight="Light" Background="Transparent" HorizontalAlignment="Stretch"/>
         </Grid>
-        <Grid Grid.Column="1" Grid.Row="3">
+        <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" Margin="0,56,0,0.333" Grid.RowSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1.7*"/>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0" >
-                <TextBox Style="{StaticResource explanationText}" Text="GuzzleR ID: " HorizontalAlignment="Right" />
+                <TextBox  Style="{StaticResource explanationText}" Text="GuzzleR ID: " HorizontalAlignment="Right" />
             </Grid>
             <Grid Grid.Column="1" >
 
-                <TextBox  MinWidth="128"  Style="{StaticResource saniaStyle}"  HorizontalAlignment="Center" VerticalAlignment="Center" Text="{x:Bind GuzzlerId ,Mode=OneWay}" IsReadOnly="True" HorizontalContentAlignment="Center"/>
+                <TextBox  MinWidth="128"  Style="{StaticResource saniaStyle}"  HorizontalAlignment="Stretch" Margin=" 0 0 20 0" VerticalAlignment="Center" Text="{x:Bind GuzzlerId ,Mode=OneWay}" IsReadOnly="True" HorizontalContentAlignment="Center"/>
             </Grid>
             <Grid Grid.ColumnSpan="2" />
         </Grid>
-        <Grid Grid.Row="4" Grid.Column="1">
+        <Grid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1.7*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.2*"/>
                 <RowDefinition Height="0.2*"/>
                 <RowDefinition Height="0.2*"/>
                 <RowDefinition Height="0.2*"/>
-                <RowDefinition Height="0.2*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Column="0" Grid.Row="0">
-                <TextBox Style="{StaticResource explanationText}" Text="Device Nick:"  />
+            <Grid Grid.Column="0" Grid.Row="0" Margin="20 0 0 0 ">
+                <TextBox Style="{StaticResource explanationText}" Text="Device Nick:"  HorizontalAlignment="Stretch" />
             </Grid>
-            <Grid Grid.Column="1" Grid.Row="0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="44*"/>
-                    <ColumnDefinition Width="29*"/>
-                </Grid.ColumnDefinitions>
-                <TextBox   Background="{StaticResource buttonBack}" Style="{StaticResource saniaStyle}"  HorizontalAlignment="Stretch" VerticalAlignment="Center"  Text="{x:Bind DevName ,Mode=OneWay}" Grid.ColumnSpan="2" Margin="0,0,10,0" FontSize="17" />
+            <Grid Grid.Column="1" Grid.Row="0" Margin="0 0 10 0 ">
+
+                <TextBox  Background="{StaticResource buttonBack}" Style="{StaticResource saniaStyle}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Text="{x:Bind DevName ,Mode=OneWay}"  FontSize="17" />
             </Grid>
             <Grid Grid.Column="0" Grid.Row="1">
-                <TextBox Style="{StaticResource explanationText}" Text="Device Type"    />
+                <TextBox HorizontalAlignment="Stretch" Margin="10 0 0 0 " Style="{StaticResource explanationText}" Text="Device Type"    />
             </Grid>
             <Grid Grid.Column="1" Grid.Row="1">
-                <TextBox   Background="{StaticResource buttonBack}" Style="{StaticResource saniaStyle}"  HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="{x:Bind DevType, Mode=OneWay}"/>
+                <TextBox HorizontalAlignment="Stretch"  Margin="0 5 10 5 "  Background="{StaticResource buttonBack}" Style="{StaticResource saniaStyle}"  VerticalAlignment="Stretch" Text="{x:Bind DevType, Mode=OneWay}" />
             </Grid>
             <Grid Grid.Column="0" Grid.Row="2">
-                <TextBox Style="{StaticResource explanationText}" Text="Manufacturer Name: "  FontSize="14"  />
+                <TextBox HorizontalAlignment="Stretch" Margin="5 0 0 0 " Style="{StaticResource explanationTextLight}" Text="Manufacturer Name: "  FontSize="14"  />
             </Grid>
             <Grid Grid.Column="1" Grid.Row="2">
-                <TextBox   Background="{StaticResource buttonBack}" Style="{StaticResource saniaStyle}"  HorizontalAlignment="Stretch" VerticalAlignment="Center"  Text="{x:Bind Manufacturer, Mode=OneWay}"/>
+                <TextBox HorizontalAlignment="Stretch" Margin="0 5 10 5 "  Background="{StaticResource buttonBack}" Style="{StaticResource saniaStyle}" VerticalAlignment="Stretch"  Text="{x:Bind Manufacturer, Mode=OneWay}" />
             </Grid>
             <Grid Grid.Column="0" Grid.Row="3">
-                <TextBox Style="{StaticResource explanationText}" Text="Device Model:"  />
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox HorizontalAlignment="Stretch"  Margin="10,0,0,0" Style="{StaticResource explanationTextLight}" Text="Device Model:"   />
             </Grid>
             <Grid Grid.Column="1" Grid.Row="3">
-                <TextBox   Background="{StaticResource buttonBack}" Style="{StaticResource saniaStyle}"  HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="{x:Bind Model, Mode=OneWay}"/>
-            </Grid>
-            <Grid Grid.Column="0" Grid.Row="4">
-                <TextBox Style="{StaticResource explanationTextLight}" Text="Serial Number: "  />
-            </Grid>
-            <Grid Grid.Column="1" Grid.Row="4">
-                <TextBox   Background="{StaticResource buttonBack}" Style="{StaticResource saniaStyle}"  HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="{x:Bind Serial, Mode=OneWay}"/>
+                <TextBox HorizontalAlignment="Stretch"  Margin="0 5 10 5 " Background="{StaticResource buttonBack}" Style="{StaticResource saniaStyle}" VerticalAlignment="Stretch" Text="{x:Bind Model, Mode=OneWay}"/>
             </Grid>
 
 
+
+
         </Grid>
-        <Grid Grid.Row="6" Grid.Column="1">
+        <Grid Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="0.333,395.667,25,0.667" Grid.RowSpan="2">
         </Grid>
-        <Grid Grid.Row="7" Grid.Column="1">
+        <Grid Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Margin="0.333,0.333,25,0">
             <Button Style="{StaticResource defaultButton}" Content="&lt; Back"  HorizontalAlignment="Left" VerticalAlignment="Center" Click="backButton_Click" />
         </Grid>
     </Grid>

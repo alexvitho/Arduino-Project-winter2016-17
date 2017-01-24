@@ -21,19 +21,19 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.3*" />
-            <RowDefinition Height="1.5*" />
-            <RowDefinition Height="1.5*" />
-            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="0.2*" MinHeight="50"/>
+            <RowDefinition Height="1.7*" />
+            <RowDefinition Height="0.2*" />
             <RowDefinition Height="5*" />
-            <RowDefinition Height="0.5*" />
-            <RowDefinition Height="1.5*" />
+            <RowDefinition Height="0.2*" />
+            <RowDefinition Height="0.1*" MinHeight="50"/>
             <RowDefinition Height="0.3*" />
         </Grid.RowDefinitions>
         <Grid Grid.Row="1" Grid.Column="1">
             <TextBox Style="{StaticResource TitleText}" FontSize="24" Text="{x:Bind DevName , Mode=OneWay ,FallbackValue=Device Name}" FontWeight="Light" />
         </Grid>
         <Grid Grid.Row="2" Grid.Column="1" >
-            <TextBox Style="{StaticResource explanationText}" FontSize="20" Text="Pick a date to see how much your device guzzled" VerticalAlignment="Top" />
+            <TextBox Style="{StaticResource explanationText}" FontSize="20" Text="Pick a date to see how much your device guzzled" VerticalAlignment="Center" />
         </Grid>
 
         <Grid Grid.Column="1" Grid.Row="4">

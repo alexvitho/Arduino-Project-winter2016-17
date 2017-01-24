@@ -24,12 +24,12 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.3*" />
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="0.7*" />
-            <RowDefinition Height="1*" />
+            <RowDefinition Height="0.5*" MinHeight="30"/>
+            <RowDefinition Height="0.7*" MinHeight="30"/>
+            <RowDefinition Height="1*" MinHeight="80"/>
             <RowDefinition Height="4*" />
-            <RowDefinition Height="1.2*" MinHeight="80"/>
-            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="1*" MinHeight="60"/>
+            <RowDefinition Height="0.3*" />
         </Grid.RowDefinitions>
         <Grid Grid.Row="1" Grid.Column="1">
             <TextBox Style="{StaticResource TitleText}" FontSize="24" Text="{x:Bind DevName  , Mode=OneWay}" FontWeight="Light" />

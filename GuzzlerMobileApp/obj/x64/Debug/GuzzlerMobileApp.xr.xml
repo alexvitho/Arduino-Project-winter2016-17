@@ -42,8 +42,8 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Resources" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="MaxWidth" />
       <RootMethod Name="GetColumnSpan" />
       <RootMethod Name="SetColumnSpan" />
@@ -187,6 +187,7 @@
       <RootProperty Name="MinWidth" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Content" />
+      <RootProperty Name="MinHeight" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="ClickMode" />
       <RootProperty Name="Height" />
@@ -406,15 +407,11 @@
       <RootProperty Name="ShowLabels" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="Separator" />
       <RootProperty Name="LabelFormatter" />
       <RootProperty Name="MinValue" />
       <RootProperty Name="MaxValue" />
       <RootProperty Name="DisableAnimations" />
-    </RootType>
-    <RootType FullName="LiveCharts.Uwp.Separator">
-      <RootProperty Name="IsEnabled" />
-      <RootProperty Name="Step" />
+      <RootProperty Name="Separator" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Mode" />
@@ -468,6 +465,9 @@
       <RootProperty Name="PointGeometrySize" />
       <RootProperty Name="StrokeThickness" />
       <RootProperty Name="Title" />
+    </RootType>
+    <RootType FullName="LiveCharts.Uwp.Separator">
+      <RootProperty Name="Step" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.realTimePower" />
     <RootType FullName="GuzzlerMobileApp.views.regDev" />
