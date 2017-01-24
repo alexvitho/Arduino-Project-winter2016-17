@@ -42,7 +42,7 @@
             <TextBox   Background="{StaticResource buttonBack}" Style="{StaticResource explanationText}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" Text="{x:Bind DevGuzzeled ,Mode=TwoWay}"/>
         </Grid>
         <Grid Grid.Column="1"  Grid.ColumnSpan="1"  Grid.Row="4" >
-            <lvc:PieChart x:Name="pieChart" LegendLocation="Top" Series="{Binding Series}"    Hoverable="False">
+            <lvc:PieChart x:Name="pieChart" LegendLocation="Top" Series="{Binding Series}" DisableAnimations="True"   Hoverable="False">
                 
             </lvc:PieChart>
         </Grid>

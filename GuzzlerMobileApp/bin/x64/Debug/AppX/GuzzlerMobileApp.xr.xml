@@ -6,14 +6,15 @@
     <RootPropertyPathName Name="DropDownOpenedHeight" />
     <RootPropertyPathName Name="Data2" />
     <RootPropertyPathName Name="Data1" />
+    <RootPropertyPathName Name="SeriesCollection" />
+    <RootPropertyPathName Name="Labels" />
+    <RootPropertyPathName Name="valFormatter" />
     <RootPropertyPathName Name="Series" />
     <RootPropertyPathName Name="Formatter" />
     <RootPropertyPathName Name="minTimeVal" />
     <RootPropertyPathName Name="maxTimeVal" />
-    <RootPropertyPathName Name="costData" />
-    <RootPropertyPathName Name="SeriesCollection" />
+    <RootPropertyPathName Name="Bill" />
     <RootPropertyPathName Name="YFormatter" />
-    <RootPropertyPathName Name="Labels" />
     <RootPropertyPathName Name="ChartValues" />
     <RootPropertyPathName Name="DateTimeFormatter" />
     <RootPropertyPathName Name="AxisMax" />
@@ -263,6 +264,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="RelativeSource" />
+      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.RelativeSource">
       <RootProperty Name="Mode" />
@@ -376,7 +378,6 @@
       <RootProperty Name="Series" />
       <RootProperty Name="LegendStyle" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.PieSeries">
       <RootProperty Name="ItemsSource" />
@@ -392,44 +393,44 @@
       <RootProperty Name="IsSelectionEnabled" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.chartTry" />
-    <RootType FullName="LiveCharts.Uwp.PieChart">
-      <RootProperty Name="LegendLocation" />
+    <RootType FullName="LiveCharts.Uwp.CartesianChart">
       <RootProperty Name="Series" />
-      <RootProperty Name="AnimationsSpeed" />
-      <RootProperty Name="Hoverable" />
+      <RootProperty Name="LegendLocation" />
+      <RootProperty Name="AxisX" />
+      <RootProperty Name="AxisY" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="LiveCharts.Uwp.Axis">
+      <RootProperty Name="Title" />
+      <RootProperty Name="Labels" />
+      <RootProperty Name="ShowLabels" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Separator" />
+      <RootProperty Name="LabelFormatter" />
+      <RootProperty Name="MinValue" />
+      <RootProperty Name="MaxValue" />
+      <RootProperty Name="DisableAnimations" />
+    </RootType>
+    <RootType FullName="LiveCharts.Uwp.Separator">
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="Step" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Mode" />
       <RootProperty Name="FallbackValue" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.dailyColumn" />
-    <RootType FullName="LiveCharts.Uwp.CartesianChart">
-      <RootProperty Name="Series" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="AxisX" />
-      <RootProperty Name="AxisY" />
-      <RootProperty Name="LegendLocation" />
-    </RootType>
-    <RootType FullName="LiveCharts.Uwp.Axis">
-      <RootProperty Name="Title" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="LabelFormatter" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="MinValue" />
-      <RootProperty Name="MaxValue" />
-      <RootProperty Name="Labels" />
-      <RootProperty Name="DisableAnimations" />
-      <RootProperty Name="Separator" />
-    </RootType>
     <RootType FullName="GuzzlerMobileApp.views.dailyLog" />
+    <RootType FullName="LiveCharts.Uwp.PieChart">
+      <RootProperty Name="LegendLocation" />
+      <RootProperty Name="Series" />
+      <RootProperty Name="DisableAnimations" />
+      <RootProperty Name="Hoverable" />
+    </RootType>
     <RootType FullName="GuzzlerMobileApp.views.dailyPie" />
     <RootType FullName="GuzzlerMobileApp.views.deviceDetails" />
     <RootType FullName="GuzzlerMobileApp.views.devices" />
-    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries">
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="IndependentValuePath" />
-      <RootProperty Name="DependentValuePath" />
-    </RootType>
     <RootType FullName="GuzzlerMobileApp.views.estimatedCost" />
     <RootType FullName="Windows.UI.Xaml.Controls.CalendarView">
       <RootProperty Name="HorizontalAlignment" />
@@ -466,9 +467,7 @@
       <RootProperty Name="Values" />
       <RootProperty Name="PointGeometrySize" />
       <RootProperty Name="StrokeThickness" />
-    </RootType>
-    <RootType FullName="LiveCharts.Uwp.Separator">
-      <RootProperty Name="Step" />
+      <RootProperty Name="Title" />
     </RootType>
     <RootType FullName="GuzzlerMobileApp.views.realTimePower" />
     <RootType FullName="GuzzlerMobileApp.views.regDev" />

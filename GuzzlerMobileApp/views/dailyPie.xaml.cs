@@ -56,12 +56,14 @@ namespace GuzzlerMobileApp.views
                         Values = new ChartValues<double>(new double[] { (Math.Round(it.Val, 6)) })
                                        ,
                         Title = it.Dev,
+                        LabelPoint =new Func<ChartPoint, string>(chartPoint => string.Format("{0} ({1:P})", chartPoint.Y, chartPoint.Participation)
+                       )
                       
                     });
                 }
                      
                 
-                PointLabel = chartPoint => chartPoint.Y.ToString();
+            //    PointLabel = chartPoint => chartPoint.Y.ToString();
 
                 DataContext = this;
             }

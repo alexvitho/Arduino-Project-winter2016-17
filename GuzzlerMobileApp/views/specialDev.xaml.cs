@@ -26,13 +26,7 @@ namespace GuzzlerMobileApp.views
             Window.Current.Content = new realTimePower(DeviceName);
             Window.Current.Activate();
         }
-        private void cost_Click(object sender, RoutedEventArgs e)
-        {
-            Window.Current.Content = new estimatedCost(DeviceName);
-            //     Window.Current.Content = new chartTry();
 
-            Window.Current.Activate();
-        }
         private void history_Click(object sender, RoutedEventArgs e)
         {
             Window.Current.Content = new historyLog(DeviceName);

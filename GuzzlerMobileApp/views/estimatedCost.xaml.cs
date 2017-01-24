@@ -36,7 +36,6 @@ namespace GuzzlerMobileApp.views
         
         
 
-        public string DevName { get; private set; }
         public List<powerDayItem> powerPerDay { get; private set; }
         public string DevGuzzeled { get; private set; }
         DateTime Date { get; set; }
@@ -44,11 +43,9 @@ namespace GuzzlerMobileApp.views
         double[] DailyArray;
         double _Bill;
 
-        public estimatedCost( string name = null)
+        public estimatedCost( )
         {
-            if (name == null)
-                name = "";
-            DevName = name;
+           
            
                 Date = DateTimeOffset.Now.ToLocalTime().Date;
             
@@ -117,7 +114,7 @@ namespace GuzzlerMobileApp.views
         }
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
-            Window.Current.Content = new specialDev(DevName);
+            Window.Current.Content = new devices();
             Window.Current.Activate();
         }
 

@@ -111,7 +111,14 @@ namespace GuzzlerMobileApp.views
             App.devicesMan.AzureRemoveDevice(existingDevsModel.nickToId[toRemove], toRemove);
             existingDevsModel.nickToId.Remove(toRemove);
         }
+        private void cost_Click(object sender, RoutedEventArgs e)
+        {
+            
+            showMSG.showOkMSG("Thank you for being patient", "It took few seconds to calculate the statistics");
 
+            Window.Current.Content = new estimatedCost();
+            Window.Current.Activate();
+        }
 
         #region INotifyPropertyChange
         public event PropertyChangedEventHandler PropertyChanged;

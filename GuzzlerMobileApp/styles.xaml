@@ -24,7 +24,9 @@
         <Setter Property="IsReadOnly" Value="True"/>
         <Setter Property="FontSize" Value="48"/>
         <Setter Property="FontWeight" Value="ExtraBold"/>
-        <Setter Property="FontFamily" Value="Showcard Gothic"/>
+     <!--   <Setter Property="FontFamily" Value="Showcard Gothic"/>  -->
+        <Setter Property="FontFamily" Value="Stencil"/>
+
         <Setter Property="TextWrapping" Value="Wrap"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="HorizontalContentAlignment" Value="Left"/>
@@ -62,7 +64,9 @@
         <Setter Property="IsHitTestVisible" Value="False"/>
         <Setter Property="FontSize" Value="15"/>
         <Setter Property="FontWeight" Value="Medium"/>
-        <Setter Property="FontFamily" Value="Showcard Gothic"/>
+ <!--       <Setter Property="FontFamily" Value="Showcard Gothic"/> -->
+        <Setter Property="FontFamily" Value="Stencil"/>
+
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="TextAlignment" Value="Center"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
@@ -320,7 +324,9 @@
         <Setter Property="Padding" Value="8,4,8,4"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="FontFamily" Value="Showcard Gothic"/>
+  <!--      <Setter Property="FontFamily" Value="Showcard Gothic"/> -->
+        <Setter Property="FontFamily" Value="Stencil"/>
+
         <Setter Property="FontWeight" Value="Normal"/>
         <Setter Property="FontSize" Value="16"/>
         <Setter Property="UseSystemFocusVisuals" Value="True"/>
@@ -389,7 +395,9 @@
         <Setter Property="Padding" Value="8,4,8,4"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="FontFamily" Value="Showcard Gothic"/>
+ <!--       <Setter Property="FontFamily" Value="Showcard Gothic"/> -->
+        <Setter Property="FontFamily" Value="Stencil"/>
+
         <Setter Property="FontWeight" Value="Normal"/>
         <Setter Property="FontSize" Value="16"/>
         <Setter Property="UseSystemFocusVisuals" Value="True"/>
@@ -512,7 +520,9 @@
         <Setter Property="Padding" Value="12,11,12,13"/>
         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
         <Setter Property="Foreground" Value="Black"/>
-        <Setter Property="FontFamily" Value="Showcard Gothic" />
+   <!--     <Setter Property="FontFamily" Value="Showcard Gothic" /> -->
+        <Setter Property="FontFamily" Value="Stencil"/>
+
         <Setter Property="UseSystemFocusVisuals" Value="True"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -630,7 +640,9 @@
         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
         <Setter Property="HorizontalAlignment" Value="Left"/>
         <Setter Property="VerticalAlignment" Value="Top"/>
-        <Setter Property="FontFamily" Value="Showcard Gothic"/>
+  <!--      <Setter Property="FontFamily" Value="Showcard Gothic"/> -->
+        <Setter Property="FontFamily" Value="Stencil"/>
+
         <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}"/>
         <Setter Property="ItemContainerStyle" Value="{StaticResource ComboBoxItemStyle1}" />
         <Setter Property="ItemsPanel">
@@ -776,7 +788,9 @@
     </Style>
 
     <Style x:Key="TitleContentStyle" TargetType="ContentControl">
-        <Setter Property="FontFamily" Value="Showcard Gothic" />
+ <!--       <Setter Property="FontFamily" Value="Showcard Gothic" /> -->
+        <Setter Property="FontFamily" Value="Stencil"/>
+
         <Setter Property="FontWeight" Value="ExtraBlack"/>
         <Setter Property="FontSize" Value="22"/>
         <Setter Property="Height" Value="20"/>
@@ -790,7 +804,9 @@
         <Setter Property="Foreground" Value="Yellow"/>
     </Style>
     <Style x:Key="TitleMessageStyle" TargetType="TextBlock">
-        <Setter Property="FontFamily" Value="Showcard Gothic" />
+   <!--     <Setter Property="FontFamily" Value="Showcard Gothic" /> -->
+        <Setter Property="FontFamily" Value="Stencil"/>
+
         <Setter Property="FontWeight" Value="ExtraBlack"/>
         <Setter Property="FontSize" Value="22"/>
         <Setter Property="Height" Value="20"/>
