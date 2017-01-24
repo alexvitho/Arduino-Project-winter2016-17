@@ -61,7 +61,7 @@ namespace GuzzlerMobileApp.views
             }
             foreach (string dev in DataModel.existingDevsModel.existingDevs)
             {
-                DailyArray = analysis.getMonthlyPowerPerDay(Date.ToUniversalTime(), DevName);
+                DailyArray = analysis.getMonthlyPowerPerDay(Date.ToUniversalTime(), dev);
                 for (int j=0; j < DailyArray.Length; ++j)
                 {
                     sum[j] += DailyArray[j];

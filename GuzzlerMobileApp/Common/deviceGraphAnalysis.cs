@@ -117,17 +117,27 @@ namespace GuzzlerMobileApp.Common
             }
             return dailyAveragePower;
         }
+        //public double getAvgDailyPower(DateTimeOffset DateChosed, string deviceName)
+        //{
+        //    double[] hourlyPower = getDailyPowerPerHour(DateChosed, deviceName);
+        //    double overalSum = 0;
+        //    for(int i = 0; i< 24; ++i)
+        //    {
+        //        overalSum += hourlyPower[i];
+        //    }
+        //    return (overalSum / 24);
+        //}
+        // returns the sum of the power consumed in one day 
         public double getDailyPower(DateTimeOffset DateChosed, string deviceName)
         {
             double[] hourlyPower = getDailyPowerPerHour(DateChosed, deviceName);
             double overalSum = 0;
-            for(int i = 0; i< 24; ++i)
+            for (int i = 0; i < 24; ++i)
             {
                 overalSum += hourlyPower[i];
             }
-            return (overalSum / 24);
+            return (overalSum );
         }
-
         public string getValueFromTable(string pKey, string rKey, string column, CloudTable table)
         {
             string countryFilter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, pKey);
@@ -168,7 +178,7 @@ namespace GuzzlerMobileApp.Common
             {
                 overalSum += dailyPower[i];
             }
-            return( overalSum / numOfDays);
+            return( overalSum);
         }
 
         public double getElectricityTaarif(string country , string year)
