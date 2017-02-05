@@ -4,7 +4,6 @@ using Microsoft.WindowsAzure.Storage.Auth;
 using Microsoft.WindowsAzure.Storage.Table;
 using System;
 using System.Collections.Generic;
-using static GuzzlerMobileApp.DataModel.powerTimeItem;
 
 namespace GuzzlerMobileApp.Common
 {
@@ -48,20 +47,12 @@ namespace GuzzlerMobileApp.Common
                 DateTimeOffset prevDay = new DateTimeOffset(day.Year, day.Month, day.Day, 0, 0, 0, new TimeSpan());
                 day = prevDay.AddHours(-2);
                 startTime = new DateTimeOffset(day.Year, day.Month, day.Day, 22, 0, 0, new TimeSpan());
-
-                //       startTime = new DateTimeOffset(DateChosed.Year, DateChosed.Month, DateChosed.Day, 0, 0, 0, new TimeSpan());
                 endTime = new DateTimeOffset(DateChosed.Year, DateChosed.Month, DateChosed.Day, 21, 59, 59, new TimeSpan());
             }
-
             string startTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.GreaterThanOrEqual, startTime);
             string endTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.LessThanOrEqual, endTime);
             string dateFilter = TableQuery.CombineFilters(TableQuery.CombineFilters(partitionFilter, TableOperators.And, startTimeFilter), TableOperators.And, endTimeFilter);
             // ************************************** End of date filter ********************************************//
-            // **************************************  power filter ********************************************//
-            string powerLow = TableQuery.GenerateFilterConditionForDouble("realPower", QueryComparisons.GreaterThanOrEqual, 1);
-            string powerHigh = TableQuery.GenerateFilterConditionForDouble("realPower", QueryComparisons.LessThanOrEqual, 2);
-            string powerFilter = TableQuery.CombineFilters(TableQuery.CombineFilters(partitionFilter, TableOperators.And, powerHigh), TableOperators.And, powerLow);
-            // ************************************** End of power filter ********************************************//
             var query = new TableQuery<DynamicTableEntity>().Where(dateFilter).Select(new string[] { "Timestamp", "realPower" });
             var queryOutput = devicesGraphsTable.ExecuteQuerySegmentedAsync<DynamicTableEntity>(query, null);
             var results = queryOutput.Result.Results;
@@ -99,7 +90,6 @@ namespace GuzzlerMobileApp.Common
         }
         public List<powerTimeItem> getAverageEvery10SAmples(List<powerTimeItem> dailyPower)
         {
-            // List<powerTimeItem> dailyPower = getPowerValuesForDate(DateChosed, deviceName);
             List<powerTimeItem> dailyAveragePower = new List<powerTimeItem>();
             int i = 0;
            double average = 0;
@@ -117,16 +107,7 @@ namespace GuzzlerMobileApp.Common
             }
             return dailyAveragePower;
         }
-        //public double getAvgDailyPower(DateTimeOffset DateChosed, string deviceName)
-        //{
-        //    double[] hourlyPower = getDailyPowerPerHour(DateChosed, deviceName);
-        //    double overalSum = 0;
-        //    for(int i = 0; i< 24; ++i)
-        //    {
-        //        overalSum += hourlyPower[i];
-        //    }
-        //    return (overalSum / 24);
-        //}
+
         // returns the sum of the power consumed in one day 
         public double getDailyPower(DateTimeOffset DateChosed, string deviceName)
         {

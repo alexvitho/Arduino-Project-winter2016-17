@@ -1,11 +1,8 @@
 ﻿using GuzzlerMobileApp.DataModel;
 using LiveCharts;
-using LiveCharts.Configurations;
 using LiveCharts.Uwp;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using static GuzzlerMobileApp.Common.deviceGraphAnalysis;
@@ -31,19 +28,20 @@ namespace GuzzlerMobileApp.views
                 Date = DateTimeOffset.Now.ToLocalTime().Date;
             else
                 Date = DateTime;
-            double guzzeldDevPower =0;
+            double guzzeldDevPower = 0;
             double totalPower = 0;
             this.InitializeComponent();
             powerPartition = (new Common.deviceGraphAnalysis()).getDailyPowerPie(Date.ToLocalTime());
-            foreach (piePowerItem it in powerPartition) {
+            foreach (piePowerItem it in powerPartition)
+            {
                 totalPower += it.Val;
                 if (it.Dev.Equals(DevName))
-                    guzzeldDevPower = Math.Round(it.Val,6);
+                    guzzeldDevPower = Math.Round(it.Val, 6);
             }
             totalPower = Math.Round(totalPower, 6);
-            string DevPower ="On " + dateToString(Date) +"\n"+DevName+" guzzled: "+ guzzeldDevPower +" kW";
-            DevGuzzeled = DevPower+ "\nTotal guzzled: " + totalPower + " kW";
-  
+            string DevPower = "On " + dateToString(Date) + "\n" + DevName + " guzzled: " + guzzeldDevPower + " kW";
+            DevGuzzeled = DevPower + "\nTotal guzzled: " + totalPower + " kW";
+
             try
             {
 
@@ -56,15 +54,11 @@ namespace GuzzlerMobileApp.views
                         Values = new ChartValues<double>(new double[] { (Math.Round(it.Val, 6)) })
                                        ,
                         Title = it.Dev,
-                        LabelPoint =new Func<ChartPoint, string>(chartPoint => string.Format("{0} ({1:P})", chartPoint.Y, chartPoint.Participation)
+                        LabelPoint = new Func<ChartPoint, string>(chartPoint => string.Format("{0} ({1:P})", chartPoint.Y, chartPoint.Participation)
                        )
-                      
+
                     });
                 }
-                     
-                
-            //    PointLabel = chartPoint => chartPoint.Y.ToString();
-
                 DataContext = this;
             }
             catch (Exception e)

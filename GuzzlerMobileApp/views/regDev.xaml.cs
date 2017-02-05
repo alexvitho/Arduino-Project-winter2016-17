@@ -3,7 +3,6 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using GuzzlerMobileApp.DataModel;
 using System;
-using Windows.UI.Popups;
 
 namespace GuzzlerMobileApp.views
 {

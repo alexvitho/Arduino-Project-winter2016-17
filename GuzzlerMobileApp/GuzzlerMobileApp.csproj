@@ -103,9 +103,6 @@
       <DependentUpon>ExtendedSplash.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="views\chartTry.xaml.cs">
-      <DependentUpon>chartTry.xaml</DependentUpon>
-    </Compile>
     <Compile Include="views\dailyColumn.xaml.cs">
       <DependentUpon>dailyColumn.xaml</DependentUpon>
     </Compile>
@@ -179,10 +176,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Page>
-    <Page Include="views\chartTry.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="views\dailyColumn.xaml">
       <Generator>MSBuild:Compile</Generator>

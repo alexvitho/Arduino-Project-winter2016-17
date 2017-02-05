@@ -1,5 +1,4 @@
 ﻿using GuzzlerMobileApp.Common;
-using GuzzlerMobileApp.views;
 using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Collections.Generic;
@@ -11,7 +10,7 @@ using Windows.UI.Xaml.Navigation;
 
 
 namespace GuzzlerMobileApp
-{ 
+{
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>

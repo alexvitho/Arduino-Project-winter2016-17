@@ -1,5 +1,4 @@
 ﻿using GuzzlerMobileApp.DataModel;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using Windows.UI.Xaml;

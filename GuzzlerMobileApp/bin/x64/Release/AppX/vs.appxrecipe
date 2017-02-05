@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-319VCQC</Machine>
+    <WindowsUser>Alex</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>b7657ddb-b2f7-4885-9e64-d4f2feaf51e1</PackageIdentityName>
+    <PackageIdentityPublisher>CN=anwigley</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\obj\x64\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <RegisteredManifestChecksum>7D0FAA79C5D1DFF1EE68B3854D2F3DF6497BFCA155C3E28C202ADDD76BE8DA0F</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>b7657ddb-b2f7-4885-9e64-d4f2feaf51e1_1.0.0.0_x64__ka1dgav0par9g</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>b7657ddb-b2f7-4885-9e64-d4f2feaf51e1_ka1dgav0par9g!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>b7657ddb-b2f7-4885-9e64-d4f2feaf51e1</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=anwigley</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-05T18:59:03.266</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\Assets\ExampleG1.png">
+      <PackagePath>Assets\ExampleG1.png</PackagePath>
+      <Modified>2017-01-20T12:57:34.917</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\Assets\Guzz.png">
+      <PackagePath>Assets\Guzz.png</PackagePath>
+      <Modified>2017-01-20T12:57:34.917</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\Assets\GuzzlerLogo.png">
+      <PackagePath>Assets\GuzzlerLogo.png</PackagePath>
+      <Modified>2017-01-20T12:57:34.917</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\Assets\guzzlerSpalsh.PNG">
+      <PackagePath>Assets\guzzlerSpalsh.PNG</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-01-20T12:57:34.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\Assets\guzzlerSpalsh.scale-100.png">
+      <PackagePath>Assets\guzzlerSpalsh.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-01-20T12:57:34.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\Assets\guzzlerSpalsh.scale-200.png">
+      <PackagePath>Assets\guzzlerSpalsh.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-01-20T12:57:34.922</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\Assets\guzzlerSpalsh.scale-400.png">
+      <PackagePath>Assets\guzzlerSpalsh.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-01-20T12:57:34.922</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2017-01-20T12:57:34.918</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\Assets\Moneygraph.jpg">
+      <PackagePath>Assets\Moneygraph.jpg</PackagePath>
+      <Modified>2017-01-20T12:57:34.918</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <Modified>2017-01-20T12:57:34.919</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-01-20T12:57:34.919</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-01-20T12:57:34.919</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-01-20T12:57:34.920</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-01-20T12:57:34.920</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-01-20T12:57:34.920</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\clrcompression.dll">
+      <PackagePath>clrcompression.dll</PackagePath>
+      <Modified>2016-06-13T18:46:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\de\Microsoft.Data.Edm.resources.dll">
+      <PackagePath>de\Microsoft.Data.Edm.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:32:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\de\Microsoft.Data.OData.resources.dll">
+      <PackagePath>de\Microsoft.Data.OData.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:33:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\de\System.Spatial.resources.dll">
+      <PackagePath>de\System.Spatial.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:35:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\es\Microsoft.Data.Edm.resources.dll">
+      <PackagePath>es\Microsoft.Data.Edm.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:32:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\es\Microsoft.Data.OData.resources.dll">
+      <PackagePath>es\Microsoft.Data.OData.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:33:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\es\System.Spatial.resources.dll">
+      <PackagePath>es\System.Spatial.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:35:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\fr\Microsoft.Data.Edm.resources.dll">
+      <PackagePath>fr\Microsoft.Data.Edm.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:32:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\fr\Microsoft.Data.OData.resources.dll">
+      <PackagePath>fr\Microsoft.Data.OData.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:33:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\fr\System.Spatial.resources.dll">
+      <PackagePath>fr\System.Spatial.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:35:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\GuzzlerMobileApp.dll">
+      <PackagePath>GuzzlerMobileApp.dll</PackagePath>
+      <Modified>2017-02-05T18:59:01.766</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\GuzzlerMobileApp.exe">
+      <PackagePath>GuzzlerMobileApp.exe</PackagePath>
+      <Modified>2017-02-05T18:59:03.229</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\GuzzlerMobileApp.pdb">
+      <PackagePath>GuzzlerMobileApp.pdb</PackagePath>
+      <Modified>2017-02-05T18:59:03.227</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\it\Microsoft.Data.Edm.resources.dll">
+      <PackagePath>it\Microsoft.Data.Edm.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:32:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\it\Microsoft.Data.OData.resources.dll">
+      <PackagePath>it\Microsoft.Data.OData.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:33:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\it\System.Spatial.resources.dll">
+      <PackagePath>it\System.Spatial.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:35:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\ja\Microsoft.Data.Edm.resources.dll">
+      <PackagePath>ja\Microsoft.Data.Edm.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:32:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\ja\Microsoft.Data.OData.resources.dll">
+      <PackagePath>ja\Microsoft.Data.OData.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:33:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\ja\System.Spatial.resources.dll">
+      <PackagePath>ja\System.Spatial.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:35:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\ko\Microsoft.Data.Edm.resources.dll">
+      <PackagePath>ko\Microsoft.Data.Edm.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:32:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\ko\Microsoft.Data.OData.resources.dll">
+      <PackagePath>ko\Microsoft.Data.OData.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:33:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\ko\System.Spatial.resources.dll">
+      <PackagePath>ko\System.Spatial.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:35:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\LiveCharts.Uwp\DefaultGeoMapTooltip.xaml">
+      <PackagePath>LiveCharts.Uwp\DefaultGeoMapTooltip.xaml</PackagePath>
+      <Modified>2016-11-19T17:20:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\LiveCharts.Uwp\DefaultLegend.xaml">
+      <PackagePath>LiveCharts.Uwp\DefaultLegend.xaml</PackagePath>
+      <Modified>2016-11-19T17:20:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\LiveCharts.Uwp\DefaultTooltip.xaml">
+      <PackagePath>LiveCharts.Uwp\DefaultTooltip.xaml</PackagePath>
+      <Modified>2016-11-19T17:20:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\LiveCharts.Uwp\HeatColorRange.xaml">
+      <PackagePath>LiveCharts.Uwp\HeatColorRange.xaml</PackagePath>
+      <Modified>2016-11-19T17:20:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2017-01-31T16:58:01.816</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\ru\Microsoft.Data.Edm.resources.dll">
+      <PackagePath>ru\Microsoft.Data.Edm.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:32:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\ru\Microsoft.Data.OData.resources.dll">
+      <PackagePath>ru\Microsoft.Data.OData.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:33:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\ru\System.Spatial.resources.dll">
+      <PackagePath>ru\System.Spatial.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:35:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\zh-Hans\Microsoft.Data.Edm.resources.dll">
+      <PackagePath>zh-Hans\Microsoft.Data.Edm.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:32:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\zh-Hans\Microsoft.Data.OData.resources.dll">
+      <PackagePath>zh-Hans\Microsoft.Data.OData.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:33:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\zh-Hans\System.Spatial.resources.dll">
+      <PackagePath>zh-Hans\System.Spatial.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:35:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\zh-Hant\Microsoft.Data.Edm.resources.dll">
+      <PackagePath>zh-Hant\Microsoft.Data.Edm.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:32:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\zh-Hant\Microsoft.Data.OData.resources.dll">
+      <PackagePath>zh-Hant\Microsoft.Data.OData.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:33:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\zh-Hant\System.Spatial.resources.dll">
+      <PackagePath>zh-Hant\System.Spatial.resources.dll</PackagePath>
+      <Modified>2015-11-20T14:35:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\_Resources\0.rsrc">
+      <PackagePath>_Resources\0.rsrc</PackagePath>
+      <Modified>2017-02-05T18:58:20.988</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\_Resources\1.rsrc">
+      <PackagePath>_Resources\1.rsrc</PackagePath>
+      <Modified>2017-02-05T18:58:21.018</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\_Resources\2.rsrc">
+      <PackagePath>_Resources\2.rsrc</PackagePath>
+      <Modified>2017-02-05T18:58:21.115</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\_Resources\3.rsrc">
+      <PackagePath>_Resources\3.rsrc</PackagePath>
+      <Modified>2017-02-05T18:58:21.219</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Release\ilc\_Resources\index.txt">
+      <PackagePath>_Resources\index.txt</PackagePath>
+      <Modified>2017-02-05T18:58:21.220</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.3\1.3\">
+      <Name>Microsoft.NET.Native.Framework.1.3</Name>
+      <Version>1.3.24201.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.3, MinVersion = 1.3.24201.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.3\1.3\.\arm\ret\Native\Microsoft.NET.Native.Framework.1.3.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.3\1.3\">
+      <Name>Microsoft.NET.Native.Framework.1.3</Name>
+      <Version>1.3.24201.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.3, MinVersion = 1.3.24201.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.3\1.3\.\x64\ret\Native\Microsoft.NET.Native.Framework.1.3.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.3\1.3\">
+      <Name>Microsoft.NET.Native.Framework.1.3</Name>
+      <Version>1.3.24201.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.3, MinVersion = 1.3.24201.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.3\1.3\.\x86\ret\Native\Microsoft.NET.Native.Framework.1.3.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.4\1.4\">
+      <Name>Microsoft.NET.Native.Runtime.1.4</Name>
+      <Version>1.4.24201.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.4, MinVersion = 1.4.24201.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.4\1.4\.\AppX\ARM\Microsoft.NET.Native.Runtime.1.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.4\1.4\">
+      <Name>Microsoft.NET.Native.Runtime.1.4</Name>
+      <Version>1.4.24201.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.4, MinVersion = 1.4.24201.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.4\1.4\.\AppX\x64\Microsoft.NET.Native.Runtime.1.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.4\1.4\">
+      <Name>Microsoft.NET.Native.Runtime.1.4</Name>
+      <Version>1.4.24201.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.4, MinVersion = 1.4.24201.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.4\1.4\.\AppX\x86\Microsoft.NET.Native.Runtime.1.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.24123.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.24123.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.24123.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.24123.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.24123.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.24123.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

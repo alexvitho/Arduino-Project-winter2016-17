@@ -4,17 +4,13 @@ using Windows.UI.Core;
 using Windows.UI.Xaml;
 using System;
 using Windows.Foundation;
-using GuzzlerMobileApp.views;
 
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace GuzzlerMobileApp
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
-      partial class ExtendedSplash : Page
+
+    partial class ExtendedSplash : Page
     {
         internal Windows.Foundation.Rect splashImageRect; // Rect to store splash screen image coordinates.
         private SplashScreen splash; // Variable to hold the splash screen object.
@@ -52,7 +48,6 @@ namespace GuzzlerMobileApp
             // Complete app setup operations here...
         }
         internal void DismissExtendedSplash() {
-         //   rootFrame.Navigate(typeof(devices));
             Window.Current.Content = null;
         }
         void ExtendedSplash_OnResize(Object sender, WindowSizeChangedEventArgs e)
@@ -62,7 +57,7 @@ namespace GuzzlerMobileApp
             {
                 // Update the coordinates of the splash screen image.
                 splashImageRect = splash.ImageLocation;
-               // PositionImage();
+              
 
             }
         }

@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>5035CF84843AA0CCB387C9B45DD2C3A07DF441BF93C2CECDF14E818E2BF96592</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>0F1C99832ED37B9A46E8182B9C02056D762D7A5B8D6F052E02C2A3809870F17A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>b7657ddb-b2f7-4885-9e64-d4f2feaf51e1_1.0.0.0_x64__ka1dgav0par9g</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>b7657ddb-b2f7-4885-9e64-d4f2feaf51e1_ka1dgav0par9g!App</RegisteredUserModeAppID>
     <RegisteredPackageID>b7657ddb-b2f7-4885-9e64-d4f2feaf51e1</RegisteredPackageID>
@@ -28,17 +28,13 @@
     <AppXManifest Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-24T03:09:42.992</Modified>
+      <Modified>2017-02-05T19:20:18.646</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\GuzzlerMobileApp.exe">
       <PackagePath>entrypoint\GuzzlerMobileApp.exe</PackagePath>
-      <Modified>2017-01-24T03:09:15.174</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\FourToolkit.Charts\1.2.0\lib\uap10.0\FourToolkit.Charts.dll">
-      <PackagePath>FourToolkit.Charts.dll</PackagePath>
-      <Modified>2016-07-31T09:56:06.000</Modified>
+      <Modified>2017-02-05T19:20:17.383</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\LiveCharts\0.8.0\lib\portable-net40+sl5+win8+wp8+wpa81\LiveCharts.dll">
       <PackagePath>LiveCharts.dll</PackagePath>
@@ -208,9 +204,9 @@
       <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
       <Modified>2016-10-19T14:07:18.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\Newtonsoft.Json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\Newtonsoft.Json\6.0.8\lib\netcore45\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2016-06-13T20:06:14.000</Modified>
+      <Modified>2015-01-11T17:54:54.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\runtime.any.System.Collections\4.0.11\lib\netcore50\System.Collections.dll">
       <PackagePath>System.Collections.dll</PackagePath>
@@ -652,25 +648,9 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T20:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\Win2D.uwp\1.18.0\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
-      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
-      <Modified>2016-05-16T00:04:10.000</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\WindowsAzure.Storage\8.0.0\lib\win8\Microsoft.WindowsAzure.Storage.dll">
       <PackagePath>Microsoft.WindowsAzure.Storage.dll</PackagePath>
       <Modified>2016-12-21T17:56:54.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\WinRTXamlToolkit\2.0.0\lib\uap10.0\WinRTXamlToolkit.dll">
-      <PackagePath>WinRTXamlToolkit.dll</PackagePath>
-      <Modified>2016-03-04T00:06:22.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\WinRTXamlToolkit.Controls.DataVisualization\2.0.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization.dll">
-      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization.dll</PackagePath>
-      <Modified>2016-03-04T00:06:24.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\Win2D.uwp\1.18.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
-      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
-      <Modified>2016-05-16T00:04:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\Assets\ExampleG1.png">
       <PackagePath>Assets\ExampleG1.png</PackagePath>
@@ -747,11 +727,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\GuzzlerMobileApp.xr.xml">
       <PackagePath>GuzzlerMobileApp.xr.xml</PackagePath>
-      <Modified>2017-01-24T01:34:41.612</Modified>
+      <Modified>2017-01-31T16:02:42.903</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2017-01-13T20:52:41.843</Modified>
+      <Modified>2017-01-31T16:16:04.616</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\LiveCharts.Uwp\0.8.0\lib\uap10.0\LiveCharts.Uwp\DefaultGeoMapTooltip.xaml">
       <PackagePath>LiveCharts.Uwp\DefaultGeoMapTooltip.xaml</PackagePath>
@@ -773,29 +753,13 @@
       <PackagePath>LiveCharts.Uwp\LiveCharts.Uwp.xr.xml</PackagePath>
       <Modified>2016-11-19T17:20:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\WinRTXamlToolkit.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
-      <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>
-      <Modified>2016-03-03T23:52:14.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\WinRTXamlToolkit.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml">
-      <PackagePath>WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml</PackagePath>
-      <Modified>2016-03-03T23:52:14.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\WinRTXamlToolkit.Controls.DataVisualization.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml">
-      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml</PackagePath>
-      <Modified>2016-03-03T23:52:16.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Alex\.nuget\packages\WinRTXamlToolkit.Controls.DataVisualization.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml">
-      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml</PackagePath>
-      <Modified>2016-03-03T23:52:16.000</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2017-01-24T03:09:41.773</Modified>
+      <Modified>2017-02-05T19:20:18.180</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Git\Arduino-Project-winter2016-17\GuzzlerMobileApp\bin\x64\Debug\Core\GuzzlerMobileApp.exe">
       <PackagePath>GuzzlerMobileApp.exe</PackagePath>
-      <Modified>2017-01-24T03:09:42.988</Modified>
+      <Modified>2017-02-05T19:20:18.639</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

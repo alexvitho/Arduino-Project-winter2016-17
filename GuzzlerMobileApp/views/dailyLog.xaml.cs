@@ -26,7 +26,6 @@ namespace GuzzlerMobileApp.views
         public DateTime minTimeVal { get; set; }
         DateTime todayAndNow;
         deviceGraphAnalysis analysis = new deviceGraphAnalysis();
-        private Boolean dataExists = true;
 
 
         public dailyLog(string specificDate, string devName, DateTimeOffset DateTime)
@@ -58,7 +57,6 @@ namespace GuzzlerMobileApp.views
                 if (powerData.Count == 0)
                 {
                     showMSG.showOkMSG("NO INFO", "Sorry, no data for " + DevName + " on " + deviceGraphAnalysis.dateToString(DateChosed.Date));
-                    dataExists = false;
                     return;
                 }
                 // there is at least one data point

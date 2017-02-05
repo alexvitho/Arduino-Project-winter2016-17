@@ -2,18 +2,8 @@
 using GuzzlerMobileApp.DataModel;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 using LiveCharts;
 using LiveCharts.Uwp;
 
@@ -33,9 +23,6 @@ namespace GuzzlerMobileApp.views
     public sealed partial class estimatedCost : Page
     {
 
-        
-        
-
         public List<powerDayItem> powerPerDay { get; private set; }
         public string DevGuzzeled { get; private set; }
         DateTime Date { get; set; }
@@ -43,23 +30,22 @@ namespace GuzzlerMobileApp.views
         double[] DailyArray;
         double _Bill;
 
-        public estimatedCost( )
+        public estimatedCost()
         {
-           
-           
-                Date = DateTimeOffset.Now.ToLocalTime().Date;
-            
+
+            Date = DateTimeOffset.Now.ToLocalTime().Date;
+
             this.InitializeComponent();
             int daysInMonth = DateTime.DaysInMonth(Date.Year, Date.Month);
-            double[] sum= new double[daysInMonth] ;
-            for (int i =0; i < daysInMonth; i++)
+            double[] sum = new double[daysInMonth];
+            for (int i = 0; i < daysInMonth; i++)
             {
                 sum[i] = 0;
             }
             foreach (string dev in DataModel.existingDevsModel.existingDevs)
             {
                 DailyArray = analysis.getMonthlyPowerPerDay(Date.ToUniversalTime(), dev);
-                for (int j=0; j < DailyArray.Length; ++j)
+                for (int j = 0; j < DailyArray.Length; ++j)
                 {
                     sum[j] += DailyArray[j];
                 }
@@ -67,7 +53,7 @@ namespace GuzzlerMobileApp.views
             DailyArray = sum;
 
             double tarrif = analysis.getElectricityTaarif("Israel", "2017");
-            
+
             for (int i = 0; i < DailyArray.Length; i++)
             {
                 DailyArray[i] *= tarrif;
@@ -75,23 +61,23 @@ namespace GuzzlerMobileApp.views
             }
             SeriesCollection = new SeriesCollection();
 
-           
-            
-                SeriesCollection.Add(new ColumnSeries()
-
-                {
-                    Title = "",
-                    Values = new ChartValues<double>(DailyArray)
-                });
-
-            
 
 
-            Labels = new[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24" ,"25","26","27","28","29","30","31"};
+            SeriesCollection.Add(new ColumnSeries()
+
+            {
+                Title = "",
+                Values = new ChartValues<double>(DailyArray)
+            });
+
+
+
+
+            Labels = new[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" };
             Formatter = value => value.ToString("N");
-            valFormatter = new Func<double, string>(p => Math.Round(p,3).ToString() + " NIS");
+            valFormatter = new Func<double, string>(p => Math.Round(p, 3).ToString() + " NIS");
             DataContext = this;
-           
+
 
         }
 
@@ -103,13 +89,15 @@ namespace GuzzlerMobileApp.views
 
         public string Bill
         {
-            get {
-                
+            get
+            {
+
                 for (int i = 0; i < DailyArray.Length; i++)
                 {
                     _Bill += DailyArray[i];
                 }
-                return _Bill.ToString() + " Nis"; }
+                return _Bill.ToString() + " Nis";
+            }
             private set { }
         }
         private void backButton_Click(object sender, RoutedEventArgs e)
@@ -118,7 +106,7 @@ namespace GuzzlerMobileApp.views
             Window.Current.Activate();
         }
 
-       
+
 
     }
 }

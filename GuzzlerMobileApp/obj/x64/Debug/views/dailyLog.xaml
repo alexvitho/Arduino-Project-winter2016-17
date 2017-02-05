@@ -72,10 +72,10 @@
                     <RowDefinition Height="1*" />
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0"  >
-                    <Button x:ConnectionId='3' Content="column chart"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center"                      />
+                    <Button x:ConnectionId='3' Content="Daily cost"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center"                      />
                 </Grid>
                 <Grid Grid.Row="1" >
-                    <Button x:ConnectionId='2' Content="Pie chart"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center"                   />
+                    <Button x:ConnectionId='2' Content="Daily distribution"  Style="{StaticResource defaultButton}" HorizontalAlignment="Stretch" VerticalAlignment="Center"                   />
                 </Grid>
                 
             </Grid>
