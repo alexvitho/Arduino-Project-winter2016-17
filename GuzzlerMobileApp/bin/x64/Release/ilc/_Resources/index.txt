@@ -1,8 +1,0 @@
-Microsoft.Data.Edm, Version=5.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
-  Microsoft.Data.Edm.resources
-Microsoft.Data.OData, Version=5.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
-  Microsoft.Data.OData.resources
-Microsoft.WindowsAzure.Mobile, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
-  Microsoft.WindowsAzure.MobileServices.Resources.resources
-System.Spatial, Version=5.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
-  System.Spatial.resources
