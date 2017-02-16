@@ -15,10 +15,10 @@ namespace GuzzlerMobileApp.Common
         CloudTable taarifTable;
         public deviceGraphAnalysis()
         {
-            credentials = new StorageCredentials("guzzlerstorage", "GQgI4xCFRAHvD4s+4E+QKqPAHAWGgWagsWa6zP3aWfKus8GGJ15n+Fhp0DT9tD6+OzHSGR2Ekf8Twl4w2mfPow==");
+            credentials = new StorageCredentials("guzzlerstorage2", "Eaa9uDqM5n5SHE8GfAHqw5yLxuSxIl4ulIt9IxTnB2s2ePfY1C1WL9OMmmyJw1jRkRYbpnM3ZQcOnvmZE8BY2Q==");
             storageAccount = new CloudStorageAccount(credentials, true);
-            devicesGraphsTable = storageAccount.CreateCloudTableClient().GetTableReference("DeviceGraps");  // Retrieve a reference to the table.
-            taarifTable = storageAccount.CreateCloudTableClient().GetTableReference("ElectricityTariff");
+            devicesGraphsTable = storageAccount.CreateCloudTableClient().GetTableReference("GuzzlerDevices"); // Table that sotres devices Data History 
+            taarifTable = storageAccount.CreateCloudTableClient().GetTableReference("ElectricityTariff"); // Electricity taarif table
         }
 
         // function to create a string representing the date day/month/year
