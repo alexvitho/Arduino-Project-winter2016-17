@@ -258,7 +258,7 @@ void loop() {
   
 
   Serial.println(request);
-  if (counterS==10 ){
+  if (counterS==13 ){   
     
   counterS=0;
   client.print(request);
