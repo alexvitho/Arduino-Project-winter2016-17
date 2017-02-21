@@ -31,7 +31,7 @@ namespace GuzzlerMobileApp.views
             double guzzeldDevPower = 0;
             double totalPower = 0;
             this.InitializeComponent();
-            powerPartition = (new Common.deviceGraphAnalysis()).getDailyPowerPie(Date.ToLocalTime());
+            powerPartition = (new Common.deviceGraphAnalysis()).getDailyPowerPie(Date);
             foreach (piePowerItem it in powerPartition)
             {
                 totalPower += it.Val;

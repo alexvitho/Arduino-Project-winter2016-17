@@ -1,4 +1,5 @@
 ﻿using GuzzlerMobileApp.Common;
+using GuzzlerMobileApp.views;
 using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Collections.Generic;
@@ -59,7 +60,8 @@ namespace GuzzlerMobileApp
                 DataModel.existingDevsModel.existingDevs = new List<String>();
                 DataModel.existingDevsModel.nickToId = new Dictionary<string, string>(); // name to guzzler id dictionary
                 DataModel.existingDevsModel.existingDevs  = devicesMan.getAllDevicesNames();
-                controller cntrl = new controller();
+                Window.Current.Content = new devices();
+                Window.Current.Activate();
             }
             catch (Exception l)
             {

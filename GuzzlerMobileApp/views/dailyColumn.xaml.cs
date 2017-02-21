@@ -31,7 +31,7 @@ namespace GuzzlerMobileApp.views
                 Date = DateTime;
             DevGuzzeled = "Power consumption of " + DevName + "\non the " + deviceGraphAnalysis.dateToString(Date) + "\n NIS/Day";
             this.InitializeComponent();
-            double[] DailyArray = analysis.getDailyPowerPerHour(Date.ToUniversalTime(), DevName);
+            double[] DailyArray = analysis.getDailyPowerPerHour(Date, DevName);
             double tarrif = analysis.getElectricityTaarif("Israel", "2017");
             for (int i = 0; i < 24; i++)
             {
@@ -47,7 +47,7 @@ namespace GuzzlerMobileApp.views
                 Values = new ChartValues<double>(DailyArray),
             });
 
-            Labels = new[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24" };
+            Labels = new[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23" };
             Formatter = value => value.ToString("N");
             valFormatter = new Func<double, string>(p => p.ToString() + " NIS");
             DataContext = this;

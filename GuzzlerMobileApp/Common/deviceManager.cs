@@ -28,7 +28,7 @@ namespace GuzzlerMobileApp.Common
         public static StorageCredentials credentials = new StorageCredentials("guzzlerstorage2", "Eaa9uDqM5n5SHE8GfAHqw5yLxuSxIl4ulIt9IxTnB2s2ePfY1C1WL9OMmmyJw1jRkRYbpnM3ZQcOnvmZE8BY2Q==");
         public static CloudStorageAccount storageAccount = new CloudStorageAccount(credentials, true);
         CloudTable devicesTable = storageAccount.CreateCloudTableClient().GetTableReference("RegisteredDevices");  // Retrieve a reference to devices details table.
-        CloudTable devicesRealTimeTable = storageAccount.CreateCloudTableClient().GetTableReference("GuzzlerDevices");  // Retrieve a reference to device data table
+        CloudTable devicesRealTimeTable = storageAccount.CreateCloudTableClient().GetTableReference("DeviceGrapsReal");  // Retrieve a reference to device data table
         public Device createNewDevice(string guzzId, string deviceName, string type, string manName, string model, string serial)
         {
             Device newDevice = new Device(guzzId, deviceName);

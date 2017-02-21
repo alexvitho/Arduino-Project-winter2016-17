@@ -66,9 +66,9 @@ namespace GuzzlerMobileApp.views
             valueFormatter = value => Math.Round(value, 3).ToString();
             AxisStep = TimeSpan.FromSeconds(1).Ticks;
             SetAxisLimits(DateTime.Now);
-            pointFormatter = value => Math.Round(value,3).ToString() + " kW";
+            pointFormatter = value => Math.Round(value, 3).ToString() + " kW";
 
-            lineData.LabelPoint= new Func<ChartPoint, string>(p => Math.Round(p.Y,3).ToString()+" kW");
+            lineData.LabelPoint = new Func<ChartPoint, string>(p => Math.Round(p.Y, 3).ToString() + " kW");
             //The next code simulates data changes every 1500 ms
             Timer = new DispatcherTimer
             {
@@ -127,8 +127,8 @@ namespace GuzzlerMobileApp.views
         private void TimerOnTick(object sender, object eventArgs)
         {
             var now = DateTime.Now;
-            string partitionFilter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, existingDevsModel.nickToId[devName]); 
-            string startTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.GreaterThanOrEqual, now);
+            string partitionFilter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, existingDevsModel.nickToId[devName]);
+            string startTimeFilter = TableQuery.GenerateFilterConditionForDate("Timestamp", QueryComparisons.GreaterThanOrEqual, now.Subtract(new TimeSpan( 0,0,3)));
             string dateFilter = (TableQuery.CombineFilters(partitionFilter, TableOperators.And, startTimeFilter));
             var query = new TableQuery<DynamicTableEntity>().Where(dateFilter).Select(new string[] { "realPower" });
             var queryOutput = devicesGraphsTable.ExecuteQuerySegmentedAsync<DynamicTableEntity>(query, null);
@@ -144,9 +144,6 @@ namespace GuzzlerMobileApp.views
             {
                 DateTime = now,
                 Value = tmpVal
-               
-
-
             });
 
             SetAxisLimits(now);

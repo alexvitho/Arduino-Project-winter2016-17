@@ -18,6 +18,10 @@
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>GuzzlerMobileApp_TemporaryKey.pfx</PackageCertificateKeyFile>
     <PackageCertificateThumbprint>0A7ED766AB0AD4AC63238811BF10E3AF184B0496</PackageCertificateThumbprint>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x64|arm</AppxBundlePlatforms>
+    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -97,7 +101,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Common\controller.cs" />
     <Compile Include="Common\deviceGraphAnalysis.cs" />
     <Compile Include="Common\deviceManager.cs" />
     <Compile Include="DataModel\dataModel.cs" />
@@ -128,9 +131,6 @@
     </Compile>
     <Compile Include="views\message.xaml.cs">
       <DependentUpon>message.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="views\PointShapeLineExample .xaml.cs">
-      <DependentUpon>PointShapeLineExample .xaml</DependentUpon>
     </Compile>
     <Compile Include="views\realTimePower.xaml.cs">
       <DependentUpon>realTimePower.xaml</DependentUpon>
@@ -208,10 +208,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="views\message.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="views\PointShapeLineExample .xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
